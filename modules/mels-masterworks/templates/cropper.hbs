@@ -1,0 +1,28 @@
+<div class="laminator-canvas">
+  <div id="m3-lam-base" data-croppie="base">
+    {{! placeholder for base canvas }}
+  </div>
+  <form id="m3-lam-canvas-actions" class="sidebar">
+    <div class="dual-button">
+      <button class="canvas-action min-size toggle" name="cropCircle" data-action="shape" data-shape="circle" title="{{localize 'm3.laminator.toggle.circle'}}"><i class="fas fa-user-circle"></i></button>
+      <label title="{{localize 'm3.laminator.toggle.shapeHint'}}">{{localize "m3.laminator.toggle.shape"}}</label>
+      <button class="canvas-action min-size toggle" name="cropSquare" data-action="shape" data-shape="square" title="{{localize 'm3.laminator.toggle.square'}}"><i class="fas fa-portrait"></i></button>
+    </div>
+    <div class="dual-button">
+      <button class="canvas-action min-size" data-action="source" data-target="base" title="{{localize 'm3.laminator.toggle.left'}}"><i class="fas fa-arrow-circle-left"></i></button>
+      <label title="{{localize 'm3.laminator.toggle.sourceHint'}}">{{localize "m3.laminator.toggle.source"}}</label>
+      <button class="canvas-action min-size" data-action="source" data-target="overlay" title="{{localize 'm3.laminator.toggle.right'}}"><i class="fas fa-arrow-circle-right"></i></button>
+    </div>
+    <div id="m3-lam-combined" class="combined-preview" data-croppie="combined">
+      {{! placeholder for combined preview }}
+    </div>
+    <div class="flexrow">
+      <button class="min-size force-context-up" name="configureSave" title="{{localize 'm3.laminator.config.resolution'}}"><i class="fas fa-wrench"></i></button>
+      <button name="saveToken" title="{{localize 'm3.laminator.saveToken.hint'}}">{{localize "m3.laminator.saveToken.title"}}</button>
+      <button class="min-size" name="previewResult" title="{{localize 'm3.laminator.config.preview'}}"><i class="fas fa-images"></i></button>
+    </div>
+  </form>
+  <div id="m3-lam-overlay" data-croppie="overlay">
+    {{! placeholder for overlay canvas }}
+  </div>
+</div>

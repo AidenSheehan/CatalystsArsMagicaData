@@ -1,0 +1,70 @@
+<form class="{{cssClass}} scriptorium scriptorium-sheet" autocomplete="off">
+  <div class="scriptorium flex0">
+    <img src="systems/arm5e/assets/scriptorium/Scriptorium_header.png" style="border: 0px;" />
+  </div>
+  <h1 class="scriptorium-title width: 100%;" text-align="center">Scriptorium</h1>
+  <header class="scriptorium-header flex0">
+    <div class="flexrow" style="margin-left: 32px; margin-right: 57px;">
+      <div class="resource-content flexrow flex-center flex-between margintop6">
+        <label for="season" class="smallTitle">{{localize "arm5e.sheet.season"}}</label>
+        <select name="season" data-type="String" class="change-season flex0 scriptorium seasons">
+          {{selectOptions seasons selected=season localize=true labelAttr="label"}}
+        </select>
+      </div>
+      <div class="resource-content flexrow flex-center flex-between margintop6">
+        <label for="year" class="smallTitle">{{localize "arm5e.sheet.year"}}</label>
+        <input type="number" name="year" value="{{year}}" data-dtype="Number"
+          class="scriptorium change-year select-on-focus" />
+      </div>
+    </div>
+  </header>
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="arm5eTabs sheet-tabs tabs" data-group="primary">
+    <a class="item posRelative" data-tab="reading" data-group="primary">
+      <div class="navItem-right-ball" style="padding-top: 4px;"><img src="systems/arm5e/assets/bLeft.png"
+          style="padding-top: 12px;" /></div>
+      <div class="navItem-left-ball" style="padding-top: 4px;"><img src="systems/arm5e/assets/bRight.png"
+          style="padding-top: 12px;" /></div>
+      {{localize "arm5e.activity.reading"}}
+    </a>
+    <a class="item posRelative" data-tab="writing" data-group="primary">
+      <div class="navItem-right-ball" style="padding-top: 4px;"><img src="systems/arm5e/assets/bLeft.png"
+          style="padding-top: 12px;" /></div>
+      <div class="navItem-left-ball" style="padding-top: 4px;"><img src="systems/arm5e/assets/bRight.png"
+          style="padding-top: 12px;" /></div>
+      {{localize "arm5e.activity.writing"}}
+    </a>
+    <a class="item posRelative" data-tab="copying" data-group="primary">
+      <div class="navItem-right-ball" style="padding-top: 4px;"><img src="systems/arm5e/assets/bLeft.png"
+          style="padding-top: 12px;" /></div>
+      <div class="navItem-left-ball" style="padding-top: 4px;"><img src="systems/arm5e/assets/bRight.png"
+          style="padding-top: 12px;" /></div>
+      {{localize "arm5e.activity.copying"}}
+    </a>
+
+
+  </nav>
+  <div class="marginsides32">
+    {{> "systems/arm5e/templates/generic/metalic-bar.html" topoffset="-7px" }}
+  </div>
+  {{!-- Sheet Body --}}
+
+  <section class="sheet-body">
+    {{> "systems/arm5e/templates/generic/parts/scriptorium-reading.html"  }}
+    <!-- ***********
+    *** WRITING ****
+    **************** -->
+    {{> "systems/arm5e/templates/generic/parts/scriptorium-writing.html"  }}
+    <!-- ***********
+    *** COPYING ****
+    **************** -->
+    {{> "systems/arm5e/templates/generic/parts/scriptorium-copying.html"  }}
+    <!-- <div class="tab marginsides32" data-group="primary" data-tab="other">
+      <label>WIP</label>
+     -->
+  </section>
+
+  <div class="footer-background flex0">
+    <img src="systems/arm5e/assets/scriptorium/Scriptorium_footer.png" />
+  </div>
+</form>

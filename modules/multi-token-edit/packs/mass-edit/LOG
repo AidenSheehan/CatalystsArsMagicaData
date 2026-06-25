@@ -1,0 +1,7 @@
+2026/03/23-09:43:49.975 2e80 Recovering log #4722
+2026/03/23-09:43:49.980 2e80 Delete type=0 #4722
+2026/03/23-09:43:49.981 2e80 Delete type=3 #4720
+2026/03/23-09:45:33.879 780 Level-0 table #4727: started
+2026/03/23-09:45:33.879 780 Level-0 table #4727: 0 bytes OK
+2026/03/23-09:45:33.881 780 Delete type=0 #4725
+2026/03/23-09:45:33.884 780 Manual compaction at level-0 from '!macros!3ivww8AUhPHNRmd7' @ 72057594037927935 : 1 .. '!macros!uDU52bTJ1GUzZIza' @ 0 : 0; will stop at (end)

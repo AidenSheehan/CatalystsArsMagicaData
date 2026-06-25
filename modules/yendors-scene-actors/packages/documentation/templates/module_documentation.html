@@ -1,0 +1,17 @@
+<div class="module_info">
+	<div class="main flexrow">
+		<aside class="sidebar flexcol">
+			<nav class="tabs">
+				<p class="sub-headline">Info</p>
+				<a class="item" data-tab="info">{{module.title}}</a>
+				<a class="item" data-tab="changelog">Changelog</a>
+			</nav>
+		</aside>
+		<div class="flexcol">
+			<div class="scrollable content">
+				{{> (templates.moduleInfo) module=module }}
+				{{> (templates.changelog) changelog=changelog }}
+			</div>
+		</div>
+	</div>
+</div>

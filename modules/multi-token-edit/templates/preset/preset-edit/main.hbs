@@ -1,0 +1,49 @@
+<div class="tab{{#if tab.active}} active{{/if}}" data-group="{{tab.group}}" data-tab="{{tab.id}}">
+
+    <div class="form-group">
+        <label>{{localize "Name"}}</label>
+        <div class="form-fields">
+            <input type="text" name="name" placeholder="Preset Name" value="{{preset.name}}" minlength="{{minlength}}" {{#if minlength}}required{{/if}} autofocus>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>{{localize "COMBAT.CombatantImage"}}</label>
+        <div class="form-fields">
+            <file-picker name="img" type="imagevideo" value="{{preset.img}}"></file-picker>
+        </div>
+    </div>
+
+    {{#if dataEditEnabled}}
+    <fieldset>
+        <legend>{{localize "MassEdit.common.data"}}</legend>
+        <div class="form-group">
+            <label>{{localize "SIDEBAR.Edit"}} [{{documentName}}]</label>
+            <div class="form-fields">
+                <button  data-action="editDocument" type="button"><i class="fa-solid fa-gear"></i></button>
+            </div>
+            <p class="hint">{{localize "MassEdit.presets.data-edit" document=documentName}}</p>
+        </div>
+        {{#if fieldDeleteEnabled}}
+        <div class="form-group">
+            <label>{{localize "MassEdit.presets.delete-fields"}}</label>
+            <div class="form-fields">
+                <button  data-action="deleteFields" type="button"><i class="fas fa-tasks"></i></button>
+            </div>
+            <p class="hint">{{localize "MassEdit.presets.select-delete"}}</p>
+        </div>
+        {{/if}}
+        {{#if assignEnabled}}
+        <div class="form-group">
+            <label>Assign [{{documentName}}]</label>
+            <div class="form-fields">
+                <button  data-action="assignDocument" type="button"><i class="fa-solid fa-arrow-right-to-arc"></i></button>
+            </div>
+            <p class="hint">{{localize "MassEdit.presets.data-assign" document=documentName}}</p>
+        </div>
+        {{/if}}
+
+    </fieldset>
+    {{/if}}
+
+</div>

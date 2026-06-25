@@ -1,0 +1,53 @@
+
+a.ship-crew-tab, a.ship-positions-tab,
+a.ship-storage-tab, a.ship-cargo-tab,
+a.ship-finance-tab, a.ship-component-tab,
+a.ship-notes-tab, a.ship-notes-tab.active, a.ship-notes-tab:hover {
+	padding: 1ch 0.3ch;
+  font-size: 1.5ch;
+}
+
+.storage-header {
+  height: auto;
+  min-height: 3ch;
+}
+
+.add-skill {
+  width: 15ch;
+}
+
+.actor-notes-tab {
+  min-width: 12ch;
+}
+
+.info-tab {
+  width: 75px;
+}
+
+.item-tab {
+  min-width: 10ch;
+}
+
+.skill-tab {
+  min-width: 12ch;
+}
+
+.effects-tab {
+  min-width: 9ch;
+}
+
+.items-weapons {
+	grid-template-columns: 5% 30% 6% 7% 11% 12% 12% 17%;
+}
+
+.items-armor {
+  grid-template-columns: 5% 38% 10% 10% 10% 15% 12%;
+}
+
+.item-title-npc {
+  width: 21ch;
+}
+
+.consumable-row .refill-button {
+  width: 12ch;
+}

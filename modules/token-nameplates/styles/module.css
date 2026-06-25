@@ -1,0 +1,2 @@
+.token-nameplate-list{display:grid;grid-template-columns:fit-content(50px) 1fr 1fr fit-content(50px)}.token-nameplate-list__header{margin-top:4px;margin-bottom:4px}.token-nameplate-list__col{padding:4px}.token-nameplate-list__col--alt-row{background-color:var(--table-row-color-even)}.token-nameplate-list__col--disabled{pointer-events:none;opacity:.5}.nameplate-font-tab__preview{width:100%}.ui-autocomplete{z-index:999!important}a.disabled[disabled]{color:#a9a9a9}
+/*# sourceMappingURL=module.css.map */

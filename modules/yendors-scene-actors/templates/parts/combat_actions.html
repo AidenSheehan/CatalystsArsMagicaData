@@ -1,0 +1,32 @@
+<div class="combat_actions toolbar">
+    {{#if settings.combatHasStarted}}
+    <div class="toolbar_section">
+        <div class="toolbar_action combat_action" data-action="previousTurn">
+            <i class="fa fa-backward-step"></i>
+        </div>
+    </div>
+    <div class="toolbar_section">
+        <div class="toolbar_action combat_action{{#if settings.turnIsFinished}} highlighted{{/if}}" data-action="nextTurn">
+            <i class="fa fa-step-forward"></i> Zug beenden
+        </div>
+    </div>
+    {{else}}
+    {{#if settings.unRolled}}
+    <div class="toolbar_section">
+        <div class="toolbar_action combat_action" data-action="rollNpcInit">
+            <i class="fa fa-dice"></i> NPC Init
+        </div>
+    </div>
+    {{/if}}
+    <div class="toolbar_section">
+        <div class="toolbar_action combat_action" data-action="startCombat">
+            <i class="fa fa-swords"></i> Starten
+        </div>
+    </div>
+    {{/if}}
+    <div class="toolbar_section">
+        <div class="toolbar_action combat_action" data-action="stopCombat">
+            <i class="fa fa-ban"></i> Beenden
+        </div>
+    </div>
+</div>

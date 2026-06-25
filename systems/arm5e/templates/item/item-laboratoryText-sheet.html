@@ -1,0 +1,74 @@
+<form class="sheet-content flexcol" autocomplete="off">
+  <header class="sheet-header">
+    <img class="item-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+    <div class="header-fields">
+      <div class="flexrow">
+        <label for="system.type" class="smallTitle" style="padding-left: 24px">{{localize "arm5e.sheet.type"}}</label>
+        <select {{noSelect}} class="width2" name="system.type" data-type="String">
+          {{selectOptions config.lab.labTextType selected=system.type localize=true}}
+        </select>
+        <div>
+          <label class="label-light" style="position: relative; bottom: 10px;">{{localize "Draft"}}</label>
+          <input type="checkbox" {{checked system.draft}} data-dtype="Boolean" {{noSelect}} name="system.draft"
+            style="position: relative; bottom: 5px;" />
+        </div>
+        {{>"systems/arm5e/templates/item/parts/cost.hbs" classes="fit"}}
+      </div>
+      {{#if locked}}
+        <i class="icon-Icon_Locked"></i>
+      {{/if}}
+      <h1 class="charname"><input name="name" {{noEdit}} type="text" value="{{item.name}}" placeholder="Name" /></h1>
+      <div class="padding4 flexrow">
+        {{> "systems/arm5e/templates/item/parts/authorship.html" }}
+      </div>
+      <div class="flexrow">
+        <div class="padding2">
+          <label>{{system.localizedDesc}}</label>
+        </div>
+        {{#if canBeRead}}
+          <div class="modifier" style="margin-top: 10px;">
+            <a class=" study-labtext" title='{{localize "arm5e.hints.read" item=(localize "arm5e.sheet.book")}}'
+              style="padding-left: 5px; padding-top: 5px;"><i class="icon-Icon_Readspell"></i></a>
+          </div>
+        {{/if}}
+      </div>
+    </div>
+  </header>
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="arm5eTabs sheet-tabs tabs" data-group="primary">
+    <a class="item posRelative" data-tab="description">
+      <div class="navItem-right-ball"><img src="systems/arm5e/assets/bLeft.png" /></div>
+      <div class="navItem-left-ball"><img src="systems/arm5e/assets/bRight.png" /></div>
+      {{localize "arm5e.sheet.description"}}
+    </a>
+
+
+    <!-- <a class="item posRelative" data-tab="authorship">
+      <div class="navItem-right-ball"><img src="systems/arm5e/assets/bLeft.png" /></div>
+      <div class="navItem-left-ball"><img src="systems/arm5e/assets/bRight.png" /></div>
+      {{localize "arm5e.sheet.authorship.label"}}
+    </a> -->
+  </nav>
+  {{> "systems/arm5e/templates/generic/metalic-bar.html" }}
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+    {{!-- Description Tab --}}
+    {{#if (eq system.type "raw")}}
+      {{editor enrichedDescription target="system.description" button=true owner=owner engine="prosemirror" editable=editable}}
+    {{else}}
+      {{> "systems/arm5e/templates/item/parts/spell-design-V2.html" docId=@root.item._id container="book" 
+    prefix="" spelldata=@root visibility=@root.ui.sections.visibility.book ritual=(eq system.type "spell") noApplyFocus=true}}
+    {{/if}}
+    {{#if (eq system.type "enchantment")}}
+      {{> "systems/arm5e/templates/item/parts/enchantment-attributes.html" docId=@root.item._id container="book"
+    prefix="" enchantData=@root visibility=@root.ui.sections.visibility.book expiryAllowed=true}}
+    {{/if}}
+
+    <div>
+      {{#if metagame.view }}
+        {{> "systems/arm5e/templates/generic/metalic-bar.html" }}
+        {{> "systems/arm5e/templates/generic/source.html" }}
+      {{/if}}
+    </div>
+  </section>
+</form>

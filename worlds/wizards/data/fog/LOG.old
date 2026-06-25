@@ -1,0 +1,22 @@
+2026/06/25-18:48:39.306 8d64 Recovering log #126
+2026/06/25-18:48:39.319 8d64 Delete type=0 #126
+2026/06/25-18:48:39.319 8d64 Delete type=3 #125
+2026/06/25-18:48:50.131 5484 Level-0 table #130: started
+2026/06/25-18:48:50.131 5484 Level-0 table #130: 0 bytes OK
+2026/06/25-18:48:50.137 5484 Delete type=0 #128
+2026/06/25-18:48:50.166 5484 Manual compaction at level-0 from '!fog!2qe4xDnKcK53PlM1' @ 72057594037927935 : 1 .. '!fog!tin6XrInTtbtiiXa' @ 0 : 0; will stop at '!fog!tin6XrInTtbtiiXa' @ 12 : 1
+2026/06/25-18:48:50.166 5484 Compacting 1@0 + 0@1 files
+2026/06/25-18:48:50.179 5484 Generated table #131@0: 4 keys, 22967 bytes
+2026/06/25-18:48:50.179 5484 Compacted 1@0 + 0@1 files => 22967 bytes
+2026/06/25-18:48:50.179 5484 compacted to: files[ 0 1 2 0 0 0 0 ]
+2026/06/25-18:48:50.187 5484 Delete type=2 #111
+2026/06/25-18:48:50.187 5484 Manual compaction at level-0 from '!fog!tin6XrInTtbtiiXa' @ 12 : 1 .. '!fog!tin6XrInTtbtiiXa' @ 0 : 0; will stop at (end)
+2026/06/25-18:48:50.187 5484 Manual compaction at level-1 from '!fog!2qe4xDnKcK53PlM1' @ 72057594037927935 : 1 .. '!fog!tin6XrInTtbtiiXa' @ 0 : 0; will stop at '!fog!tin6XrInTtbtiiXa' @ 15 : 1
+2026/06/25-18:48:50.187 5484 Compacting 1@1 + 2@2 files
+2026/06/25-18:48:50.196 5484 Generated table #132@1: 10 keys, 236336 bytes
+2026/06/25-18:48:50.196 5484 Compacted 1@1 + 2@2 files => 236336 bytes
+2026/06/25-18:48:50.206 5484 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/06/25-18:48:50.206 5484 Delete type=2 #70
+2026/06/25-18:48:50.206 5484 Delete type=2 #89
+2026/06/25-18:48:50.206 5484 Delete type=2 #131
+2026/06/25-18:48:50.206 5484 Manual compaction at level-1 from '!fog!tin6XrInTtbtiiXa' @ 15 : 1 .. '!fog!tin6XrInTtbtiiXa' @ 0 : 0; will stop at (end)

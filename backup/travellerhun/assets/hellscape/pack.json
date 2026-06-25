@@ -1,0 +1,12 @@
+{
+	"name": "HellScape - Airship",
+	"id": "uykpW0MY",
+	"version": "1",
+	"author": "AurelTristen",
+	"custom_color_overrides": {
+		"enabled": false,
+		"min_redness": 0.1,
+		"min_saturation": 0,
+		"red_tolerance": 0.04
+	}
+}

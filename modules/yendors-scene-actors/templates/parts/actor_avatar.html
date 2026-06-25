@@ -1,0 +1,67 @@
+<div class="active_scene_actor scene_actor_listener{{#if actor.rotateOnScene}} rotated{{/if}}{{#if actor.fullAvatar}} full_avatar{{/if}}" data-id="{{actor.id}}" data-tooltip="{{#ifEquals actor.sceneItemType "actor"}}{{tooltips.actor}}{{else}}{{tooltips.item}}{{/ifEquals}}">
+    <div class="active_scene_actor_avatar" style="background-image: url('{{actor.img}}');">
+        {{#if actor.showTarget}}
+        <div class="target_container{{#if actor.isTarget}} targeted{{/if}}">
+            {{#if actor.isTarget}}
+            <div class="toggle_target_options">
+                {{#if general.isDSA5}}
+                <div class="target_action" data-id="{{actor.id}}" data-type="talent" data-tooltip="Vergleichsprobe"><i class="fas fa-dice-d20"></i></div>
+                <div class="target_action" data-id="{{actor.id}}" data-type="attack" data-tooltip="Ziel angreifen"><i class="fas fa-sword"></i></div>
+                {{#if user.character.system.isMage}}
+                <div class="target_action" data-id="{{actor.id}}" data-type="magic" data-tooltip="Zauber auf Ziel wirken"><i class="fas fa-wand"></i></div>
+                {{/if}}
+                {{#if user.character.system.isPriest}}
+                <div class="target_action" data-id="{{actor.id}}" data-type="magic" data-tooltip="Liturgie auf Ziel wirken"><i class="fas fa-jedi"></i></div>
+                {{/if}}
+                {{else}}
+                <div class="target_action" data-id="{{actor.id}}" data-type="talent"><i class="fas fa-dice-d20"></i></div>
+                {{/if}}
+            </div>
+            {{/if}}
+            <div class="toggle_target target_action" data-id="{{actor.id}}" data-type="toggle" data-tooltip="Als Ziel auswählen">
+                {{#if actor.isTarget}}
+                <i class="fas fa-bullseye-pointer"></i>
+                {{else}}
+                <i class="fas fa-bullseye"></i>
+                {{/if}}
+            </div>
+        </div>
+        {{/if}}
+        <div class="avatar_spacer"></div>
+        {{#if actor.showName}}
+        <div class="actor_name_container" data-actor-id="{{actor.id}}"{{#if user.isGM}} data-tooltip="{{localize 'Canvas.tooltipClickNameLabel'}}"{{/if}}>
+            <div class="actor_name">{{actor.name}}</div>
+            {{#unless actor.isNameRevealed}}
+            <i class="fa fa-eye-slash" data-tooltip="{{localize 'Canvas.tooltipNameIsHidden'}}"></i>
+            {{/unless}}
+        </div>
+        {{/if}}
+        {{#ifEquals actor.sceneItemType "item"}}
+        <div class="item_interaction_container{{#if actor.isLocked}} item_locked{{/if}}">
+            <div class="item_amount{{#if user.isGM}} item_action{{/if}}" data-id="{{actor.id}}">{{actor.amount}}x</div>
+            <div class="spacer"></div>
+            {{#if user.isGM}}
+            <div class="item_lock item_action" data-id="{{actor.id}}">
+                {{#if actor.isLocked}}
+                <i class="fa fa-lock" data-tooltip="{{localize 'Canvas.tooltipItemEnable'}}"></i>
+                {{else}}
+                <i class="fa fa-lock-open" data-tooltip="{{localize 'Canvas.tooltipItemDisable'}}"></i>
+                {{/if}}
+            </div>
+            {{else}}
+            {{#if actor.isLocked}}
+            <div class="no_add" data-tooltip="{{localize 'Canvas.tooltipItemLocked'}}">
+                <i class="fa fa-lock"></i>
+            </div>
+            {{else}}
+            <div class="add_to_inventory item_action" data-id="{{actor.id}}" data-tooltip="{{localize 'Canvas.tooltipItemToInventory'}}">
+                <i class="fas fa-sack"></i>
+                <i class="fas fa-arrow-turn-down-right"></i>
+            </div>
+            {{/if}}
+            {{/if}}
+        </div>
+        {{/ifEquals}}
+        {{{itemBox}}}
+    </div>
+</div>

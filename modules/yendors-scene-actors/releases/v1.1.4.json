@@ -1,0 +1,37 @@
+{
+  "id": "yendors-scene-actors",
+  "title": "Yendor's Scene Actors",
+  "description": "Show actor images on your scenes easily with a nice actor selector ui.",
+  "authors": [
+    {
+      "name": "YendorsVTT"
+    }
+  ],
+  "version": "1.1.4",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "11"
+  },
+  "styles": [
+    "./assets/css/yendors_scene_actors.css"
+  ],
+  "esmodules": [
+    "script/init.js"
+  ],
+  "languages": [{
+    "lang": "de",
+    "name": "Deutsch",
+    "path": "lang/de.json"
+  },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "socket": true,
+  "url": "https://gitlab.com/yendors-vtt/yendors-scene-actors/-/releases",
+  "manifest": "https://vtt.seidler.media/yendors-vtt/yendors-scene-actors/module.json",
+  "download": "https://vtt.seidler.media/yendors-vtt/packages/yendors-scene-actors/v1.1.4.zip",
+  "bugs": "https://gitlab.com/yendors-vtt/yendors-scene-actors/issues"
+}

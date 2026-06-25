@@ -1,0 +1,382 @@
+{
+  
+  "COMBATTRACKEREXTENSIONS.ToggleNameMask": "Toggle Name Masking",
+  "COMBATTRACKEREXTENSIONS.ToggleTokenVisibility":"Toggle Token Visibility",
+  "COMBATTRACKEREXTENSIONS.DuplicateCombatant": "Duplicate Combatant",
+  "COMBATTRACKEREXTENSIONS.RemoveAllDuplicates": "Remove All Duplicates",
+  "COMBATTRACKEREXTENSIONS.ChangeDispositionToFriendly": "Change disposition to Friendly",
+  "COMBATTRACKEREXTENSIONS.ChangeDispositionToNeutral": "Change disposition to Neutral",
+  "COMBATTRACKEREXTENSIONS.ChangeDispositionToHostile": "Change disposition to Hostile",
+  "COMBATTRACKEREXTENSIONS.ChangeDispositionToSecret": "Change disposition to Secret",
+  "COMBATTRACKEREXTENSIONS.ChangeDispositionCancel": "Cancel",
+  "COMBATTRACKEREXTENSIONS.ChangeDisposition":"Change disposition",
+  "COMBATTRACKEREXTENSIONS.ChangePhase":"Move to {phasename}",
+  "COMBATTRACKEREXTENSIONS.ChangePhaseCancel": "Cancel",
+  "COMBATTRACKEREXTENSIONS.UnknownCombatant": "Unknown",
+  "COMBATTRACKEREXTENSIONS.ChangeToActive": "Set combatant to current",
+  "COMBATTRACKEREXTENSIONS.Phase":"Phase: ",
+  "COMBATTRACKEREXTENSIONS.SelectorAll":"All",
+  "COMBATTRACKEREXTENSIONS.SelectorAllPlayers":"All players",
+  "COMBATTRACKEREXTENSIONS.SelectorAllNPCs":"All NPCs",
+  "COMBATTRACKEREXTENSIONS.SelectorAllNPCsFriendly":"All Friendly NPCs",
+  "COMBATTRACKEREXTENSIONS.SelectorAllNPCsNeutral":"All Neutral NPCs",
+  "COMBATTRACKEREXTENSIONS.SelectorAllNPCsHostile":"All Hostile NPCs",
+  "COMBATTRACKEREXTENSIONS.SelectorAllNPCsSecret":"All Secret NPCs",
+  "COMBATTRACKEREXTENSIONS.SelectorRandomUnsetCombatant":"Random from {unsetphase}",
+  
+  "COMBATTRACKEREXTENSIONS.MenuUnset":"To {unsetphase}",
+  "COMBATTRACKEREXTENSIONS.MenuMask":"Mask",
+  "COMBATTRACKEREXTENSIONS.MenuUnMask":"Unmask",
+  "COMBATTRACKEREXTENSIONS.MenuHide":"Hide",
+  "COMBATTRACKEREXTENSIONS.MenuReveal":"Reveal",
+  "COMBATTRACKEREXTENSIONS.MenuAdd":"Add",
+  "COMBATTRACKEREXTENSIONS.MenuAddTooltip":"Add tokens from canvas to encounter",
+  "COMBATTRACKEREXTENSIONS.MenuRemove":"Remove",
+  "COMBATTRACKEREXTENSIONS.MenuSelect":"Select",
+  "COMBATTRACKEREXTENSIONS.MenuClearInitiative":"Clear initiative",
+  
+  "COMBATTRACKEREXTENSIONS.ConfirmRemoveCombatantsPromptTitle":"Remove combatants",
+  "COMBATTRACKEREXTENSIONS.ConfirmRemoveCombatantsPromptBody":"Remove {selection}?",
+  
+  "COMBATTRACKEREXTENSIONS.MenuSettings":"Settings",
+  "COMBATTRACKEREXTENSIONS.MenuSettingsHint":"Combat Tracker Extensions Settings",
+  
+  "COMBATTRACKEREXTENSIONS.MenuPhaseEditor":"Phases Editor",
+  "COMBATTRACKEREXTENSIONS.MenuRoundSetEditor":"Round Set Editor",
+  
+  "COMBATTRACKEREXTENSIONS.PhaseUnset":"Unset",
+  "COMBATTRACKEREXTENSIONS.PhaseAssign":"Move combatants to this Phase",
+  "COMBATTRACKEREXTENSIONS.PhaseAssignAll":"Assign all",
+  "COMBATTRACKEREXTENSIONS.PhaseAssignAllPlayers":"Assign all players",
+  "COMBATTRACKEREXTENSIONS.PhaseAssignNPCs":"Assign NPCs",
+  
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupsEdit":"Edit groups",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupsCreate":"Create group",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupsPlayers":"Players",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupsNPCs":"NPCs",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupsFriendly":"Friendly NPCs",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupsNeutral":"Neutral NPCs",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupsHostile":"Hostile NPCs",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupsSecret":"Secret NPCs",
+  
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateNew":"New",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupClearAllGroups":"Clear all groups",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupConfirmClearAllGroupsPromptTitle":"Clear all groups",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupConfirmClearAllGroupsPromptBody":"This will remove all members from all existing groups. Groups will remain",
+  
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupDeleteAllGroups":"Delete all groups",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupConfirmDeleteAllGroupsPromptTitle":"Delete all groups",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupConfirmDeleteAllGroupsPromptBody":"This will remove all members from all existing groups and delete all groups.",
+  
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupConfirmDeleteGroupPromptTitle":"Delete group",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupConfirmDeleteGroupPromptBody":"This will remove all members from this group and delete the group.",
+  
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromToken":"Create group from token",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromTokenHint":"Create group from token and join all combatants with this token to the created group. If group already exist, it will be updated.",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromActor":"Create group from actor",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromActorHint":"Create group from actor and join all combatants with this actor to the created group. If group already exist, it will be updated.",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromActorFolder":"Create group from actor folder",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromActorFolderHint":"Create group from actor folder and join all combatants with actors in the same folder to the created group. If group already exist, it will be updated.",
+  
+    
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromPlayers":"Players",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromPlayersHint":"Create group and join all Players combatants to the created group. If group already exist, it will be updated.",
+  
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromNPCs":"NPCs",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromNPCsHint":"Create group and join all NPCs combatants to the created group. If group already exist, it will be updated.",
+  
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromFriendlyNPCs":"Friendly NPCs",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromFriendlyNPCsHint":"Create group and join all Friendly NPCs combatants to the created group. If group already exist, it will be updated.",
+  
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromNeutralNPCs":"Neutral NPCs",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromNeutralNPCsHint":"Create group and join all Neutral NPCs combatants to the created group. If group already exist, it will be updated.",
+    
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromHostileNPCs":"Hostile NPCs",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromHostileNPCsHint":"Create group and join all Hostile NPCs combatants to the created group. If group already exist, it will be updated.",
+  
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromSecretNPCs":"Secret NPCs",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupCreateFromSecretNPCsHint":"Create group and join all Secret NPCs combatants to the created group. If group already exist, it will be updated.",
+  
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupJoin":"Join {initiativegroupname}",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupLeave":"Leave {initiativegroupname}",
+  "COMBATTRACKEREXTENSIONS.InitiativeGroupLead":"Set as group leader",
+ 
+  "ColorPicker.Title":"Color Picker",
+  "HTMLColorPicker.Title":"HTML Color Picker",
+  
+  "RoundSetEditor.Title":"Round Set Editor",
+  "PhaseEditor.Title":"Phases Editor",
+  "GroupEditor.Title":"Initiative Group Editor",
+  
+  "ListEditor.Title":"List Editor",
+  "ListEditor.TableHeader.ItemName.Caption":"Name",
+  "ListEditor.TableHeader.ItemIcon.Caption":"Icon",
+  "ListEditor.TableHeader.ItemIcon.Hint":"A Font Awesome CSS class, example 'fa-sparkles'",
+  "ListEditor.Button.AddItem.Hint":"Add",
+  "ListEditor.Button.MoveItemUp.Hint":"Move up",
+  "ListEditor.Button.MoveItemDown.Hint":"Move down",
+  "ListEditor.Button.DeleteItem.Hint":"Delete",
+  "ListEditor.Button.Close.Caption":"Close",
+  "ListEditor.Button.Update.Caption":"Save",
+  "ListEditor.Button.UpdateAndClose.Caption":"Save and close",
+  
+  "GroupEditor.Label.Members.Caption":"Group Members",
+  "GroupEditor.Label.Name.Caption":"Name",
+  "GroupEditor.Label.Color.Caption":"Color",
+  "GroupEditor.Label.SharesInitiative.Caption":"Shares Initiative",
+  "GroupEditor.Button.RemoveMember.Hint":"Remove member from group",
+  
+  "GroupEditor.Button.Close.Caption":"Close",
+  "GroupEditor.Button.Update.Caption":"Save",
+  "GroupEditor.Button.Delete.Caption":"Delete",
+  "GroupEditor.Button.UpdateAndClose.Caption":"Save and close",
+  
+  "settings": {
+    "categories": {
+      "GENERAL_OPTIONS": {
+        "Name": "General Options",
+        "Hint": "General options"
+      },
+      "BASIC_COMMANDS_OPTIONS": {
+        "Name": "Commands Options",
+        "Hint": "Basic command(dropdown) options"
+      },
+      "COMBATTRACKER_OPTIONS": {
+        "Name": "Combat Tracker Options",
+        "Hint": "Options for Combat Tracker"
+      },
+      "DISPLAY_OPTIONS": {
+        "Name": "Display Options",
+        "Hint": "General display options"
+      },
+      "INPUT_OPTIONS": {
+        "Name": "Input Options",
+        "Hint": "Initiative input options"
+      },
+      
+      "PHASE_OPTIONS": {
+        "Name": "Phases Options",
+        "Hint": "Options for Phases"
+      }
+      ,
+      "OBSCURING_OPTIONS": {
+        "Name": "Obscuring Options",
+        "Hint": "Options for obscuring combatant information for players. Owned tokens are never obscured"
+      }
+      ,
+      "GROUP_OPTIONS": {
+        "Name": "Group Options",
+        "Hint": "Options for combatant groups"
+      }
+    },
+    "settings": {
+      "OPTION_COMBAT_TRACKER_MODULE_SETTINGS_FORM": {
+        "Name": "Settings",
+        "Hint": "Opens the module Settings"
+      },
+      "OPTION_COMBAT_TRACKER_SHARING_GROUPS_SHARE_PHASE": {
+        "Name": "Sharing Groups also share phase",
+        "Hint": "When checked, combatants in a group that shares inititative also share phase. Only used if [Enable combatants groups] is enabled"
+      },
+      "OPTION_COMBAT_TRACKER_NEW_GROUPS_SHARES_INITIATIVE": {
+        "Name": "New groups shares initiative",
+        "Hint": "When checked, new groups will be created with Shared Initiative enabled as default. Only used if [Enable combatants groups] is enabled"
+      },
+      
+      "OPTION_COMBAT_TRACKER_ENABLE_GROUPS": {
+        "Name": "Enable combatants groups",
+        "Hint": "Enable grouping of combatants."
+      },
+      "OPTION_COMBAT_TRACKER_ENABLE_BASIC_COMMANDS": {
+        "Name": "Enable base menu commands",
+        "Hint": "Enable base dropdown menu commands."
+      },
+      
+      "OPTION_COMBAT_TRACKER_PHASE_UNSET_NAME": {
+        "Name": "Unset phase name",
+        "Hint": "The name(caption) to be shown for the Unset phase"
+      },
+      "OPTION_COMBAT_TRACKER_ENABLE_PHASE_ASSIGN_RANDOM_UNSET": {
+        "Name": "Enable phase assignment random",
+        "Hint": "When checked, the Phase Assignment dropdown will have a entry for randomly selecting a unset combatant."
+      },
+      "OPTION_CANVAS_TOKEN_HIDE_TOKEN_EFFECTS_FOR_PLAYERS": {
+        "Name": "Hide token effects for non-GMs",
+        "Hint": "When checked, token active effects on the Canvas will only be showed for owned tokens."
+      },
+      
+      "OPTION_CANVAS_TOKEN_HIDE_TOKEN_BORDER_FOR_PLAYERS": {
+        "Name": "Hide token border for non-GMs",
+        "Hint": "When checked, token border on the Canvas will only be showed for owned tokens."
+      },
+      
+      "OPTION_COMBAT_TRACKER_HIDE_TOKEN_EFFECTS_FOR_PLAYERS": {
+        "Name": "Hide combatant effects for non-GMs",
+        "Hint": "When checked, combatants active effects in Combat Tracker will only be showed for owned tokens."
+      },
+      "OPTION_COMBAT_TRACKER_SHOW_TOKEN_EFFECT_TOOLTIPS": {
+        "Name": "Show combatant effect tooltips",
+        "Hint": "When checked, combatants active effects in Combat Tracker will have a describing tooltip. If not all effects can be showed, a summary icon with a full list as tooltip replaces all effect icons."
+      },
+      "OPTION_COMBAT_TRACKER_ENABLE_PLAYERS_PAN_TO_TOKEN": {
+        "Name": "Enable pan to token for non-GMs",
+        "Hint": "When checked, players can click a combatant in Combat Tracker and the canvas will pan to its token."
+      },
+      "OPTION_COMBAT_TRACKER_ENABLE_PLAYERS_CHANGE_PHASE": {
+        "Name": "Enable change phase for non-GMs",
+        "Hint": "When checked, players can change phase in Combat Tracker for owned combatants"
+      },
+      "OPTION_COMBAT_TRACKER_DEFAULT_PHASE_PLAYERS": {
+        "Name": "Default phase for players",
+        "Hint": "When adding a player token to combat, it will be added to this phase.(First phase is 0)"
+      },
+      "OPTION_COMBAT_TRACKER_DEFAULT_PHASE_NPCS": {
+        "Name": "Default phase for NPCs",
+        "Hint": "When adding a NPC token to combat, it will be added to this phase.(First phase is 0)"
+      },
+      
+      "OPTION_COMBAT_TRACKER_PHASE_EDITOR_FORM": {
+        "Name": "Phase Editor",
+        "Hint": "Opens the Phase Editor"
+      },
+      "OPTION_COMBAT_TRACKER_ROUNDSET_EDITOR_FORM": {
+        "Name": "Round Set Editor",
+        "Hint": "Opens the Round Set Editor"
+      },
+      "OPTION_COMBAT_TRACKER_ENABLE_ROUNDSET": {
+        "Name": "Enable round set",
+        "Hint": "Enables custom defined round set for the combat tracker. Each round in the round set has its own phases."
+      },
+      "OPTION_COMBAT_TRACKER_DEFINED_ROUNDSET": {
+        "Name": "Defined round set",
+        "Hint": "Custom defined round set with rounds for the combat tracker. A string with a valid JSON expression. "
+      },
+      
+      "OPTION_COMBAT_TRACKER_ENABLE_PHASES": {
+        "Name": "Enable phases",
+        "Hint": "Enables custom defined phases for the combat tracker. Each phase has its own initiative order. Adds dropdown menu items in the Combat Tracker that allows for changing the phase of a combatant token. "
+      },
+      "OPTION_COMBAT_TRACKER_DEFINED_PHASES": {
+        "Name": "Defined phases",
+        "Hint": "Custom defined phases for the combat tracker. A string with a valid JSON expression. Format example: {\"phases\":[{\"name\":\"Magic\",\"icon\":\"fa-sparkles\"},{\"name\":\"Missile\",\"icon\":\"fa-bullseye\"},{\"name\":\"Melee\",\"icon\":\"fa-swords\"},{\"name\":\"Manoeuvers\",\"icon\":\"fa-person-walking\"}]}"
+      },
+      "OPTION_COMBAT_TRACKER_ENABLE_DISPOSITION_CHANGE": {
+        "Name": "Enable disposition change",
+        "Hint": "Adds dropdown menu items in the Combat Tracker that allows for changing the disposition of a combatant token. Applies for GMs only."
+      },
+      "OPTION_COMBAT_TRACKER_USE_ACTOR_PORTRAITS_FOR_GMS": {
+        "Name": "Use actor portraits for GMs",
+        "Hint": "When checked, the Combat Tracker will use the token actors portrait as image instead of the token image. Applies for GMs only."
+      },
+      "OPTION_COMBAT_TRACKER_USE_ACTOR_PORTRAITS_FOR_PLAYERS": {
+        "Name": "Use actor portraits for players",
+        "Hint": "When checked, the Combat Tracker will use the token actors portrait as image instead of the token image. Applies for non-GMs only."
+      },
+      "OPTION_COMBAT_TRACKER_SHOW_DISPOSITION_FOR_GMS": {
+        "Name": "Show disposition for GMs",
+        "Hint": "When checked, the Combat Tracker will indicate by color the disposition of the combatant. Applies for GMs only."
+      },
+      "OPTION_COMBAT_TRACKER_SHOW_DISPOSITION_FOR_PLAYERS": {
+        "Name": "Show disposition for players",
+        "Hint": "When checked, the Combat Tracker will indicate by color the disposition of the combatant. Applies for non-GMs only."
+      },
+      "OPTION_COMBAT_TRACKER_ENABLE_NAME_MASKING": {
+        "Name": "Enable name masking",
+        "Hint": "When checked, GMs can toggle masking the name of combatants for non-GMs in the Combat Tracker."
+      },
+      "OPTION_COMBAT_TRACKER_ENABLE_VISIBILITY_TOGGLE": {
+        "Name": "Enable visibility toggle",
+        "Hint": "When checked, GMs can toggle visibility of the combatant token in the Combat Tracker."
+      },
+      "OPTION_COMBAT_TRACKER_ADD_COMBATANTS_NAME_MASKED": {
+        "Name": "Add NPC combatants with name masked",
+        "Hint": "When checked, adding a NPC token to the Combat Tracker will have its name masked for non-GMs. Only used if[Enable name masking] is checked."
+      },
+      "OPTION_COMBAT_TRACKER_ADD_COMBATANTS_HIDDEN": {
+        "Name": "Add NPC combatants as hidden",
+        "Hint": "When checked, adding a NPC token to the Combat Tracker will be added as hidden."
+      },
+      "OPTION_COMBAT_TRACKER_OBSCURE_COMBATANT": {
+        "Name": "Enable obscure combatant",
+        "Hint": "When checked, the Combat Tracker will display combatants/information based on module settings and ownership. Applies for non-GMs only."
+      },
+      "OPTION_COMBAT_TRACKER_OBSCURE_COMBATANT_BY_VISIBILITY": {
+        "Name": "Obscure combatant by visibility",
+        "Hint": "When checked, the Combat Tracker will only display combatants that has token visible for the user. Only used if [Enable obscure combatant] is checked. Applies for non-GMs only."
+      },
+      "OPTION_COMBAT_TRACKER_OBSCURE_COMBATANT_BY_DISPOSITION": {
+        "Name": "Obscure combatant by disposition",
+        "Hint": "When checked, the Combat Tracker will display combatants/information for tokens based on their disposition and current settings. Only used if [Enable obscure combatant] is checked. Applies for non-GMs only."
+      },
+      "OPTION_COMBAT_TRACKER_REVERSE_INITIATIVE": {
+        "Name": "Reverse initiative",
+        "Hint": "Reverse the sorting order for initiative so that lowest goes first."
+      },
+      "OPTION_COMBAT_TRACKER_ENABLE_DUPLICATE_COMBATANT": {
+        "Name": "Duplicate combatant",
+        "Hint": "Add a 'Duplicate Combatant' dropdown menu item in the Combat Tracker that allows each token to have multiple combatants to give the possibility to get multiple actions in the same round."
+      },
+      "OPTION_COMBAT_TRACKER_ENABLE_INITIATIVE_INPUT_FIELD": {
+        "Name": "Initiative input field",
+        "Hint": "Replace the normal initiative value with a number input field."
+      },
+      "OPTION_COMBAT_TRACKER_INITIATIVE_INPUT_MIN": {
+        "Name": "Minimum initiative input allowed",
+        "Hint": "The minimum number that can be entered into the initiative input field."
+      },
+      "OPTION_COMBAT_TRACKER_INITIATIVE_INPUT_MAX": {
+        "Name": "Maximum initiative input allowed",
+        "Hint": "The maximum number that can be entered into the initiative input field."
+      },
+      
+      
+      "OPTION_COMBAT_TRACKER_HIDE_INITIATIVES_FRIENDLY": {
+        "Name": "Hide FRIENDLY combatants initiative",
+        "Hint": "If checked, combatants with FRIENDLY token disposition will not show their initiative value in the Combat Tracker. Only used if [Enable obscure combatant] is checked. Applies for non-GMs only."
+      },
+      "OPTION_COMBAT_TRACKER_HIDE_INITIATIVES_NEUTRAL": {
+        "Name": "Hide NEUTRAL combatants initiative",
+        "Hint": "If checked, combatants with NEUTRAL token disposition will not show their initiative value in the Combat Tracker. Only used if [Enable obscure combatant] is checked. Applies for non-GMs only."
+      },
+      "OPTION_COMBAT_TRACKER_HIDE_INITIATIVES_HOSTILE": {
+        "Name": "Hide HOSTILE combatants initiative",
+        "Hint": "If checked, combatants with HOSTILE token disposition will not show their initiative value in the Combat Tracker. Only used if [Enable obscure combatant] is checked. Applies for non-GMs only."
+      },
+      "OPTION_COMBAT_TRACKER_HIDE_INITIATIVES_SECRET": {
+        "Name": "Hide SECRET combatants initiative",
+        "Hint": "If checked, combatants with SECRET token disposition will not show their initiative value in the Combat Tracker. Only used if [Enable obscure combatant] is checked. Applies for non-GMs only."
+      },
+      "OPTION_COMBAT_TRACKER_HIDE_INITIATIVES_NON_NPCS": {
+        "Name": "Hide players combatants initiative",
+        "Hint": "If checked, player combatants will not show their initiative value in the Combat Tracker. Only used if [Enable obscure combatant] is checked. Applies for non-GMs only."
+      },
+      
+      
+      "OPTION_COMBAT_TRACKER_HIDE_COMBATANTS_FRIENDLY": {
+        "Name": "Hide FRIENDLY combatants",
+        "Hint": "If checked, combatants with FRIENDLY token disposition will not be shown in the Combat Tracker. Only used if [Enable obscure combatant] is checked. Applies for non-GMs only."
+      },
+      "OPTION_COMBAT_TRACKER_HIDE_COMBATANTS_NEUTRAL": {
+        "Name": "Hide NEUTRAL combatants",
+        "Hint": "If checked, combatants with NEUTRAL token disposition will not be shown in the Combat Tracker. Only used if [Enable obscure combatant] is checked. Applies for non-GMs only."
+      },
+      "OPTION_COMBAT_TRACKER_HIDE_COMBATANTS_HOSTILE": {
+        "Name": "Hide HOSTILE combatants",
+        "Hint": "If checked, combatants with HOSTILE token disposition will not be shown in the Combat Tracker. Only used if [Enable obscure combatant] is checked. Applies for non-GMs only."
+      },
+      "OPTION_COMBAT_TRACKER_HIDE_COMBATANTS_SECRET": {
+        "Name": "Hide SECRET combatants",
+        "Hint": "If checked, combatants with SECRET token disposition will not be shown in the Combat Tracker. Only used if [Enable obscure combatant] is checked. Applies for non-GMs only."
+      }      ,
+      "OPTION_COMBAT_TRACKER_HIDE_COMBATANTS_NPCS": {
+        "Name": "Hide NPCs combatants",
+        "Hint": "If checked, NPC combatants will not be shown in the Combat Tracker. Only used if [Enable obscure combatant] is checked. Applies for non-GMs only."
+      },
+      "OPTION_COMBAT_TRACKER_HIDE_COMBATANTS_NON_NPCS": {
+        "Name": "Hide non-NPCs combatants",
+        "Hint": "If checked, non-NPC combatants will not be shown in the Combat Tracker. Only used if [Enable obscure combatant] is checked. Applies for non-GMs only."
+      }
+      
+    }
+  }
+}

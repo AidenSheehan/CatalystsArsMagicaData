@@ -1,0 +1,23 @@
+<div class="module_info">
+	<div class="main flexrow">
+		<aside class="sidebar flexcol">
+			<nav class="tabs">
+				<p class="sub-headline">Info</p>
+				<a class="item" data-tab="info">Yendor's Scene Actors</a>
+				<a class="item" data-tab="changelog">Changelog</a>
+				<p class="sub-headline">Funktionen</p>
+				<a class="item" data-tab="autoAspKap">Automatisierte AsP & KaP</a>
+				<a class="item" data-tab="actorInfo">Erweiterte Akteur-Infos</a>
+				<a class="item" data-tab="magicAnalysis">Magische Analyse</a>
+				<a class="item" data-tab="masterMenu">Meister-Menü</a>
+				<a class="item" data-tab="combatSpells">Zauber & Liturgien im Kampf</a>
+			</nav>
+		</aside>
+		<div class="flexcol">
+			<div class="scrollable content">
+				{{> modules/yendors-dsa5-extensions/templates/dialog/parts/features_info.html }}
+				{{> modules/yendors-dsa5-extensions/templates/dialog/parts/features_changelog.html changelog=changelog}}
+			</div>
+		</div>
+	</div>
+</div>

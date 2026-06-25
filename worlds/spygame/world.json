@@ -1,0 +1,14 @@
+{
+  "title": "SpyGame",
+  "id": "spygame",
+  "system": "worldbuilding",
+  "joinTheme": "default",
+  "coreVersion": "11.308",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "systemVersion": "0.8.2",
+  "lastPlayed": "Sat Nov 29 2025 15:22:38 GMT+0100 (közép-európai téli idő)",
+  "playtime": 87
+}

@@ -1,0 +1,29 @@
+<div class="selector_settings_container">
+  {{#if isBattleActorsEnabled}}
+  <div class="scene_settings_row">
+    <label>
+      <input class="is_battlemap" type="checkbox" value="1"{{#if settings.isBattlemap}} checked{{/if}} />
+      Battlemap-Szene
+    </label>
+  </div>
+  {{#unless settings.isBattlemap}}
+  <div class="scene_settings_row">
+    <label>TotM: Zugehörige Battlemap</label>
+    <select class="select_battlemap">
+      {{#each scenes as |scene|}}
+      <option value="{{scene.id}}"{{#if scene.isSelected}} selected{{/if}}>{{scene.name}}</option>
+      {{/each}}
+    </select>
+  </div>
+  {{/unless}}
+  {{/if}}
+  {{#if settings.isBattlemap}}
+  <div class="scene_settings_row">
+    <label>
+      <input class="is_battlemap_orientation" type="checkbox" value="1"{{#if settings.isBattlemapOrientation}} checked{{/if}} />
+      Orientieren & Umschauen
+    </label>
+  </div>
+  {{/if}}
+  <button class="delete_scene_actors">{{localize 'Selector.deleteAllActors'}}</button>
+</div>

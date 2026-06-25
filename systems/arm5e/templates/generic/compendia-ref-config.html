@@ -1,0 +1,24 @@
+<form autocomplete="off" onsubmit="event.preventDefault();">
+    <header class="table-header flexrow">
+        <label class="index">{{ localize "Compendia" }}</label>
+    </header>
+    <!-- <section class="sheet-body" style="height: 800px"> -->
+    <div class="arm5e backSection padding12 flex-group-left ">
+        <div>
+            <select name="referenceModule" data-type="String">
+                {{selectOptions arsModules selected=referenceModule labelAttr="label" nameAttr="id" valueAttr="id"}}
+            </select>
+        </div>
+        <div>
+            <label class="">{{localize "Notify missing reference"}}</label>
+            <input type="checkbox" name="nofifyMissingRef" size="4" {{checked nofifyMissingRef}} />
+        </div>
+    </div>
+    <!-- </section> -->
+
+    <div class="form-group">
+        <button type="submit">
+            <i class="fas fa-save"></i> {{localize 'PERMISSION.Submit'}}
+        </button>
+    </div>
+</form>

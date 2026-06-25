@@ -1,0 +1,33 @@
+<div class="form-group">    
+    <label>{{label}}</label>
+    
+    <div class="form-fields">
+        {{#if text}}
+        <input {{#if colorPicker}}class="color"{{/if}} type="text" name="{{name}}" value="{{value}}" {{disabled disabled}}/>
+            {{#if filePicker}}
+            <button type="button" class="file-picker" data-type="imagevideo" data-target="{{name}}" title="{{localize 'FILES.BrowseTooltip'}}" tabindex="-1">
+                <i class="fas fa-file-import fa-fw"></i>
+            </button>
+            {{/if}}
+        {{else if number}}
+        <input type="number" name="{{name}}" step="any" value="{{value}}" {{disabled disabled}}/>
+        {{else if color}}
+        <color-picker {{#if numeric}}class="numeric"{{/if}} name="{{name}}" value="{{value}}" {{disabled disabled}}></color-picker>
+        {{else if boolean}}
+        <input type="checkbox" name="{{name}}" {{checked value}} {{disabled disabled}}/>
+        {{else if array}}
+        <input class="me-array" type="text" name="{{name}}" value="{{value}}" {{disabled disabled}}/>
+        {{else if range}}
+        <input type="range" name="{{name}}" value="{{value}}" min="{{min}}" max="{{max}}" step="{{step}}">
+        <span class="range-value">{{value}}</span>
+        {{else if select}}
+        <select name="{{name}}" data-dtype="string">
+            {{#each options}}
+            <option value="{{this}}">{{this}}</option>
+            {{/each}}
+        </select>
+        {{else if jsonArray}}
+        <textarea class="me-jsonArray" name="{{name}}">{{value}}</textarea>
+        {{/if}}
+    </div>
+</div>

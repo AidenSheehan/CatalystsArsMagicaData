@@ -1,0 +1,294 @@
+{
+  "id": "arm5e",
+  "title": "Ars Magica 5th Edition",
+  "description": "Ars Magica 5e for Foundry VTT, mandatory arm5e-compendia module at (https://github.com/Xzotl42/arm5e-compendia/releases/latest/download/module.json)",
+  "version": "2.4.1.18",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "14.359",
+    "maximum": "14"
+  },
+  "relationships": {
+    "requires": [
+      {
+        "id": "arm5e-compendia",
+        "type": "module",
+        "manifest": "https://github.com/Xzotl42/arm5e-compendia/releases/latest/download/module.json",
+        "compatibility": {
+          "minimum": "0.10.3"
+        }
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "xzotl",
+      "contribution": "Main dev and official maintainer",
+      "flags": {}
+    },
+    {
+      "name": "ialbiol",
+      "contribution": "Dev",
+      "flags": {}
+    },
+    {
+      "name": "phaldaros",
+      "contribution": "Original dev",
+      "flags": {}
+    },
+    {
+      "name": "Teotimus",
+      "contribution": "Spanish version",
+      "flags": {}
+    },
+    {
+      "name": "sylph",
+      "contribution": "Graphical design",
+      "flags": {}
+    },
+    {
+      "name": "Ludo.Bermejo",
+      "contribution": "Dev",
+      "flags": {}
+    },
+    {
+      "name": "jupotter",
+      "contribution": "Dev, French version",
+      "flags": {}
+    },
+    {
+      "name": "Lanneval",
+      "contribution": "French version",
+      "flags": {}
+    },
+    {
+      "name": "Orneen",
+      "contribution": "French version, compendium content",
+      "flags": {}
+    },
+    {
+      "name": "N0Br41nZ",
+      "contribution": "Italian version",
+      "flags": {}
+    },
+    {
+      "name": "Ramon Alves",
+      "contribution": "Portuguese (BR) version",
+      "flags": {}
+    },
+    {
+      "name": "jaircunhavianna",
+      "contribution": "Compendium content",
+      "flags": {}
+    },
+    {
+      "name": "Moo Man",
+      "contribution": "Dev",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "module/arm5e.js"
+  ],
+  "styles": [
+    {
+      "src": "css/arm5e.css"
+    },
+    {
+      "src": "css/Ars-Magica-icons.css"
+    }
+  ],
+  "flags": {
+    "hotReload": {
+      "extensions": [
+        "css",
+        "json"
+      ]
+    }
+  },
+  "documentTypes": {
+    "Actor": {
+      "player": {},
+      "npc": {},
+      "laboratory": {},
+      "covenant": {},
+      "magicCodex": {},
+      "beast": {}
+    },
+    "Item": {
+      "weapon": {},
+      "armor": {},
+      "spell": {},
+      "vis": {},
+      "item": {},
+      "book": {},
+      "virtue": {},
+      "flaw": {},
+      "quality": {},
+      "inferiority": {},
+      "ability": {},
+      "abilityFamiliar": {},
+      "diaryEntry": {},
+      "power": {},
+      "powerFamiliar": {},
+      "speciality": {},
+      "distinctive": {},
+      "sanctumRoom": {},
+      "magicItem": {},
+      "reputation": {},
+      "inhabitant": {},
+      "habitantMagi": {},
+      "habitantCompanion": {},
+      "habitantSpecialists": {},
+      "habitantHabitants": {},
+      "habitantHorses": {},
+      "habitantLivestock": {},
+      "possessionsCovenant": {},
+      "visSourcesCovenant": {},
+      "visStockCovenant": {},
+      "magicalEffect": {},
+      "baseEffect": {},
+      "calendarCovenant": {},
+      "incomingSource": {},
+      "laboratoryText": {},
+      "enchantment": {},
+      "labCovenant": {},
+      "mundaneBook": {},
+      "personality": {},
+      "personalityTrait": {},
+      "wound": {},
+      "art": {},
+      "supernaturalEffect": {}
+    },
+    "ChatMessage": {
+      "standard": {},
+      "roll": {},
+      "init": {},
+      "combat": {},
+      "combatAttack": {},
+      "combatDefense": {},
+      "combatSoak": {},
+      "combatDamage": {},
+      "magic": {},
+      "damage": {}
+    }
+  },
+  "packs": [
+    {
+      "name": "actors",
+      "label": "Actors",
+      "path": "packs/actors",
+      "type": "Actor",
+      "system": "arm5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "scenes",
+      "label": "Scenes",
+      "path": "packs/scenes",
+      "type": "Scene",
+      "system": "arm5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "macros",
+      "label": "Macros",
+      "path": "packs/macros",
+      "type": "Macro",
+      "system": "arm5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "journals",
+      "label": "Journals",
+      "path": "packs/journals",
+      "type": "JournalEntry",
+      "system": "arm5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "name": "rolltables",
+      "label": "Rolltables",
+      "path": "packs/rolltables",
+      "type": "RollTable",
+      "system": "arm5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    },
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "lang/es.json",
+      "flags": {}
+    },
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json",
+      "flags": {}
+    },
+    {
+      "lang": "it",
+      "name": "Italiano",
+      "path": "lang/it.json",
+      "flags": {}
+    },
+    {
+      "lang": "pt",
+      "name": "Portuguese",
+      "path": "lang/pt.json",
+      "flags": {}
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Portuguese (Brazil)",
+      "path": "lang/pt-BR.json",
+      "flags": {}
+    }
+  ],
+  "media": [
+    {
+      "type": "setup",
+      "url": "systems/arm5e/assets/thumbnails/arm5openlicenselogo.webp",
+      "thumbnail": "systems/arm5e/assets/thumbnails/arm5openlicenselogo.webp",
+      "loop": false,
+      "flags": {}
+    }
+  ],
+  "socket": true,
+  "grid": {
+    "distance": 3,
+    "units": "ft"
+  },
+  "url": "https://github.com/Xzotl42/arm5e",
+  "manifest": "https://github.com/Xzotl42/arm5e/releases/latest/download/system.json",
+  "download": "https://github.com/Xzotl42/arm5e/releases/download/v2.4.1.18/arm5e.zip",
+  "license": "LICENSE.txt"
+}

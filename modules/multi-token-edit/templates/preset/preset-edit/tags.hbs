@@ -1,0 +1,14 @@
+<div class="tab{{#if tab.active}} active{{/if}}" data-group="{{tab.group}}" data-tab="{{tab.id}}">
+    {{#if multiEdit}}
+    <fieldset>
+        <legend>Add Tags</legend>
+        <string-tags-multi value="" name="addTags" slug="true"></string-tags-multi>
+    </fieldset>
+    <fieldset>
+        <legend>Remove Tags</legend>
+        <string-tags-multi value="" name="removeTags" slug="true"></string-tags-multi>
+    </fieldset>
+    {{else}}
+    <string-tags-multi value="{{preset.tags}}" name="tags" slug="true"></string-tags-multi>
+    {{/if}}
+</div>

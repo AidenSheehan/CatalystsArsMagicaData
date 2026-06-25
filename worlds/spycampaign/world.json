@@ -1,0 +1,15 @@
+{
+  "title": "SpyCampaign",
+  "id": "spycampaign",
+  "system": "custom-system-builder",
+  "coreVersion": "13.351",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "systemVersion": "5.0.2",
+  "lastPlayed": "Mon Dec 29 2025 17:57:18 GMT+0100 (közép-európai téli idő)",
+  "playtime": 69153,
+  "description": "",
+  "flags": {}
+}

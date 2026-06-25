@@ -1,0 +1,25 @@
+<div class="scene_actors_layer_inner{{#if settings.hoverNames}} hover_names{{/if}}">
+	{{#if isFocusView}}
+	<div class="active_scene_actors_focus_view{{#if isSidebarCollapsed}} sidebar_collapsed{{/if}} {{tileSize}}">
+		<div class="active_scene_actors_fv left_side{{canvasScaleClass}}">
+			{{#each itemsLeft as |item|}}
+			{{> modules/yendors-scene-actors/templates/parts/actor_avatar.html general=../general actor=item user=../user tooltips=../tooltips}}
+			{{/each}}
+		</div>
+		<div class="active_scene_actors_fv on_focus{{canvasScaleClass}}">
+			{{> modules/yendors-scene-actors/templates/parts/actor_avatar.html general=general actor=itemFocus user=user tooltips=tooltips}}
+		</div>
+		<div class="active_scene_actors_fv right_side{{canvasScaleClass}}">
+			{{#each itemsRight as |item|}}
+			{{> modules/yendors-scene-actors/templates/parts/actor_avatar.html general=../general actor=item user=../user tooltips=../tooltips}}
+			{{/each}}
+		</div>
+	</div>
+	{{else}}
+	<div class="active_scene_actors{{canvasScaleClass}}{{#if isSidebarCollapsed}} sidebar_collapsed{{/if}} {{tileSize}}">
+		{{#each items as |item|}}
+		{{> modules/yendors-scene-actors/templates/parts/actor_avatar.html general=../general actor=item user=../user tooltips=../tooltips}}
+		{{/each}}
+	</div>
+	{{/if}}
+</div>

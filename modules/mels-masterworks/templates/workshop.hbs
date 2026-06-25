@@ -1,0 +1,108 @@
+<form id="{{options.id}}">
+  <button type="submit" name="captureSubmit" class="hide" aria-hidden="true"></button>
+  <div class="workshop-canvas">
+    <aside class="sidebar">
+      <section class="" name="offlineControls">
+        <div class="divider"><span>{{localize "m3.workshop.offlineMode"}}</span></div>
+        <div class="form-group">
+          <button name="startSession">{{localize "m3.workshop.connect"}}</button>
+        </div>
+      </section>
+      <section class="hide" name="onlineControls">
+        <div class="form-group form-group-stacked search-controls">
+          <div class="divider" for="search_text"><span>{{localize "m3.workshop.search"}}</span>{{{html.sourceSelect}}}</div>
+          <input type="text" name="search_text">
+          
+          <div class="search-buttons top-spacer">
+            <button class="min-size toggle-expand toggle" name="toggle-search-config" title="{{localize 'm3.workshop.searchConfig'}}" data-targetid="search-config"><i class="fas fa-wrench"></i></button>
+            <button type="submit" name="submit">{{localize "m3.workshop.search"}}</button>
+            <button class="min-size" name="random-search" title="{{localize 'm3.workshop.randomSearch'}}"><i class="fas fa-dice"></i></button>
+          </div>
+          <div class="label-range top-spacer bottom-spacer">
+            <div class="slider-labels">
+              <label for="zoom_level" class="cap-label" >{{localize "m3.workshop.zoomMost"}}</label>
+              <div class="slider-center">
+                {{rangePicker name="zoom_level" value=8 min=0 max=8 step=2}}
+                <span class="center-label">{{localize "m3.workshop.zoomLevel"}}</span>
+              </div>
+              <label class="cap-label" for="zoom_level">{{localize "m3.workshop.zoomLeast"}}</label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="drop-expand" id="search-config-drop">
+        <div class="search-config expand" id="search-config">
+          <section class="hide" name="onlineConfig">
+            <div class="divider">
+              <select name="category">
+                {{!-- placeholder for generated categories --}} 
+              </select>
+            </div>
+            <div class="form-group" name="category-tags">
+              {{!-- placeholder for generated tags --}} 
+            </div>
+            
+            <div class="divider"><span>{{localize "m3.workshop.displayConfig"}}</span></div>
+            <div class="label-range">
+              <div class="slider-labels">
+                <label for="result-size" class="cap-label" >{{localize "m3.workshop.resultSize"}}</label>
+                {{rangePicker name="result-size" value=options.thumbSize min=64 max=132 step=16}}
+              </div>
+            </div>
+            <div class="label-range">
+              <div class="slider-labels">
+                <label for="grid-size" class="cap-label" >{{localize "m3.workshop.gridSize"}}</label>
+                {{rangePicker name="grid-size" value=options.gridSize min=3 max=7 step=2}}
+              </div>
+            </div>
+          </section>
+          <section class="import-info" name="importConfig">
+            <div class="divider"><span>{{localize "m3.workshop.importPath"}}</span></div>
+            <div class="name-affixes">
+              <input type="text" name="prefix" placeholder="{{localize 'm3.workshop.prefix'}}">
+              <span><i class="fas fa-id-card"></i></span>
+              <input type="text" name="suffix" placeholder="{{localize 'm3.workshop.suffix'}}">
+            </div>
+            <textarea class="path-display" name="import-path" disabled placeholder="{{localize 'm3.error.fpDisconnect'}}"></textarea>
+          </section>
+          <section class="workshop-tools" name="otherTools">
+            <div class="divider"><span>{{localize "m3.workshop.tools"}}</span></div>
+            <div class="dual-button">
+              <button class="min-size toggle" data-action="laminate" data-operation="crop" data-shape="square" data-id="m3lam-crop" title="{{localize 'm3.workshop.laminator.crop'}}"><i class="fas fa-crop"></i></button>
+              <label title="{{localize 'm3.workshop.openLaminatorHint'}}">{{localize "m3.workshop.openLaminator"}}</label>
+              <button class="min-size toggle" data-action="laminate" data-operation="merge" data-shape="circle" data-id="m3lam-merge" title="{{localize 'm3.workshop.laminator.merge'}}"><i class="fas fa-photo-video"></i></button>
+            </div>
+          </section>
+        </div>
+      </div>
+      <section class="chosen-images hide" name="favoritesList">
+        <div class="divider"><span>{{localize "m3.workshop.savedImgs"}}</span></div>
+        <div class="thumb-list" name="saved-list" id="saved-images">
+          {{!-- placeholder for saved images --}}
+        </div>
+        <div class="button-align-right top-spacer">
+          <button class="min-size hide" name="crop-favorites" title="{{localize 'm3.workshop.crop'}}"><i class="fas fa-crop"></i></button>
+          <button class="min-size hide" name="tokenize-favorites" title="{{localize 'm3.workshop.tokenize'}}"><i class="fas fa-user-circle"></i></button>
+          <button class="min-size hide" name="remove-mark" title="{{localize 'm3.workshop.removeSaved'}}"><i class="fas fa-trash"></i></button>
+          <button class="min-size" name="mark-image" class="hide" title="{{localize 'm3.workshop.addSaved'}}"><i class="fas fa-plus-circle"></i></button>
+          <button class="min-size hide" name="save-favorites" title="{{localize 'm3.workshop.importSaved'}}"><i class="fas fa-cloud-download-alt fa-cloud-arrow-down"></i></button>
+        </div>
+      </section>
+      <section class="chosen-images hide" name="tokenList">
+        <div class="divider"><span>{{localize "m3.workshop.savedTokens"}}</span></div>
+        <div class="thumb-list" id="saved-tokens">
+          {{!-- placeholder for saved tokens --}}
+        </div>
+        <div class="button-align-right top-spacer">
+          <button class="min-size" name="remove-tokens" title="{{localize 'm3.workshop.deleteTokens.hint'}}"><i class="fas fa-trash"></i></button>
+          <button class="min-size" name="save-tokens" title="{{localize 'm3.workshop.importTokens'}}"><i class="fas fa-cloud-download-alt fa-cloud-arrow-down"></i></button>
+        </div>
+      </section>
+      {{> "modules/mels-masterworks/templates/partials/patreon-splash.hbs" hidePlug=true containerStyle='bottom-ad hide'}}
+    </aside>
+
+    <div id="image-grid">
+      {{> "modules/mels-masterworks/templates/partials/patreon-splash.hbs" containerStyle='patreon-splash'}}
+    </div>
+  </div>
+</form>

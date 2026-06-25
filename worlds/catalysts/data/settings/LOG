@@ -1,0 +1,5 @@
+2025/06/09-16:35:34.547 bd30 Recovering log #6
+2025/06/09-16:35:34.547 bd30 Level-0 table #8: started
+2025/06/09-16:35:34.562 bd30 Level-0 table #8: 529 bytes OK
+2025/06/09-16:35:34.565 bd30 Delete type=0 #6
+2025/06/09-16:35:34.565 bd30 Delete type=3 #4

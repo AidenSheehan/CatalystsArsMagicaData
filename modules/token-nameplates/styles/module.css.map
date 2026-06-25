@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/module.scss"],
+  "sourcesContent": [".token-nameplate-list {\n  display: grid;\n  grid-template-columns: fit-content(50px) 1fr 1fr fit-content(50px);\n\n  &__header {\n    margin-top: 4px;\n    margin-bottom: 4px;\n  }\n\n  &__col {\n    padding: 4px;\n    &--alt-row {\n      background-color: var(--table-row-color-even);\n    }\n    &--disabled {\n      pointer-events: none;\n      opacity: 0.5;\n    }\n  }\n}\n\n.nameplate-font-tab {\n  &__preview {\n    width: 100%;\n  }\n}\n\n.ui-autocomplete {\n  z-index: 999 !important;\n}\n\na.disabled[disabled] {\n  color: darkGray;\n}\n"],
+  "mappings": "AAAA,CAAA,qBACE,QAAA,KACA,sBAAA,YAAA,MAAA,IAAA,IAAA,YAAA,MAEA,CAAA,6BACE,WAAA,IACA,cAAA,IAGF,CAAA,0BATF,QAUI,IACA,CAAA,mCACE,iBAAA,IAAA,wBAEF,CAAA,oCACE,eAAA,KACA,QAAA,GAMJ,CAAA,4BACE,MAAA,KAIJ,CAAA,gBACE,QAAA,cAGF,CAAA,CAAA,QAAA,CAAA,UACE,MAAA",
+  "names": []
+}

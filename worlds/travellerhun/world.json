@@ -1,0 +1,29 @@
+{
+  "title": "TravellerHUN",
+  "id": "travellerhun",
+  "system": "twodsix",
+  "description": "<p>This is a time of great unrest. the Imperium is in pieces. It is up to a party of ragtag adventurers to climb the ladder of chaos.</p>",
+  "coreVersion": "11.308",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11.308"
+  },
+  "systemVersion": "4.0.0",
+  "packs": [
+    {
+      "label": "Cres_enemies",
+      "type": "Actor",
+      "name": "cresenemies",
+      "path": "packs/cresenemies",
+      "system": "twodsix",
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "lastPlayed": "Mon Dec 18 2023 10:25:25 GMT+0100 (közép-európai téli idő)",
+  "safeMode": false,
+  "playtime": 326054
+}

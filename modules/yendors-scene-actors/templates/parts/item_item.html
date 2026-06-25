@@ -1,0 +1,31 @@
+<div class="item_item" data-item-id="{{item.id}}">
+    <div class="actor_avatar selector_avatar" data-id="{{item.id}}" style="background-image: url('{{item.img}}')">
+        <div class="item_amount" data-id="{{item.id}}">{{item.amount}}</div>
+    </div>
+    <div class="actor_name toggle_name" data-actor-id="{{item.id}}">
+        {{item.name}}
+        <div class="item_lock" data-id="{{item.id}}">
+            {{#if item.isLocked}}
+            <i class="fa fa-lock" data-tooltip="{{localize 'Canvas.tooltipItemEnable'}}"></i>
+            {{else}}
+            <i class="fa fa-lock-open" data-tooltip="{{localize 'Canvas.tooltipItemDisable'}}"></i>
+            {{/if}}
+        </div>
+    </div>
+    <div class="actor_action_icon item_sheet" data-id="{{item.id}}" data-tooltip="{{#if showTooltips}}{{localize 'Selector.openItemSheet'}}{{/if}}">
+        <i class="fas fa-scroll"></i>
+    </div>
+    <div class="actor_action_icon item_remove" data-id="{{item.id}}" data-tooltip="{{#if showTooltips}}{{localize 'Selector.removeItem'}}{{/if}}">
+        <i class="fas fa-delete-right"></i>
+    </div>
+    <div class="actor_action_icon item_show{{#if item.showOnScene}} active{{/if}}" data-id="{{item.id}}" data-value="{{item.showOnScene}}" data-tooltip="{{#if showTooltips}}{{localize 'Selector.showItem'}}{{/if}}">
+        {{#if item.fullAvatar}}
+        <i class="far fa-card-diamond"></i>
+        {{else}}
+        <i class="fas fa-card-diamond"></i>
+        {{/if}}
+    </div>
+    <div class="actor_action_icon item_focus{{#if item.isOnFocus}} active{{/if}}" data-id="{{item.id}}" data-tooltip="{{#if showTooltips}}{{localize 'Selector.focusActor'}}{{/if}}">
+        <i class="far fa-users-viewfinder"></i>
+    </div>
+</div>

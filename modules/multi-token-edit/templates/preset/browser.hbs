@@ -1,0 +1,53 @@
+<div class="preset-browser">
+
+    <header class="preset-header flexcol">
+        {{#if allowDocumentSwap}}
+        <div class="header-select flexrow">
+            {{#each docs as |doc|}}
+            <a class="document-select {{#if (eq doc.name ../currentDocument)}}active{{/if}}" data-action="documentChange" data-tooltip="{{doc.tooltip}}" data-name="{{doc.name}}">{{{doc.icon}}}</a>
+            {{/each}}
+            {{#if docsDropdown}}
+            <div class="dropdown">
+                <a class="dropicon" style="color:tan;"><i class="fa-solid fa-square-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    {{#each docsDropdown as |doc|}}
+                    <a class="document-select {{#if (eq doc.name ../currentDocument)}}active{{/if}}" data-action="documentChange" data-tooltip="{{doc.tooltip}}" data-name="{{doc.name}}">{{{doc.icon}}}</a>
+                    {{/each}}
+                </div>
+            </div>
+            {{/if}}
+            <div class="window-controls">
+                <a class="header-control{{#if docLockActive}} active{{/if}}" data-action="toggleLock" data-tooltip="{{localize 'MassEdit.presets.controls.document-lock'}}"><i class="fa-solid fa-lock"></i></a>
+                <a class="header-control{{#if layerSwitchActive}} active{{/if}}" data-setting="switchLayer" data-action="toggleSetting" data-tooltip="{{localize 'MassEdit.presets.controls.layer-switch'}}"><i class="fa-solid fa-arrows-cross"></i></a>
+                <a class="header-control{{#if autoScale}} active{{/if}}" data-setting="autoScale" data-action="toggleSetting" data-tooltip="{{localize 'MassEdit.presets.controls.scale-to-grid'}}"><i class="fa-solid fa-arrow-down-big-small"></i></a>
+                <a class="header-control{{#if externalCompendiums}} active{{/if}}" data-setting="externalCompendiums" data-action="toggleSetting" data-tooltip="{{localize 'MassEdit.presets.controls.external-compendiums'}}"><i class="fa-solid fa-books"></i></a>
+                <a class="header-control{{#if virtualDirectory}} active{{/if}}" data-setting="virtualDirectory" data-action="toggleSetting" data-tooltip="{{localize 'MassEdit.presets.controls.virtual-directory'}}"><i class="fas fa-file-search"></i></a>
+            </div>
+        </div>
+        {{/if}}
+        {{#if createEnabled}}
+        <div class="header-actions action-buttons flexrow">
+            <button type="button" data-action="presetCreate"><i class="fas fa-plus"></i> {{localize 'MassEdit.presets.drag-over-message'}}</button>
+        </div>
+        {{/if}}
+        <div class="header-search flexrow">
+            {{#if (eq currentDocument "Bag")}}
+            <a class="header-control" data-action="createBag" data-tooltip="Create a new Bag" style="position: relative;"><i class="fas fa-plus-square"></i></a>
+            {{else if isPlaceable}}
+            <a class="header-control" data-action="createPreset" data-tooltip="Create Preset from Selected" style="position: relative;"><i class="fas fa-plus-square"></i></a>
+            {{/if}}
+            <a class="header-control" data-action="createFolder" data-tooltip="{{localize 'SIDEBAR.ACTIONS.CREATE.Folder'}}" style="position: relative;"><i class="fas fa-folder"></i><i class="fas fa-plus"></i></a>
+            {{#unless allowDocumentSwap}}
+            <a class="header-control {{#if externalCompendiums}}active{{/if}}" data-setting="externalCompendiums" data-action="toggleSetting" data-tooltip="{{localize 'MassEdit.presets.controls.external-compendiums'}}" style="flex: 0 0 30px;"><i class="fa-solid fa-books"></i></a>
+            {{/unless}}
+            <input class="{{#if lastSearch}}active{{/if}}" type="search" name="search" value="{{lastSearch}}" placeholder="{{localize 'FILES.Search'}}" autocomplete="off" style="color: black">
+            <a style="color: #6e6e6e" data-action="toggleSavedSearches" data-tooltip="Saved Searches"><i class="fa-solid fa-bookmark"></i></a>
+        </div>
+    </header>
+
+    {{#if displayDragDropMessage}}
+    <h2 style="text-align: center; margin-top: 100px; border: none;">{{localize 'MassEdit.presets.drag-placeable-message'}}</h2>
+    {{/if}}
+
+    {{>me-preset-list nodes=workingTree.children presets=workingTree.folder.presets externalTrees=externalTrees createEnabled=../createEnabled callback=../callback}}
+</div>

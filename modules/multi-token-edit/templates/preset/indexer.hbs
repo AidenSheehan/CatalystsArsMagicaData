@@ -1,0 +1,58 @@
+<div>
+    <fieldset style="overflow-y: auto; max-height: 250px;">
+        <legend>Directories to Index <a data-action="add"><i class="fas fa-plus"></i></a></legend>
+
+        <div class="indexDirectories">
+            {{#each indexDirs as |dir|}}
+            <div class="directory">
+                <input class="source" type="text" name="indexDirs.{{@index}}.source" value="{{dir.source}}" readonly>
+                <input class="bucket" type="text" name="indexDirs.{{@index}}.bucket" value="{{dir.bucket}}" {{#unless dir.bucket}}hidden{{/unless}} readonly>
+                <input class="target" type="text" name="indexDirs.{{@index}}.target" value="{{dir.target}}" readonly>
+                <a class="{{#if dir.tokenize}}active{{/if}}" data-action="toggle" data-setting="tokenize" title="Tokenize"><i class="fas fa-user-circle"></i></a>
+                <input class="tokenize" name="indexDirs.{{@index}}.tokenize" type="checkbox" {{checked dir.tokenize}} hidden/>
+                <a class="{{#if dir.index}}active{{/if}}" data-action="toggle" data-setting="index" title="Index"><i class="fas fa-file-search"></i></a>
+                <input class="index" name="indexDirs.{{@index}}.index" type="checkbox" {{checked dir.index}} hidden/>
+                <a data-action="delete" title="Delete"><i class="fas fa-trash"></i></a>
+            </div>
+            {{/each}}
+        </div>
+    </fieldset>
+
+    <br>
+
+    <div class="form-group">
+        <label>File Keyword Filter</label>
+        <input name="fileFilters" type="text" value="{{fileFilters}}"></input>
+        <p class="hint">Files containing these keywords in their name will not be included in the index. Use comma "," to separate keywords.</p>
+    </div>
+
+    <div class="form-group">
+        <label>Folder Keyword Filter</label>
+        <input name="folderFilters" type="text" value="{{folderFilters}}"></input>
+        <p class="hint">Folders containing these keywords in their name will not be included in the index. Use comma "," to separate keywords.</p>
+    </div>
+
+    <br>
+
+    <fieldset style="overflow-y: auto; max-height: 250px;">
+        <legend>Advanced Settings (USE WITH CAUTION)</legend>
+
+        <div class="form-group">
+            <label>Ignore Pre-Built Indexes</label>
+            <input name="ignoreExternal" type="checkbox" {{checked ignoreExternal}}/>
+            <p class="hint">When enabled pre-built indexes found within scanned folders will not be read and directories will be processed as normal.</p>
+        </div>
+
+        <div class="form-group">
+            <button data-action="export" type="button"><i class="fa-solid fa-file-export"></i>Export VIRTUAL DIRECTORY</button>
+            <button data-action="import" type="button"><i class="fa-solid fa-file-import"></i>Import VIRTUAL DIRECTORY</button>
+        </div>
+    
+    </fieldset>
+
+    <br>
+
+    <footer class="sheet-footer flexrow">
+        <button data-action="generate" type="button"><i class="far fa-gear"></i>Generate Index</button>
+    </footer>
+</div>

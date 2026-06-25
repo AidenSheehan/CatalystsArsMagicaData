@@ -1,0 +1,42 @@
+<form>
+    <div class="mass-edit-brush-menu">
+        <div class="controls">
+            <fieldset>
+                <legend>Controls <a class="reset" title="Reset to defaults."><i class="fas fa-undo-alt"></i></a></legend>
+                <label>Rotation</label><span class="rotation-range-label" style="color:darkorange; margin-left: 10px;" >{{rotation.[0]}}° - {{rotation.[1]}}°</span>
+                <div class="rotation-slider"></div>
+
+                <label>Scale</label><span class="scale-range-label" style="color:darkorange; margin-left: 10px;" >{{scale.[0]}} - {{scale.[1]}}</span>
+                <div class="scale-slider"></div>
+
+                <label>Density</label><span class="density-range-label" style="color:darkorange; margin-left: 10px;" >{{density}}</span>
+                <div class="density-slider"></div>
+
+                <div class="sub-controls">
+                    <a class="toggle-button {{#if spawner}}active{{/if}}" data-name="spawner" title="Spawner"><i class="fas fa-plus-circle"></i></a>
+                    <a class="toggle-button {{#if lock}}active{{/if}}" data-name="lock" title="Lock to current preset."><i class="fas fa-lock"></i></a>
+                    <a class="toggle-button {{#if random}}active{{/if}}" data-name="random" title="{{localize 'MassEdit.common.randomize'}}"><i class="fa-solid fa-dice"></i></a>
+                    <a class="toggle-button {{#if group}}active{{/if}}" data-name="group" title="Spawn multi-placeable presets as a group."><i class="fa-solid fa-object-group"></i></a>
+                    <a class="toggle-button {{#if snap}}active{{/if}}" data-name="snap" title="{{localize 'MassEdit.randomizer.snapToGrid'}}"><i class="fas fa-th"></i></a>
+                    <a class="toggle-button {{#if scaleToGrid}}active{{/if}}" data-name="scaleToGrid" title="{{localize 'MassEdit.presets.controls.scale-to-grid'}}"><i class="fa-solid fa-arrow-down-big-small"></i></a>
+
+                    <a class="colorizeControl {{#if randomColor}}rainbow-text{{/if}}" {{#if color}}{{#unless randomColor}}style="color: {{color}}"{{/unless}}{{/if}} title="Colorize"><i class="fa-solid fa-palette"></i></a>
+
+                    <a class="toggle-button {{#if eraser}}active{{/if}}" data-name="eraser" title="Eraser"><i class="fas fa-eraser"></i></a>
+                    {{#if tmfxActive}}<a class="tmfxPresetControl {{#if tmfxPreset}}active{{/if}}" title="TokenMagicFX"><i class="fa-solid fa-fire"></i></a>{{/if}}
+                    {{#if taggerActive}}<a class="taggerControl {{#if tagger}}active{{/if}}" title="Tagger"><i class="fa-solid fa-tag"></i></a>{{/if}}
+                </div>
+
+                <div class="sub-menu"></div>
+            </fieldset>
+        </div>
+        <br>
+        <div class="presets">
+            {{#each presets as |preset|}}
+            <div class="preset {{#if (eq preset.id ../activePreset.id)}}active{{/if}}" data-index="{{@index}}">
+                <label>{{preset.name}}</label>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</form>

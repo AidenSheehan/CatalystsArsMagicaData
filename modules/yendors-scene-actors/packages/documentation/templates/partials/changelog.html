@@ -1,0 +1,21 @@
+<section class="tab changelog" data-tab="changelog">
+	<h2>Changelog</h2>
+	<div class="current_entry">
+		<h3><strong>v{{changelog.currentEntry.version}}</strong> {{changelog.currentEntry.title}}</h3>
+		{{{changelog.currentEntry.content}}}
+		<hr>
+		<h3>{{localize "Documentation.SupportHeadline"}}</h3>
+		<p>{{localize "Documentation.SupportText"}}</p>
+		<p><a href="https://www.patreon.com/YendorsVTT" target="_blank">Yendor's Patreon</a></p>
+	</div>
+	<hr>
+	{{#each changelog.entryList as |entry|}}
+		<details>
+			<summary>
+				<strong>v{{entry.version}}</strong> {{entry.title}}
+			</summary>
+			{{{entry.content}}}
+		</details>
+		<hr>
+	{{/each}}
+</section>

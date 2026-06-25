@@ -1,0 +1,1003 @@
+.mass-edit-checkbox {
+  flex: 0 !important;
+  margin-left: 3px;
+  display: grid;
+}
+
+.mass-edit-checkbox > input {
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.mass-edit-randomize {
+  display: inline-grid;
+  grid-column: 1;
+  grid-row: 1;
+  overflow: hidden;
+}
+
+.mass-edit-randomize.active::before {
+  content: '';
+  z-index: 0;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: calc(100% * 1.5);
+  height: calc(100% * 1.5);
+  background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
+  animation: spin 11s linear infinite;
+}
+
+.form-group.meCommon {
+  margin-bottom: 5px;
+}
+
+.form-group.meDiff {
+  margin-bottom: 5px;
+}
+
+.form-group.meFlag {
+  margin-bottom: 5px;
+}
+
+.mass-edit-tab-selected {
+  background: rgba(255, 202, 58, 0.8);
+}
+
+.me-mod-update {
+  flex: 0 !important;
+  display: grid;
+  align-items: center;
+}
+
+.me-mod-update > input {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.me-mod-update > i {
+  grid-column: 1;
+  grid-row: 1;
+  pointer-events: none;
+  margin-left: 7px;
+}
+
+.me-global-delete {
+  position: absolute;
+  left: 1px;
+  bottom: -2px;
+  color: red;
+}
+
+/* ===================== 
+   === Randomization ===
+   ===================== */
+
+.mass-edit-randomize.active {
+  color: red;
+}
+
+.mass-edit-randomizer-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mass-edit-randomizer-form > textarea,
+.mass-edit-randomizer-form > select {
+  width: 100%;
+  height: 100%;
+}
+
+.mass-edit-randomizer-form .folder-picker {
+  flex: 0 !important;
+}
+
+/* ===================== 
+   ====== Presets ======
+   ===================== */
+
+.mass-edit-dark-window .window-content,
+.mass-edit-dark-window .tag {
+  background: rgba(50, 50, 50, 0.8) !important;
+  color: white;
+}
+
+.mass-edit-dark-window .window-header {
+  background-color: black;
+}
+
+.mass-edit-dark-window button {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: 1px groove darkorange;
+}
+
+.mass-edit-dark-window button:disabled {
+  background: gray;
+  color: white;
+}
+
+.mass-edit-dark-window input,
+.mass-edit-dark-window textarea,
+.mass-edit-dark-window select {
+  color: white;
+}
+
+.mass-edit-dark-window select option {
+  background-color: gray;
+}
+
+.mass-edit-dark-window p.notes {
+  color: var(--color-text-light-primary);
+}
+
+.mass-edit-window-fill .window-content {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.mass-edit-inactive {
+  opacity: 10%;
+  pointer-events: none;
+}
+
+.preset-browser {
+  display: flex; 
+  flex-direction: column; 
+  overflow: hidden; 
+  container-type: inline-size;
+}
+
+.preset-browser .item-list {
+  flex: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  min-height: 500px;
+  /* max-height: 700px; */
+}
+
+.preset-browser .preset-header {
+  flex: none;
+  line-height: var(--sidebar-header-height);
+  text-align: center;
+  margin: 0 0 3px;
+}
+
+.preset-browser .preset-header .header-search,
+.preset-browser .preset-header .header-select {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.preset-browser .preset-header .window-controls {
+  margin-left: 1px;
+  border-left: 2px solid gray;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding-bottom: 0px;
+  padding-left: 4px;
+}
+
+.preset-browser .preset-header .window-controls .header-control {
+  width: 20px;
+  height: 20px;
+}
+
+.preset-browser .preset-header .header-control .fa-plus {
+  position: absolute;
+  top: 4px;
+  right: 1px;
+  font-size: 0.5rem;
+  background: black;
+  color: var(--color-text-selection);
+  padding: 1px;
+  border-radius: 4px;
+}
+
+.preset-browser .preset-header .header-search > *,
+.preset-browser .preset-header .header-select > * {
+  flex: 0 0 24px;
+  font-size: medium;
+}
+
+.preset-browser .preset-header .header-search input {
+  flex: 1;
+  margin: 0 3px px;
+  background: rgba(255, 255, 245, 0.8);
+}
+
+.preset-browser .preset-header .header-search input.active {
+  background-color: orange;
+  color: black;
+  font-weight: 500;
+}
+
+.preset-browser .preset-header .active {
+  color: darkorange;
+}
+
+.preset-browser .action-buttons button {
+  height: 28px;
+  line-height: 26px;
+  margin: 4px;
+  min-width: max-content;
+  white-space: nowrap;
+}
+
+.preset-browser .document-select.active,
+.folder-edit .document-select.active,
+#mass-edit-browser-settings .document-select.active,
+.globalSearchToggle.active {
+  color: orange;
+}
+
+.preset-browser .static-label {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: black;
+  color: white;
+  margin-top: 20px;
+  border-bottom: 1px solid brown;
+  border-top: 1px solid brown;
+  padding: 2px;
+}
+
+.preset-browser .item-list .item {
+  line-height: 48px;
+  border-top: 1px solid dimgray;
+  box-shadow: none;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.preset-browser .folder {
+  line-height: 48px;
+  border: none;
+  box-shadow: none;
+  margin-right: 3px;
+  position: relative;
+  margin-top: 1px;
+}
+
+.preset-browser .folder .branding {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+}
+
+.preset-browser .folder .subtext {
+  color: #f1d438eb;
+  font-size: smaller;
+  padding-left: 15px;
+}
+
+.preset-browser .preset-items {
+  padding: 0;
+  margin: 0;
+  margin-left: 1px;
+  /* min-height: 15px; */
+}
+
+.preset-browser .folder-items {
+  list-style-type: none;
+  padding-left: 2px;
+  margin-top: 1px;
+  padding: 0;
+  margin: 0;
+}
+
+.preset-browser .folder {
+  border-width: 2px 0px 4px 7px;
+  border-color: black;
+  border-style: solid;
+  margin-right: 0;
+  margin-bottom: 1px;
+}
+
+.preset-browser .folder.drag-top {
+  border-top: 2px solid orange !important;
+}
+
+.preset-browser .folder.drag-mid > header h3 {
+  font-size: var(--font-size-16);
+  color: orange;
+}
+
+.preset-browser .item.drag-top {
+  border-top: 1px solid orange !important;
+}
+
+.preset-browser .item .thumbnail {
+  pointer-events: none;
+}
+
+.preset-browser .item.drag-bot {
+  border-bottom: 1px solid orange !important;
+}
+
+.preset-browser .top-level-preset-items {
+  min-height: 50px;
+}
+
+.preset-browser .folder header {
+  padding: 6px;
+  line-height: 24px;
+  background: black;
+}
+
+.preset-browser .folder header h3 {
+  margin: 0;
+  color: var(--color-text-selection);
+  font-size: var(--font-size-14);
+  line-height: 24px;
+  border: none;
+}
+
+.preset-browser .folder header h3 i {
+  margin-right: 10px;
+}
+
+.preset-browser .folder.selected {
+  border-left-color: orange !important;
+}
+
+.preset-browser .folder .item {
+  margin-left: 2px;
+  margin-right: 0px;
+}
+
+.preset-browser .folder.collapsed > ol {
+  display: none;
+}
+
+.preset-browser .item img {
+  flex: 0 0 48px;
+  height: 48px;
+  width: 48px;
+  object-fit: cover;
+  object-position: center;
+  border: none;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.preset-browser .item .icon {
+  position: absolute;
+  left: 2px;
+  color: var(--color-text-primary);
+  bottom: 2px;
+  display: flex;
+  gap: 2px;
+}
+
+.preset-browser .item .icon > *:nth-child(n+4) {
+  opacity: 0;
+}
+
+.preset-browser .item .item-name {
+  margin: 0 0 0 8px;
+  display: flex;
+  align-items: center;
+}
+
+.preset-browser .item .item-name label {
+  flex: 0 0 100%;
+  line-height: 1.5;
+  line-break: anywhere;
+}
+
+.preset-tooltip {
+  text-align: left !important;
+}
+
+.mass-edit-tags.tags {
+  line-height: 24px;
+  margin-bottom: 2px;
+  margin-top: 7px;
+  font-size: 0.9em;
+}
+
+.mass-edit-tags.tags span {
+  color: gold;
+  border: 1px gold solid;
+  border-radius: 3px;
+  padding: 0px 2px 0px 4px;
+  white-space: nowrap;
+  margin-right: 4px;
+}
+
+.preset-browser .item .item-controls {
+  text-align: right;
+  position: absolute;
+  right: 9px;
+}
+
+.preset-browser .item.item-s.selected {
+  background: linear-gradient(#ffa50055, #ffa50055), linear-gradient(#bb5f0155, #ffb10055);
+}
+
+.preset-browser .folder.item-s.selected {
+  border-color: orange;
+}
+
+.preset-browser .fa-folder-open {
+  color: orange;
+}
+
+.drag-hover-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  display: none;
+  pointer-events: none;
+}
+
+.drag-hover-overlay .label {
+  font-size: large;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  color: white;
+  font-size: xx-large;
+  font-weight: 700;
+  -webkit-text-stroke: 1px black;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.preset-browser .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.preset-browser .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  var(--background);;
+  width: 60px;
+  padding: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.preset-browser .dropdown-content .document-select {
+  flex: 25px;
+  margin-top: 6px;
+}
+
+.preset-browser .dropdown:hover .dropdown-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mass-edit-scene-control-macro {
+  position: relative;
+}
+
+.mass-edit-scene-control-macro .browser {
+  color: cornflowerblue !important;
+}
+
+.mass-edit-scene-control-macro .macros {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  gap: 4px;
+  display: none;
+}
+
+.mass-edit-scene-control-macro .macros.active {
+  display: flex;
+}
+
+.mass-edit-scene-control-macro .macros button {
+  background-color: lightslategray;
+}
+
+.mass-edit-scene-control-macro .macros button img {
+  max-width: 200%;
+}
+
+
+input.me-add {
+  background-color: greenyellow !important;
+  color: black !important;
+}
+
+input.me-subtract {
+  background-color: orangered !important;
+  color:black !important;
+}
+
+.preset-field-select .item {
+  border-top: 1px solid dimgray;
+  box-shadow: none;
+  line-height: 24px;
+}
+
+.preset-field-select .item .value {
+  flex: 0.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.preset-field-select .item.selected {
+  background-color: darkred;
+}
+
+.preset-field-select .header {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  line-height: 31px;
+  border: 1px solid antiquewhite;
+}
+
+
+@container (min-width: 450px) {
+  .preset-browser .preset-items {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+  }
+
+  .preset-browser .item-list .item {
+    aspect-ratio: 1;
+    margin-left: -1px;
+    margin-top: -1px;
+    border: 1px solid gray;
+  }
+
+  .preset-browser .item .item-name {
+    display: none;
+  }
+
+  .preset-browser .item .item-controls {
+    position: absolute;
+  }
+
+  .preset-browser .item .thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: auto;
+  }
+
+  .preset-browser .item img {
+    flex: none;
+  }
+
+  .preset-browser .item .icon > *:nth-child(n+4) {
+    opacity: 1;
+  }
+}
+
+.mass-edit-bag {
+  min-height: 240px;
+  min-width: 240px;
+}
+
+.mass-edit-bag-config .search {
+  display: flex;
+  gap: 4px;
+}
+
+.mass-edit-bag-config .terms  {
+  flex: 11;
+  height: 27px;
+}
+
+.mass-edit-bag-config .match {
+  flex: 3;
+  display: flex;
+  padding-left: 5px;
+  border: 1px solid var(--color-border-light-tertiary);
+}
+
+.mass-edit-bag-config .removeSearchTerm {
+  /* color: red; */
+  margin: auto;
+}
+
+
+
+/* ===================== 
+   === Generic Form ====
+   ===================== */
+.mass-edit-generic-form {
+  gap: 0;
+}
+
+.mass-edit-generic-form nav {
+  overflow-x: auto;
+  border-bottom: 1px solid var(--color-tabs-border);
+}
+
+.mass-edit-generic-form .tab {
+  gap: 0;
+}
+
+nav > a[data-tab='me-pinned'] {
+  color: orangered;
+}
+
+.me-delete-flag {
+  flex: 0.1 !important;
+  color: gray;
+}
+
+.me-delete-flag.active {
+  color: rgb(255, 0, 0);
+}
+
+.mass-edit-generic-form .me-jsonArray {
+  height: 100px;
+  white-space: pre-wrap;
+}
+
+/* ================= 
+   === Tag Input ===
+   ================= */
+
+.me-tags .tag-container {
+  flex: 0 0 100%;
+  margin-top: 8px;
+}
+
+.me-tags .tag-container .tag {
+  border: 1px darkorange solid;
+  border-radius: 5px;
+  padding: 3px;
+  margin: 2px;
+  display: inline-block;
+}
+
+.me-tags .add-tag {
+  flex: 0;
+  margin-left: 0.5em;
+  line-height: inherit;
+}
+
+/* ================== 
+   === Brush Menu ===
+   ================== */
+
+.mass-edit-brush-menu .preset {
+  border: 1px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 6px;
+  padding: 2px;
+  margin-top: 2px;
+}
+
+.mass-edit-brush-menu .preset.active {
+  background-color: darkorange;
+}
+
+.mass-edit-brush-menu .ui-slider-range {
+  background-color: darkorange;
+}
+
+.mass-edit-brush-menu .ui-slider-handle {
+  background-color: darkorange;
+  border-color: black;
+}
+
+.mass-edit-brush-menu .ui-slider {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.mass-edit-brush-menu .sub-controls {
+  display: inline-block;
+  text-align: center;
+  margin-top: 3px;
+  line-height: 1.5em;
+}
+
+.mass-edit-brush-menu .sub-controls a {
+  padding: 3px;
+}
+
+.mass-edit-brush-menu a.active {
+  color: darkorange;
+}
+
+.mass-edit-brush-menu .presets {
+  max-height: 350px;
+  overflow-y: scroll;
+}
+
+.mass-edit-brush-menu input[type='text'] {
+  color: wheat;
+}
+
+.rainbow-text {
+  background: red;
+  background: -webkit-linear-gradient(left, red, yellow, green, cyan, blue, violet);
+  background: -o-linear-gradient(right, red, yellow, green, cyan, blue, violet);
+  background: -moz-linear-gradient(right, red, yellow, green, cyan, blue, violet);
+  background: linear-gradient(to right, red, yellow, green, cyan, blue, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ================== 
+   ===== Indexer ====
+   ================== */
+
+.indexDirectories {
+  display: flex;
+  flex-direction: column;
+}
+
+.indexDirectories .directory {
+  display: flex;
+  flex: 1;
+}
+
+.indexDirectories .directory > * {
+  margin: 2px;
+}
+
+.indexDirectories .source,
+.indexDirectories .bucket {
+  flex: 0.2;
+}
+
+.indexDirectories .target {
+  flex: 1;
+}
+
+.indexDirectories a {
+  flex: 0;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.indexDirectories a.active {
+  color: darkorange
+}
+
+
+/* ======================== 
+   ===== Video Preview ====
+   ======================== */
+
+.mePreviewElement {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background: black;
+  border: 5px solid darkorange;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+/* ======================== 
+   ====== Smart Link ======
+   ======================== */
+
+.smart-linker-menu .image {
+  flex: 1;
+  border: none;
+  padding-right: 10px;
+}
+
+/* ======================== 
+   ====== Linker Menu =====
+   ======================== */
+
+#mass-edit-linker-menu {
+  min-width: 270px;
+  min-height: 370px;
+}
+
+.mass-edit-linker .controls {
+  display: flex;
+  padding-left: 2px;
+}
+
+.mass-edit-linker .controls .control {
+  font-size: 24px;
+  margin-bottom: 4px;
+  margin-right: 4px;
+  box-shadow: 0 0 3px dimgray;
+  color: white;
+  text-align: center;
+  border: 1px solid var(--color-border-dark);
+  border-radius: 5px;
+  cursor: pointer;
+  pointer-events: all;
+  place-content: center;
+  line-height: 40px;
+  width: 40px;
+}
+
+.mass-edit-linker .controls a[disabled].control {
+  color:black;
+  pointer-events: none;
+}
+
+.mass-edit-linker .controls .control:hover {
+  border: 1px solid var(--color-border-highlight-alt);
+  border-bottom: 1px solid var(--color-border-highlight);
+  box-shadow: 0 0 3px var(--color-shadow-highlight);
+}
+
+/* ==================================
+   ====== Spawn Preset Behavior =====
+   ================================== */
+
+.application preset-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0;
+}
+
+.application preset-tags button {
+  flex: 0 0 36px !important;
+  line-height: var(--form-field-height);
+}
+
+.application preset-tags input {
+  flex: 1;
+}
+
+
+/* ====================================
+   ====== Preset Category Browser =====
+   ==================================== */
+
+.mass-edit-category-browser .content {
+  display: flex;
+  flex-flow: row;
+  flex: 1;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.mass-edit-category-browser .content.top {
+  flex-direction: column;
+}
+
+.mass-edit-category-browser .menu {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 8px 3px 3px 3px;
+  box-shadow: 0 0 3px dimgray;
+  border: 1px solid var(--color-border-dark);
+  margin: 3px;
+  margin-right: 4px;
+}
+
+.mass-edit-category-browser .menu.top {
+  flex-direction: column;
+  margin-bottom: 4px;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 2px;
+  padding-top: 6px;
+}
+
+.mass-edit-category-browser .category-list {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #414141;
+  padding-right: 4px;
+  padding-left: 4px;
+  overflow-y: auto;
+}
+
+.mass-edit-category-browser .category-list.top {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mass-edit-category-browser .category-list:last-child {
+  border-width: 0px;
+}
+
+.mass-edit-category-browser .category {
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+  font-size: 24px;
+  text-align: center;
+  box-shadow: 0 0 3px dimgray;
+  border: 1px solid var(--color-border-dark-5);
+  border-radius: 5px;
+  margin-bottom: 5px;
+  border-style: solid;
+  border-width: 1px;
+  position: relative;
+}
+
+.mass-edit-category-browser .category img {
+  border-width: 0;
+  width: 32px;
+  height: 32px;
+  margin-top: 2px;
+}
+
+.mass-edit-category-browser .category.active {
+  border-color: darkorange;
+}
+
+.mass-edit-category-browser .category .dl-icon{
+  font-size: x-small;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: darkorange;
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+
+/* ==========================================
+   ====== Preset Browser Saved Searches =====
+   ==========================================*/
+
+.me-saved-searches .container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.me-saved-searches .search {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  min-width: 75px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.me-saved-searches .remove {
+  margin-left: 5px;
+}
+
+/* Temp fix */
+string-tags-multi {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0;
+}
+
+string-tags-multi > input {
+  flex: 1;
+}

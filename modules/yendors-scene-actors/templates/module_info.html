@@ -1,0 +1,25 @@
+<div class="info_menu">
+    <div class="nav-wrapper">
+        <nav class="sheet-tabs tabs" data-tab-container="primary">
+            <a class="item active" data-tab="features">{{localize 'Changelog.tabFeatures'}}</a>
+            <a class="item" data-tab="changelog">{{localize 'Changelog.tabChangelog'}}</a>
+        </nav>
+        <hr>
+    </div>
+    <section class="content">
+        <div class="window-content">
+            <div class="window-content-inner">
+                <div class="tab features" data-tab="features">
+                    {{#if isDE}}
+                    {{> modules/yendors-scene-actors/templates/module_info_de.html}}
+                    {{else}}
+                    {{> modules/yendors-scene-actors/templates/module_info_en.html}}
+                    {{/if}}
+                </div>
+                <div class="tab changelog" data-tab="changelog">
+                    {{{changelog}}}
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

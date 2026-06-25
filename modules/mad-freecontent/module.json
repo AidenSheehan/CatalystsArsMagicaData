@@ -1,0 +1,103 @@
+{
+  "id": "mad-freecontent",
+  "title": "Free Map Pack | The MAD Cartographer",
+  "description": "<p>A free sampling of Foundry content from The MAD Cartographer!</p>",
+  "version": "13.10.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "The MAD Cartographer",
+      "email": "info@themadcartographer.com",
+      "url": "https://patreon.com/themadcartographer",
+      "discord": ".harrison",
+      "flags": {}
+    }
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "betterroofs",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "levels",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "tile-scroll",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "wall-height",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "lib-wrapper",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "scene-packer",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "multi-token-edit",
+        "type": "module",
+        "compatibility": {}
+      }
+    ],
+    "recommends": [
+      {
+        "id": "monks-active-tiles",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "mad-freecontent-journals",
+      "label": "TMC | Free Maps",
+      "path": "packs/mad-freecontent-journals",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "mad-freecontent-maps",
+      "label": "TMC | Free Maps",
+      "path": "packs/mad-freecontent-maps",
+      "type": "Scene",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "mad-freecontent-prefabs",
+      "label": "TMC Prefabs | Free Content",
+      "path": "packs/mad-freecontent-prefabs",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "esmodules": [
+    "scripts/init.js"
+  ],
+  "url": "https://www.themad.network",
+  "manifest": "https://r2.foundryvtt.com/packages-public/mad-freecontent/module.json",
+  "download": "https://r2.foundryvtt.com/packages-public/mad-freecontent/mad-freecontent-13.10.0.zip"
+}

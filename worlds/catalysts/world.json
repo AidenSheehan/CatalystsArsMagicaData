@@ -1,0 +1,13 @@
+{
+  "title": "Catalysts",
+  "id": "catalysts",
+  "system": "arm5e",
+  "description": "<p>Hello guys</p>",
+  "coreVersion": "13.345",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "systemVersion": "2.3.2.29",
+  "lastPlayed": "Mon Jun 09 2025 16:35:34 GMT+0200 (közép-európai nyári idő)"
+}

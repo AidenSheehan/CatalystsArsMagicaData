@@ -1,0 +1,26 @@
+<div class="actor_item combatant combatant_item{{#if combatant.isActive}} active{{/if}}{{#if combatant.defeated}} defeated{{/if}}" data-combatant-id="{{combatant.id}}">
+  <div class="actor_avatar selector_avatar" data-combatant-id="{{combatant.id}}" style="background-image: url('{{combatant.actor.img}}')">
+    {{#if combatant.defeated}}
+    <i class="defeated_icon fas fa-skull"></i>
+    {{/if}}
+  </div>
+  {{> modules/yendors-scene-actors/templates/parts/actor_health_bar.html actor=combatant.actor combatantId=combatant.id}}
+  <div class="actor_name toggle_name" data-actor-id="{{combatant.actorId}}">{{combatant.actor.name}}{{#unless combatant.actor.isNameRevealed}}<i class="fa fa-eye-slash" data-tooltip="{{localize 'Canvas.tooltipNameIsHidden'}}"></i>{{/unless}}</div>
+  {{#unless combatant.initiative}}
+  <div class="actor_action_icon roll_initiative selector_action" data-combatant-id="{{combatant.id}}" data-action="rollInit" data-control="rollInitiative"><i class="fa fa-dice"></i>&nbsp;Initiative würfeln</div>
+  {{else}}
+  <div class="actor_action_icon combatant_target_icon{{#unless combatant.isActive}} combatant_target{{/unless}}{{#if combatant.isCurrentTarget}} active{{/if}}" data-combatant="{{combatant.id}}" data-tooltip="{{#if showTooltips}}{{localize 'Selector.openSheet'}}{{/if}}">
+    {{#if combatant.isActive}}
+    <i class="fas fa-swords"></i>
+    {{else}}
+    <i class="fas fa-bullseye"></i>
+    {{/if}}
+  </div>
+  <div class="combatant_encounter_list">
+    {{#each combatant.encounters as |encounter|}}
+    <div class="actor_action_icon combatant_encounter remove_encounter" data-combatant="{{../combatant.id}}" data-encounter="{{encounter.id}}" data-tooltip="{{encounter.token.name}}" style="background-image: url('{{encounter.actor.img}}')">
+    </div>
+    {{/each}}
+  </div>
+  {{/unless}}
+</div>

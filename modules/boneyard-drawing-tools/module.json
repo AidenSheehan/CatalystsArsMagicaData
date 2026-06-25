@@ -1,0 +1,49 @@
+{
+  "id": "boneyard-drawing-tools",
+  "title": "Boneyard Drawing Tools",
+  "description": "Utilities and tools for Drawings.",
+  "version": "2.0.9",
+  "library": "false",
+  "manifestPlusVersion": "1.2.0",
+  "compatibility": {
+    "minimum": 9,
+    "verified": 11.307,
+    "_only_if_breaking__maximum": 11
+  },
+  "name": "boneyard-drawing-tools",
+  "minimumCoreVersion": "9",
+  "compatibleCoreVersion": "9.280",
+  "authors": [
+    {
+      "name": "Lich",
+      "url": "https://github.com/operation404",
+      "discord": "operation404#8123"
+    }
+  ],
+  "relationships": {
+    "systems": [],
+    "requires": []
+  },
+  "esmodules": [
+    "setup.js"
+  ],
+  "scripts": [],
+  "styles": [
+    "styles/module.css",
+    "styles/module.css.map",
+    "styles/color_selector.css",
+    "styles/color_selector.css.map"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+  "url": "https://github.com/operation404/boneyard-drawing-tools",
+  "manifest": "https://github.com/operation404/boneyard-drawing-tools/releases/latest/download/module.json",
+  "download": "https://github.com/operation404/boneyard-drawing-tools/releases/download/2.0.9/module.zip",
+  "license": "https://github.com/operation404/boneyard-drawing-tools/blob/2.0.9/LICENSEd",
+  "readme": "https://github.com/operation404/boneyard-drawing-tools/blob/2.0.9/README.md"
+}

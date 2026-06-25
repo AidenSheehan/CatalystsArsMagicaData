@@ -1,0 +1,7 @@
+2026/06/25-18:48:39.396 8d64 Recovering log #119
+2026/06/25-18:48:39.406 8d64 Delete type=0 #119
+2026/06/25-18:48:39.406 8d64 Delete type=3 #118
+2026/06/25-18:48:49.983 5484 Level-0 table #123: started
+2026/06/25-18:48:49.983 5484 Level-0 table #123: 0 bytes OK
+2026/06/25-18:48:49.986 5484 Delete type=0 #121
+2026/06/25-18:48:50.006 5484 Manual compaction at level-0 from 'undefined' @ 72057594037927935 : 1 .. 'undefined' @ 0 : 0; will stop at (end)

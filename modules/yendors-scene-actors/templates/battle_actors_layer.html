@@ -1,0 +1,30 @@
+<div class="scene_actors_layer_inner">
+    <div class="battle_actors_view{{#if isSidebarCollapsed}} sidebar_collapsed{{/if}} {{tileSize}}">
+        <div class="active_combatant">
+            <div class="battle_combatant">
+                {{{userInfoPanel}}}
+                <div class="active_scene_actors battle_combatant_inner{{canvasScaleClass}}">
+                    {{> modules/yendors-scene-actors/templates/parts/combatant_avatar.html combatant=activeCombatant mustRollInitiative=mustRollInitiative}}
+                </div>
+                {{{userActionPanel}}}
+            </div>
+        </div>
+        <div class="combat_info">
+            {{#if showFinishTurn}}
+            <div class="finish_turn_placeholder">
+            </div>
+            {{/if}}
+            <div class="combat_text">{{{combatText}}}</div>
+            {{#if showFinishTurn}}
+            <div class="finish_turn next_turn{{#if highlightFinishTurn}} highlight{{/if}}" data-control="nextTurn">
+                Zug beenden
+            </div>
+            {{/if}}
+        </div>
+        <div class="active_scene_actors battle_encounters{{canvasScaleClass}}{{#if isSidebarCollapsed}} sidebar_collapsed{{/if}} {{tileSize}}">
+            {{#each activeCombatant.encounters as |encounter|}}
+            {{> modules/yendors-scene-actors/templates/parts/encounter_avatar.html encounter=encounter canAttack=../canAttack userHasPermission=../userHasPermission}}
+            {{/each}}
+        </div>
+    </div>
+</div>

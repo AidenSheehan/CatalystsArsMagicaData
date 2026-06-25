@@ -1,0 +1,461 @@
+{
+  "id": "twodsix",
+  "title": "Twodsix - Cepheus & Traveller (Unofficial)",
+  "url": "https://github.com/xdy/twodsix-foundryvtt/",
+  "manifest": "https://github.com/xdy/twodsix-foundryvtt/releases/latest/download/system.json",
+  "readme": "https://raw.githubusercontent.com/xdy/twodsix-foundryvtt/master/README.md",
+  "download": "https://github.com/xdy/twodsix-foundryvtt/releases/download/v6.9.5/twodsix.zip",
+  "version": "6.9.5",
+  "socket": true,
+  "background": "systems/twodsix/assets/pause/sunburst.svg",
+  "changelog": "https://raw.githubusercontent.com/xdy/twodsix-foundryvtt/master/CHANGELOG.md",
+  "authors": [
+    {
+      "name": "Jonas Karlsson",
+      "discord": "xdy#3735"
+    },
+    {
+      "name": "Kevin Maree",
+      "discord": "Ultra Kev#9816"
+    },
+    {
+      "name": "Marvin",
+      "discord": "marvin9257#8916"
+    }
+  ],
+  "compatibility":
+    {
+      "minimum": "13",
+      "verified": "13.351"
+    },
+  "description": "Twodsix: A system for use with the Cepheus Engine Core Rules, Traveller (unofficial), and other similar games. <br/>This Product is derived from the Traveller System Reference Document and other Open Gaming Content made available by the Open Gaming License, and does not contain closed content from products published by either Mongoose Publishing or Far Future Enterprises. This Product is not affiliated with either Mongoose Publishing or Far Future Enterprises, and it makes no claim to or challenge to any trademarks held by either entity. The use of the Traveller System Reference Document does not convey the endorsement of this Product by either Mongoose Publishing or Far Future Enterprises as a product of either of their product lines.<br/>Cepheus Engine and Samardan Press™ are the trademarks of Jason \"Flynn\" Kemp; we are not affiliated with Jason \"Flynn\" Kemp or Samardan Press™.<br/> See the files OpenGameLicense.md and LICENSE for license details.<br/>",
+  "esmodules": [
+    "twodsix.bundle.js"
+  ],
+  "grid": {
+    "distance": 1.5,
+    "units": "m"
+  },
+  "initiative": "2d6 + @characteristics.dexterity.mod",
+  "documentTypes": {
+    "Actor" : {
+      "traveller": {"htmlFields": ["description", "notes", "bio", "contacts", "xpNotes"]},
+      "ship": {"htmlFields": ["cargo", "financeNotes", "notes"]},
+      "vehicle": {"htmlFields": ["description"]},
+      "animal": {"htmlFields": ["description", "notes"]},
+      "robot": {"htmlFields": ["description", "notes"]},
+      "space-object": {"htmlFields": ["description", "notes"]}
+    },
+    "Item": {
+      "equipment": {"htmlFields": ["description"]},
+      "weapon": {"htmlFields": ["description"]},
+      "armor": {"htmlFields": ["description"]},
+      "augment": {"htmlFields": ["description"]},
+      "storage": {"htmlFields": ["description"]},
+      "tool": {"htmlFields": ["description"]},
+      "junk": {"htmlFields": ["description"]},
+      "skills": {"htmlFields": ["description"]},
+      "spell": {"htmlFields": ["description"]},
+      "trait": {"htmlFields": ["description"]},
+      "consumable": {"htmlFields": ["description"]},
+      "component": {"htmlFields": ["description"]},
+      "ship_position": {"htmlFields": ["description"]},
+      "computer": {"htmlFields": ["description"]},
+      "psiAbility": {"htmlFields": ["description"]}
+    }
+  },
+  "languages": [
+    {
+      "lang": "de",
+      "name": "Deutsche",
+      "path": "lang/de.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "lang/es.json"
+    },
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    },
+    {
+      "lang": "sv",
+      "name": "Svenska",
+      "path": "lang/sv.json"
+    },
+    {
+      "lang": "ru",
+      "name": "Русский",
+      "path": "lang/ru.json"
+    }
+  ],
+  "license": "LICENSE",
+  "packs": [
+    {
+      "name": "ct-items",
+      "label": "Classic Traveller Items",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/ct-items",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "twoe-skills",
+      "label": "2e skills",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/2e-skills",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "cepheus-light-items",
+      "label": "cepheus light items",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/cepheus-light-items",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "ce-light-robots",
+      "label": "ce light-robots",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/ce-light-robots",
+      "entity": "Actor",
+      "type": "Actor"
+    },
+    {
+      "name": "cepheus-faster-than-light-items",
+      "label": "cepheus faster than light items",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/cepheus-faster-than-light-items",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "ce-srd-gm-screen",
+      "label": "ce srd gm screen",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/ce-srd-gm-screen",
+      "entity": "JournalEntry",
+      "type": "JournalEntry"
+    },
+    {
+      "name": "ce-light-gm-screen",
+      "label": "ce light srd gm screen",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/ce-light-gm-screen",
+      "entity": "JournalEntry",
+      "type": "JournalEntry"
+    },
+    {
+      "name": "ce-srd-roll-tables",
+      "label": "ce srd roll tables",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/ce-srd-roll-tables",
+      "entity": "RollTable",
+      "type": "RollTable"
+    },
+    {
+      "name": "ce-srd-items",
+      "label": "ce srd items",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/ce-srd-items",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "cepheus-atom-items",
+      "label": "cepheus atom items",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/cepheus-atom-items",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "cepheus-atom-actors",
+      "label": "cepheus atom actors",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/cepheus-atom-actors",
+      "entity": "Actor",
+      "type": "Actor"
+    },
+    {
+      "name": "cepheus-atom-rolltables",
+      "label": "cepheus atom rolltables",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/cepheus-atom-rolltables",
+      "entity": "RollTable",
+      "type": "RollTable"
+    },
+    {
+      "name": "cepheus-atom-gm-screen",
+      "label": "cepheus atom gm screen",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/cepheus-atom-gm-screen",
+      "entity": "JournalEntry",
+      "type": "JournalEntry"
+    },
+    {
+      "name": "cepheus-quantum-items",
+      "label": "cepheus quantum items",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/cepheus-quantum-items",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "cepheus-quantum-careers",
+      "label": "cepheus quantum careers",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/cepheus-quantum-careers",
+      "entity": "Actor",
+      "type": "Actor"
+    },
+    {
+      "name": "cepheus-quantum-gm-screen",
+      "label": "cepheus quantum gm screen",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/cepheus-quantum-gm-screen",
+      "entity": "JournalEntry",
+      "type": "JournalEntry"
+    },
+    {
+      "name": "cepheus-deluxe-items",
+      "label": "cepheus deluxe items",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/cepheus-deluxe-items",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "cepheus-deluxe-actors",
+      "label": "cepheus deluxe actors",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/cepheus-deluxe-actors",
+      "entity": "Actor",
+      "type": "Actor"
+    },
+    {
+      "name": "cepheus-deluxe-tables",
+      "label": "cepheus deluxe tables",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/cepheus-deluxe-tables",
+      "entity": "RollTable",
+      "type": "RollTable"
+    },
+    {
+      "name": "cepheus-deluxe-gm-screen",
+      "label": "cepheus deluxe gm screen",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/cepheus-deluxe-gm-screen",
+      "entity": "JournalEntry",
+      "type": "JournalEntry"
+    },
+    {
+      "name": "twodsix-macros",
+      "label": "twodsix macros",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/twodsix-macros",
+      "entity": "Macro",
+      "type": "Macro"
+    },
+    {
+      "name": "twodsix-macros-rolltables",
+      "label": "twodsix macros rolltables",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/macro-rolltables",
+      "entity": "RollTable",
+      "type": "RollTable"
+    },
+    {
+      "name": "alpha-cephei-skills",
+      "label": "alpha cephei skills",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/alpha-cephei-skills",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "alpha-cephei-items",
+      "label": "alpha cephei items",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/alpha-cephei-items",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "name": "alpha-cephei-actors",
+      "label": "alpha cephei actors",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/alpha-cephei-actors",
+      "entity": "Actor",
+      "type": "Actor"
+    },
+    {
+      "name": "cepheus-universal-items",
+      "label": "cepheus universal items",
+      "system": "twodsix",
+      "module": "twodsix",
+      "path": "./packs/cepheus-universal-items",
+      "entity": "Item",
+      "type": "Item"
+    },
+    {
+      "label": "Wiki Journal",
+      "type": "JournalEntry",
+      "name": "wiki-journal",
+      "path": "packs/wiki-journal",
+      "system": "twodsix",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Cepheus Light",
+      "sorting": "m",
+      "packs": [
+        "ce-light-gm-screen",
+        "ce-light-robots",
+        "cepheus-light-items"
+      ]
+    },
+    {
+      "name": "CE SRD",
+      "sorting": "m",
+      "packs": [
+        "ce-srd-gm-screen",
+        "ce-srd-items",
+        "ce-srd-roll-tables"
+      ]
+    },
+    {
+      "name": "Classic Traveller",
+      "sorting": "m",
+      "packs": [
+        "ct-items"
+      ]
+    },
+    {
+      "name": "Cepheus Atom",
+      "sorting": "m",
+      "packs": [
+        "cepheus-atom-items",
+        "cepheus-atom-actors",
+        "cepheus-atom-rolltables",
+        "cepheus-atom-gm-screen"
+      ]
+    },
+    {
+      "name": "Cepheus Deluxe",
+      "sorting": "m",
+      "packs": [
+        "cepheus-deluxe-items",
+        "cepheus-deluxe-actors",
+        "cepheus-deluxe-tables",
+        "cepheus-deluxe-gm-screen"
+      ]
+    },
+    {
+      "name": "Cepheus FTL",
+      "sorting": "m",
+      "packs": [
+        "cepheus-faster-than-light-items"
+      ]
+    },
+    {
+      "name": "Cepheus Quantum",
+      "sorting": "m",
+      "packs": [
+        "cepheus-quantum-items",
+        "cepheus-quantum-careers",
+        "cepheus-quantum-gm-screen"
+      ]
+    },
+    {
+      "name": "Alpha Cephei",
+      "sorting": "m",
+      "packs": [
+        "alpha-cephei-actors",
+        "alpha-cephei-items",
+        "alpha-cephei-skills"
+      ]
+    },
+    {
+      "name": "Cepheus Universal",
+      "sorting": "m",
+      "packs": [
+        "cepheus-universal-items"
+      ]
+    },
+    {
+      "name": "Twodsix Utilities",
+      "sorting": "m",
+      "packs": [
+        "twodsix-macros",
+        "twodsix-macros-rolltables"
+      ]
+    }
+  ],
+  "primaryTokenAttribute": "hits",
+  "styles": [],
+  "bugs": "https://github.com/xdy/twodsix-foundryvtt/issues",
+  "media": [
+    {
+      "type": "cover",
+      "url": "https://raw.githubusercontent.com/xdy/twodsix-foundryvtt/master/static/assets/twodsix_screenshot.webp"
+    },
+    {
+      "type": "screenshot",
+      "url": "https://raw.githubusercontent.com/xdy/twodsix-foundryvtt/master/static/assets/twodsix_screenshot.webp"
+    },
+    {
+      "type": "icon",
+      "url": "https://raw.githubusercontent.com/xdy/twodsix-foundryvtt/master/static/assets/twodsix_icon.svg"
+    }
+  ],
+  "relationships": {},
+  "flags": {
+    "hotReload": {
+      "extensions": ["css", "html", "hbs", "json"],
+      "paths": ["twodsix.css", "templates", "lang", "styles"]
+    },
+    "manifestPlusVersion": "1.0.0",
+    "allowBugReporter": true
+  }
+}

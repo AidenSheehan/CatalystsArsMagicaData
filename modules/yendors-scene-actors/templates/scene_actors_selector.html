@@ -1,0 +1,123 @@
+<div class="scene_actors_selector_inner">
+	<div class="selector_header">
+		<div class="selector_header_inner">
+			<div class="dragHandler">
+				<i class="fas fa-grip-horizontal"></i>
+			</div>
+			<div class="selector_title">{{title}}</div>
+			<div class="toggle_property{{#if showToolbar}} active{{/if}}" data-property="showToolbar" data-tooltip="{{#if showTooltips}}{{#if showToolbar}}{{localize 'Selector.hideToolbar'}}{{else}}{{localize 'Selector.showToolbar'}}{{/if}}{{/if}}">
+				<i class="fas fa-sliders-simple"></i>
+			</div>
+			<div class="selector_minimize" data-tooltip="{{#if showTooltips}}{{#if showList}}{{localize 'Selector.minimize'}}{{else}}{{localize 'Selector.maximize'}}{{/if}}{{/if}}">
+				{{#if showList}}
+				<i class="fas fa-window-minimize"></i>
+				{{else}}
+				<i class="far fa-window-maximize"></i>
+				{{/if}} <!-- showList -->
+			</div>
+			<div class="selector_settings" data-tooltip="{{#if showTooltips}}{{localize 'Selector.szeneSettings'}}{{/if}}">
+				<i class="fas fa-gear"></i>
+			</div>
+		</div>
+		{{#if showSettings}}
+		{{> modules/yendors-scene-actors/templates/parts/scene_settings.html currentSceneId=currentSceneId scenes=availableScenes settings=settings isBattleActorsEnabled=isBattleActorsEnabled}}
+		{{/if}} <!-- showSettings -->
+	</div>
+	{{#if showToolbar}}
+	<div class="toolbar">
+		<div class="toolbar_section">
+			<div class="toolbar_action toggle_property{{#if showActorsToGM}} active{{/if}}" data-property="showActorsToGM" data-tooltip="{{#if showTooltips}}{{localize 'Selector.toolbarShowActorsToGM'}}{{/if}}">
+				<i class="fas fa-chess-king"></i>
+			</div>
+			<div class="toolbar_label">
+				<i class="fas fa-image-portrait"></i>
+			</div>
+			<div class="toolbar_action toggle_property{{#if showActorsToPlayers}} active{{/if}}" data-property="showActorsToPlayers" data-tooltip="{{#if showTooltips}}{{localize 'Selector.toolbarShowActorsToPlayers'}}{{/if}}">
+				<i class="fas fa-chess-pawn"></i>
+			</div>
+		</div>
+		<div class="toolbar_section" data-tooltip="{{#if showTooltips}}{{localize 'Selector.toolbarScaleActors'}}{{/if}}">
+			<div class="toolbar_action decrease_canvas_scale{{#if isMinCanvasScale}} disabled{{/if}}">
+				<i class="fas fa-minus"></i>
+			</div>
+			<div class="toolbar_label">
+				<i class="fas fa-image-portrait"></i>
+			</div>
+			<div class="toolbar_action increase_canvas_scale{{#if isMaxCanvasScale}} disabled{{/if}}">
+				<i class="fas fa-plus"></i>
+			</div>
+		</div>
+		<div class="toolbar_section">
+			<div class="toolbar_action toggle_property{{#if showPC}} active{{/if}}" data-property="showPC" data-tooltip="{{#if showTooltips}}{{localize 'Selector.toolbarShowPC'}}{{/if}}">
+				<span><strong>{{localize 'Selector.toolbarPC'}}</strong></span>
+			</div>
+			<div class="toolbar_label">
+				<i class="fas fa-list-dropdown"></i>
+			</div>
+			<div class="toolbar_action toggle_property{{#if showNPC}} active{{/if}}" data-property="showNPC" data-tooltip="{{#if showTooltips}}{{localize 'Selector.toolbarShowNPC'}}{{/if}}">
+				<span><strong>{{localize 'Selector.toolbarNPC'}}</strong></span>
+			</div>
+		</div>
+	</div>
+	{{/if}} <!-- showToolbar -->
+
+	{{#if showSceneList}}
+	<div class="actors_list scroll_area">
+		{{#if showPC}}
+		<div class="pc_list">
+			{{#each playerCharacters as |actor a|}}
+			{{> modules/yendors-scene-actors/templates/parts/actor_item.html actor=actor showTooltips=../showTooltips}}
+			{{/each}}
+			{{#if noPlayerCharacters}}
+			<div class="actor_item empty_list">
+				<div>{{localize 'Selector.noPlayerCharacter'}}</div>
+				<div class="hint">{{localize 'Selector.dropHere'}}</div>
+			</div>
+			{{/if}}
+		</div>
+		{{/if}} <!-- showPC -->
+
+		{{#if showNPC}}
+		<div class="npc_list">
+			{{#each actors as |actor a|}}
+			{{> modules/yendors-scene-actors/templates/parts/actor_item.html actor=actor showTooltips=../showTooltips}}
+			{{/each}}
+			{{#if isNpcEmpty}}
+			<div class="actor_item empty_list">
+				<div>{{localize 'Selector.noActor'}}</div>
+				<div class="hint">{{localize 'Selector.dropHere'}}</div>
+			</div>
+			{{/if}}
+		</div>
+		{{/if}} <!-- showNPC -->
+
+		<div class="item_list">
+			{{#each items as |item b|}}
+			{{> modules/yendors-scene-actors/templates/parts/item_item.html item=item showTooltips=../showTooltips}}
+			{{/each}}
+			{{#if isItemsEmpty}}
+			<div class="actor_item empty_list">
+				<div>{{localize 'Selector.noItems'}}</div>
+				<div class="hint">{{localize 'Selector.dropHere'}}</div>
+			</div>
+			{{/if}}
+		</div>
+
+		{{#if disabledHint}}
+		<div class="item_item empty_list">
+			<div>{{localize 'Selector.hint'}}</div>
+			<div class="hint">{{localize 'Selector.disabledHint'}}</div>
+		</div>
+		{{/if}} <!-- disabledHint -->
+    </div>
+    {{/if}} <!-- showSceneList -->
+
+    {{#if isBattleActorsSelector}}
+	{{> modules/yendors-scene-actors/templates/parts/combat_actions.html settings=settings}}
+	<div class="battle_list scroll_area">
+		{{#each combatants as |combatant|}}
+		{{> modules/yendors-scene-actors/templates/parts/combatant_item.html combatant=combatant showTooltips=../showTooltips settings=../settings}}
+		{{/each}}
+	</div>
+	{{/if}} <!-- isBattleActorsSelector -->
+</div>

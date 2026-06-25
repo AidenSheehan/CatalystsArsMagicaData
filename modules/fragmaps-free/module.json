@@ -1,0 +1,38 @@
+{
+  "id": "fragmaps-free",
+  "title": "Frag Maps - Modern, Cyberpunk and Sci-Fi Maps",
+  "description": "Hand-drawn modern, Cyberpunk and sci-fi RPG maps that inspire epic campaigns and encounters.",
+  "version": "1.1.1",
+  "compatibility": {
+    "minimum": "0.8.9",
+    "verified": "13"
+  },
+  "packs": [
+    {
+      "label": "Fragmaps Free (feet)",
+      "type": "Scene",
+      "name": "fragmaps-ft",
+      "path": "packs/fragmaps-ft",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
+      "label": "Fragmaps Free (metric)",
+      "type": "Scene",
+      "name": "fragmaps-m",
+      "path": "packs/fragmaps-m",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    }
+  ],
+  "url": "https://www.patreon.com/fragmaps",
+  "manifest": "https://foundryvtt.s3-us-west-2.amazonaws.com/modules/fragmaps-free/module.json",
+  "download": "https://foundryvtt.s3.us-west-2.amazonaws.com/modules/fragmaps-free/fragmaps-free-1.1.1.zip",
+  "flags": {}
+}

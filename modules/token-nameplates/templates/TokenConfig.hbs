@@ -1,0 +1,64 @@
+<div class="tab scrollable{{#if tab.active}} active{{/if}}" data-group="sheet" data-tab="nameplates" data-application-part="nameplates">
+  {{#with nameplates}}
+    {{#if allowSourceConfig}}
+      <div class="form-group">
+        <label for ="{{@root.rootId}}-nameplates-configSource">{{localize "NAMEPLATES.CONFIG.SOURCE.LABEL"}}</label>
+        <select id="{{@root.rootId}}-nameplates-configSource" name="nameplates.configSource">
+          {{selectOptions configSourceSelect selected=configSource localize=true}}
+        </select>
+      </div>
+      {{#if controlsDisabled}}
+        <p class="hint">{{localize "NAMEPLATES.CONFIG.SOURCE.DISABLED"}}</p>
+      {{/if}}
+    {{/if}}
+
+    <div class="form-group">
+      <label for="{{@root.rootId}}-nameplates-enabled">{{localize "NAMEPLATES.CONFIG.ENABLE.LABEL"}}</label>
+      <input type="checkbox" name="nameplates.enabled" id="{{@root.rootId}}-nameplates-enabled" {{checked enabled}} data-toggle-nameplate-config>
+      <p class="hint">{{localize "NAMEPLATES.CONFIG.ENABLE.HINT"}}</p>
+    </div>
+
+    <div class="form-group">
+      <div class="flexrow">
+        <div class="flex1">
+          <label for="{{idPrefix}}-nameplates-export">{{localize "NAMEPLATES.CONFIG.EXPORT.LABEL"}}</label>
+        </div>
+        <div class="flex0">
+          <a data-action="" data-tooltip="{{localize "NAMEPLATES.CONFIG.TOOLTIPS.EXPORT"}}" data-role="export-nameplates" data-toggle-nameplate-config>
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </div>
+      </div>
+      <p class="hint">{{localize "NAMEPLATES.CONFIG.EXPORT.HINT"}}</p>
+    </div>
+
+    <div class="form-group">
+      <div class="flexrow">
+        <div class="flex1">
+          <label for="{{idPrefix}}-nameplates-import">{{localize "NAMEPLATES.CONFIG.IMPORT.LABEL"}}</label>
+        </div>
+        <div class="flex0">
+          <a data-role="import-nameplates" data-tooltip="{{localize "NAMEPLATES.CONFIG.TOOLTIPS.IMPORT"}}" data-toggle-nameplate-config>
+            <i class="fa-solid fa-upload"></i>
+          </a>
+        </div>
+      </div>
+      <p class="hint">{{localize "NAMEPLATES.CONFIG.IMPORT.HINT"}}</p>
+    </div>
+
+    <div class="flexrow">
+      <div class="flex1">
+        <h4 class="token-nameplate-list__header">{{localize "NAMEPLATES.CONFIG.HEADER"}}</h4>
+      </div>
+      <div class="flex0">
+        <a data-action="addNameplate" data-tooltip="{{localize "NAMEPLATES.CONFIG.TOOLTIPS.ADD"}}" data-toggle-nameplate-config>
+          <i class="fa-solid fa-plus"></i>
+        </a>
+      </div>
+    </div>
+    {{> "modules/token-nameplates/templates/NameplateList.hbs" header="NAMEPLATES.CONFIG.UPPER" nameplates=upperNameplates }}
+    {{> "modules/token-nameplates/templates/NameplateList.hbs" header="NAMEPLATES.CONFIG.LOWER" nameplates=lowerNameplates }}
+    {{> "modules/token-nameplates/templates/NameplateList.hbs" header="NAMEPLATES.CONFIG.LEFT" nameplates=leftNameplates }}
+    {{> "modules/token-nameplates/templates/NameplateList.hbs" header="NAMEPLATES.CONFIG.RIGHT" nameplates=rightNameplates }}
+  {{/with}}
+</div>

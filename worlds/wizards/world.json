@@ -1,0 +1,16 @@
+{
+  "title": "Wizards",
+  "id": "wizards",
+  "system": "arm5e",
+  "joinTheme": "default",
+  "description": "<p>helloasd</p>",
+  "coreVersion": "14.364",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.364"
+  },
+  "systemVersion": "2.4.1.18",
+  "lastPlayed": "Thu Jun 25 2026 18:49:26 GMT+0100 (British Summer Time)",
+  "playtime": 68861,
+  "flags": {}
+}

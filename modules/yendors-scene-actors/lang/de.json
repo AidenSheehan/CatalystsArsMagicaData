@@ -1,0 +1,82 @@
+{
+	"Menu":{
+		"enableSceneActorsOnScene": "SceneActors für Szene aktivieren",
+		"hideSceneActorsOnScene": "SceneActors temporär ausblenden"
+	},
+	"Selector": {
+		"deleteAllActors": "Alle Szenen-Akteure löschen",
+		"noActor": "Noch kein NSC auf dieser Szene",
+		"noPlayerCharacter": "Noch kein Spieler-Charakter hinzugefügt",
+		"noItems": "Noch kein Item hinzugefügt",
+		"dropHere": "Hier rein ziehen",
+		"minimize": "minimieren",
+		"maximize": "maximieren",
+		"szeneSettings": "Szenen-Einstellungen",
+		"openSheet": "Charakterbogen öffnen",
+		"openItemSheet": "Item-Sheet öffnen",
+		"removeActor": "Akteur von Szene entfernen",
+		"removeItem": "Item von Szene entfernen",
+		"showActor": "<strong>Linksklick:</strong> Akteur auf Szene anzeigen/verbergen<br><strong>Rechtsklick:</strong> Avatar-Anzeige ändern",
+		"showItem": "<strong>Linksklick:</strong> Item auf Szene anzeigen/verbergen<br><strong>Rechtsklick:</strong> Item-Anzeige ändern",
+		"focusActor": "Akteur auf Szene in den Fokus stellen",
+		"showToolbar": "Toolbar für Szene einblenden",
+		"hideToolbar": "Toolbar für Szene ausblenden",
+		"hint": "Hinweis",
+		"disabledHint": "Die Anzeige von SCs sowie NSCs ist deaktiviert",
+		"toolbarShowActorsToGM": "Akteure für GM anzeigen/ausblenden",
+		"toolbarShowActorsToPlayers": "Akteure für Spieler anzeigen/ausblenden",
+		"toolbarScaleActors": "Akteure skalieren",
+		"toolbarNPC": "NSC",
+		"toolbarPC": "SC",
+		"toolbarShowPC": "SCs anzeigen",
+		"toolbarShowNPC": "NSCs anzeigen"
+	},
+	"Settings": {
+		"disableTitle": "SceneActors deaktivieren",
+		"disableHint": "Das Deaktivieren sollte mit dem Spielleiter abgesprochen sein, da es für dessen Spielleitung wichtig sein könnte.",
+		"tooltipsTitle": "Tooltips anzeigen",
+		"tooltipsHint": "Tooltips helfen dem Spielleiter vor allem zu Beginn, sich mit dem Modul zurecht zu finden.",
+		"changelogTitle": "Funktionen & Changelog",
+		"changelogHint": "Die Möglichkeiten des Moduls sowie das Changelog finden sich hier.",
+		"changelogButton": "Jetzt ansehen",
+		"showChangelogTitle": "Changelog anzeigen",
+		"showChangelogHint": "Soll nach Updates das Changelog für Spielleiter angezeigt werden?",
+		"keyToggleSceneActorsViewTitle": "Anzeige der Akteure",
+		"keyToggleSceneActorsViewHint": "Die Akteuere werden auf dem eigenen Bildschirm ausgeblendet bzw. eingeblendet. Spieler können Akteure nur temporär ausblenden, das heißt, sobald der GM einen einen Akteur einblendet, sind alle Akteure wieder sichtbar.",
+		"keyMinMaxSelectorTitle": "Selector minimieren",
+		"keyMinMaxSelectorHint": "Minimiert oder maximiert den SceneActorsSelector",
+		"keyToggleSceneActorsTitle": "SceneActors aktivieren",
+		"keyToggleSceneActorsHint": "Das Modul wird für die Szene komplett aktiviert bzw. deaktiviert.",
+		"rotateActorsTitle": "Akteure drehen",
+		"rotateActorsHint": "Die Akteure auf der Spielfläche können per Klick gedreht werden.",
+		"battleActorsTitle": "BattleActors aktivieren (BETA)",
+		"battleActorsHint": "ACHTUNG: Für dieses Feature wird mindestens das DSA-System v5.1.0 benötigt. Auf Battlemaps ersetzt bei einem aktiven Kampf einen der BattleActorsSelector den SceneActorsSelector. Damit können die Spieler auf einer anderen (TotM-)Szene einen immersiven Kampf ohne Battlemap führen, während der Spielleiter weiterhin mit hilfe der Battlemap den Überblick behalten kann.",
+		"hoverNamesTitle": "Namen bei Maus-Hover anzeigen",
+		"hoverNamesHint": "Wurde der Name eines Akteurs für die Spieler freigeschalten, wird er nur angezeigt, wenn der Spieler mit der Maus über dem Avatar ist. Das gilt auch für das Interaktions-Feld von Items."
+	},
+	"Changelog": {
+		"title": "Yendor's Scene Actors: Funktionen & Changelog",
+		"tabFeatures": "Funktionen",
+		"tabChangelog": "Changelog",
+		"currentReleaseHint": "Dieser Release beinhaltet kleinere Verbesserungen oder Bugfixes. Genauere Informationen finden sich im"
+	},
+	"Documentation": {
+		"SupportHeadline": "Unterstützung",
+		"SupportText": "Euch gefällt dieses oder ein anderes meiner Module und ihr möchtet meine Arbeit unterstützen? So könnt ihr das gerne über Patreon tun. Vielen Dank!"
+	},
+	"Canvas": {
+		"tooltipClickActor": "<strong>Linksklick:</strong> Akteur im Fokus anzeigen<br><strong>Rechtsklick:</strong> Alternative Porträt-Ansicht<br><strong>Alt + Linksklick:</strong> Akteur drehen (falls Option aktiviert)",
+		"tooltipClickActorPlayer": "Charakterbogen öffnen (Rechte notwendig)",
+		"tooltipClickItem": "<strong>Linksklick:</strong> Item im Fokus anzeigen<br><strong>Rechtsklick:</strong> Alternative Item-Ansicht<br><strong>Alt + Linksklick:</strong> Item drehen (falls Option aktiviert)",
+		"tooltipClickItemPlayer": "Item-Info anzeigen",
+		"tooltipClickNameLabel": "Klick: Name anzeigen/ausblenden",
+		"tooltipNameIsHidden": "Der Name wird verborgen",
+		"tooltipItemToInventory": "Item nehmen und zum Inventar hinzufügen",
+		"tooltipItemLocked": "Item kann nicht angesehen oder genommen werden",
+		"tooltipItemDisable": "Für Spieler sperren",
+		"tooltipItemEnable": "Für Spieler freigeben",
+		"notification": {
+			"noCharacter": "Dem Spieler muss ein Charakter zugewiesen sein."
+		}
+	}
+}

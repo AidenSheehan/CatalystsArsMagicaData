@@ -1,0 +1,478 @@
+/* Custom CSS */
+
+/*fix in default fvtt for item images not preserving aspect ratio*/
+.item-img {
+	object-fit: contain;
+}
+
+/* fix for dice-tray input box shift for default mode*/
+input.dice-tray__input {
+    text-align: center;
+}
+
+.dice-tray .dice-tray__stacked {
+  margin-top: 2px;
+}
+
+/* Fix GM Screen background for dark formats*/
+.gm-screen-app, .gm-screen-actions button  {
+  background: #0d0d0d !important;
+}
+
+/*Correct PopOut! auto resizing of ship sheet
+.ship-container {
+  min-height: 305px;
+  max-height: 305px;
+}*/
+
+/* Allow FVTT sidebar (menu) pop-outs to be resized*/
+.app.sidebar-popout {
+	resize: both;
+    overflow: auto;
+}
+
+/*Fix Advanced Macro Background Issue*/
+.macro-sheet .form-group.command .furnace-macro-command code,  .macro-sheet .form-group.command .furnace-macro-command textarea{
+  -webkit-text-fill-color: inherit !important;
+  background: var(--s2d6-background-opaque) !important;
+  color: var(--s2d6-default) !important;
+}
+
+/*Fix for automated Automations*/
+#AA-autorec-settings .window-content, #AA-item-settings .window-content, #AA-ae-settings .window-content {
+	color: black !important;
+}
+
+#AA-autorec-settings .animation input, #AA-item-settings .animation input, #AA-ae-settings .animation input {
+	color: black !important;
+	background-color: rgba(182, 182, 182, 0.461) !important;
+	border-radius: var(--tjs-input-text-border-radius, var(--tjs-input-border-radius))!important
+}
+
+#AA-autorec-settings .animation select, #AA-item-settings .animation select, #AA-ae-settings .animation select {
+    background-color: rgb(160, 160, 160) !important;
+    color: black !important;
+}
+
+#AA-autorec-settings .animation option {
+  background-color: revert;
+  color: revert;
+}
+
+/*No longer needed for v10
+//Fix for Tidy UI
+#client-settings nav.tabs {
+  flex-grow: 0 !important;
+}
+
+//Fix for PDFoundry
+div.pdf-app section.window-content {
+  background: var(--s2d6-background-transparent) !important;
+}
+*/
+
+/*Monk's Enhanced Journals*/
+
+.monks-enhanced-journal .window-content,
+.monks-enhanced-journal .directory-sidebar {
+  background-image: url(../assets/bg2.jpg) !important;
+  /*background-color: var(--s2d6-background-transparent) !important;*/
+}
+
+.monks-enhanced-journal .enhanced-journal .journal-sheet-container .sidebar.directory {
+  background: revert;
+  background-color: var(--s2d6-background-nearly-transparent);
+}
+
+.monks-enhanced-journal .enhanced-journal .sheet.journal-entry .journal-entry-content {
+  background: revert;
+  background-image: url(../assets/bg2.jpg);
+  background-color: var(--s2d6-background-transparent);
+}
+
+.monks-enhanced-journal .directory-sidebar > section .directory-header,
+.monks-enhanced-journal .tab-bar .tab-button,
+.monks-enhanced-journal .enhanced-journal-header,
+.monks-enhanced-journal .enhanced-journal-footer,
+.monks-enhanced-journal .enhanced-journal-header .navigation,
+.monks-enhanced-journal .enhanced-journal-header .navigation .nav-input,
+.monks-enhanced-journal .directory li.folder.collapsed > .folder-header:not(.customcolor) {
+  background: revert;
+  background-color: var(--s2d6-background-opaque);
+  color: var(--s2d6-app-color);
+}
+
+.monks-enhanced-journal .directory li.folder:not(.collapsed) > .folder-header {
+  background: var(--s2d6-background-nearly-opaque);
+}
+
+.monks-enhanced-journal .tab-bar .tab-button:hover,
+.monks-journal-sheet.sheet .journal-subsheet.blank .recent-link:hover,
+.monks-journal-sheet.sheet .journal-subsheet.blank .new-link:hover,
+.monks-enhanced-journal .tab-bar .journal-tab:hover  {
+  color: var(--s2d6-light-color);
+}
+
+.sheet.journal-entry .journal-entry-page h1 {
+  font-family: unset;
+  font-weight: unset;
+  font-size: 2em;
+  border-bottom: 2px solid var(--color-underline-header);
+  margin: unset;
+}
+
+.monks-enhanced-journal .directory .directory-header .header-actions.action-buttons button,
+.monks-enhanced-journal .enhanced-journal-footer .nav-button,
+.monks-enhanced-journal .enhanced-journal-header .bookmark-bar .bookmark-button.add-bookmark,
+.monks-enhanced-journal .enhanced-journal-header .navigation .nav-button,
+.monks-journal-sheet .items-list .item-header .item-control {
+  background-color: var(--s2d6-background-opaque);
+  border: 2px groove var(--s2d6-default-color);
+  color: var(--s2d6-app-color);
+  height: auto;
+}
+
+.monks-enhanced-journal .directory li.journalentry, .monks-enhanced-journal .directory li.journalentrypage  {
+  color: var(--s2d6-app-color);
+}
+
+.monks-enhanced-journal .directory .directory-list .directory-item,
+.monks-enhanced-journal .directory li.journalentry,
+.monks-enhanced-journal .directory li.journalentrypage {
+  border-bottom: 1px solid var(--color-border-dark-3);
+  border-top: 1px solid var(--s2d6-background-transparent);
+}
+
+.monks-journal-sheet.sheet .journal-sheet-header .sheet-image img.profile {
+  background-color: var(--s2d6-background-opaque);
+}
+
+.monks-enhanced-journal .tab-bar .journal-tab {
+  background-color: var(--s2d6-background-opaque);
+  color: var(--s2d6-dialog-color);
+}
+
+.monks-journal-sheet.sheet .journal-sheet-header .header-details .form-group label,
+.monks-journal-sheet.sheet .journal-sheet-header .header-details .form-group input,
+.monks-journal-sheet.sheet .sheet-container,
+.monks-journal-sheet.sheet .sheet-body .details-section label,
+.monks-journal-sheet.sheet .journal-sheet-header .header-details .header-name input[type="text"],
+.monks-journal-sheet.sheet .journal-sheet-header .header-details .form-group select,
+.monks-journal-sheet .currency-group .form-fields input,
+.monks-journal-sheet.sheet .sheet-body .details-section input, .monks-journal-sheet.sheet .sheet-body .details-section textarea {
+  color: var(--s2d6-default-color);
+}
+
+.monks-journal-sheet.sheet .sheet-body .details-section textarea,
+.monks-journal-sheet.sheet .sheet-body .details-section input,
+.monks-journal-sheet.sheet .journal-subsheet.blank .recently-viewed  {
+  background-color: var(--s2d6-background-opaque);
+}
+
+.monks-journal-sheet .tab.notes .notes-container {
+  width: 95%;
+}
+
+.monks-enhanced-journal .tab-bar .journal-tab.active {
+  background: revert;
+  background-color: var(--s2d6-default-color);
+  color: var(--s2d6-background-opaque);
+}
+
+.monks-journal-sheet.sheet .loot-container .loot-characters .loot-character-list .loot-character .character-name {
+  margin-top: unset;
+  left: unset;
+}
+
+.monks-journal-sheet.sheet .loot-container .loot-characters .loot-character-list .loot-character img {
+  border-color: var(--s2d6-default-color);
+}
+
+.monks-journal-sheet .items-list .item-controls a,
+.monks-journal-sheet.sheet .journal-subsheet.blank {
+  color: var(--s2d6-default-color);
+}
+
+.monks-journal-sheet .items-list .item-header,
+.monks-journal-sheet .items-list .item-header h3,
+.monks-journal-sheet .items-list .item .item-name,
+.monks-journal-sheet .items-list .item {
+  color: var(--s2d6-default-color);
+  border-color: var(--mej-sheet-tab-background);
+}
+
+.monks-journal-sheet .items-list .item-detail {
+  margin-top: unset;
+  display: unset;
+}
+
+.monks-journal-sheet .items-list .item input {
+  border-color: unset;
+  color: unset;
+  background-color: unset;
+}
+
+.monks-journal-sheet .items-list {
+  top: unset;
+  position: revert;
+}
+
+.monks-journal-sheet .items-list .item-list {
+  color: var(--s2d6-default-color);
+  border-color: var(--s2d6-default-color);
+}
+
+.monks-journal-sheet.sheet .sheet-body .details-section input, .monks-journal-sheet.sheet .sheet-body .details-section textarea {
+  border: var(--s2d6-default-color);
+}
+
+.monks-enhanced-journal > header a.subsheet {
+  background-color: var(--s2d6-background-transparent);
+}
+
+.monks-enhanced-journal .enhanced-journal-header > *,
+.monks-enhanced-journal .directory-sidebar > section .directory-header,
+.monks-enhanced-journal .directory-sidebar {
+  border-color: var(--mej-sheet-tab-background);
+}
+
+.journal-select > div > i {
+  color: var(--s2d6-default-color);
+}
+
+.journal-select {
+  height: unset;
+  background-color: var(--s2d6-background-semi-opaque);
+  color: revert;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: inherit;
+  line-height: inherit;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  border: 1px solid var(--s2d6-background-opaque);
+  border-radius: 0;
+}
+
+.monks-journal-sheet.sheet .editor .editor-content {
+  height: 100%;
+  background-color: var(--s2d6-background-transparent);
+  border: none;
+  box-shadow: none;
+  overflow-y: auto;
+}
+
+.monks-journal-sheet.sheet .editor {
+  background-color: var(--s2d6-background-transparent);
+}
+
+.monks-journal-sheet .sheet-container .journal-sheet-header .sheet-icon  {
+  background-color: var(--s2d6-background-opaque);
+  color: var(--s2d6-app-color);
+}
+
+.monks-journal-sheet .journal-sheet-header.header-name input[type="text"]  {
+  background-color: var(--s2d6-background-opaque);
+  color: var(--s2d6-default-color);
+}
+
+.monks-journal-sheet.sheet .editor-edit {
+  margin-right: 0.5ch;
+}
+/************Item Piles*******/
+/*.item-piles-odd-color:nth-child(odd), .item-piles-even-color:nth-child(even), .item-piles-item-row:nth-child(odd) {
+  background-color: var(--s2d6-light-background-transparent) !important;
+}*/
+
+:root {
+  --item-piles-even-color: var(--s2d6-light-background-transparent) !important;
+}
+
+.polyglot-lang-select select {
+  background-color: var(--s2d6-background-semi-opaque);
+}
+
+.polyglot-lang-select label {
+  margin-top: 4px;
+}
+
+.item-piles-chat-card li:nth-child(odd) {
+  background-color: var(--s2d6-light-background-transparent);
+}
+
+.item.item-piles-flexrow.item-piles-clickable-link {
+  color: var(--color-light-3);
+}
+
+.item-piles-config-container p {
+  color: var(--s2d6-form-light);
+}
+
+.item-piles-disabled {
+  background-color: revert;
+}
+
+div.svelte-ip-m19fn7 {
+  font-size: unset;
+}
+
+.item-piles-flexrow input, .item-piles-flexrow select {
+  height: revert;
+}
+/******** Monk's Active Tile Trigggers********/
+
+.action-sheet .display-value, .multiple-dropdown {
+  color: var(--s2d6-light-color);
+  background-color: var(--s2d6-background-semi-opaque);
+  border-color: var(--s2d6-background-opaque);
+}
+
+.multiple-dropdown .multiple-dropdown-option {
+  color: var(--s2d6-light-color);
+  background-color: var(--s2d6-background-nearly-opaque);
+}
+
+.monks-active-tiles.sheet .items-list, .monks-active-tiles.sheet .items-list .item .item-name,
+.monks-active-tiles div[data-tab="triggers"] .action-items .action-style,
+.monks-active-tiles .file-list,
+.monks-active-tiles .file-list li a,
+.monks-active-tiles.sheet .items-list .items-header,
+.monks-active-tiles div[data-tab="triggers"] .action-items .entity-style,
+.monks-active-tiles div[data-tab="triggers"] .action-items .value-style,
+.action *  {
+  color: var(--s2d6-default-color);
+  border-color: var(--s2d6-default-color);
+}
+
+.monks-active-tiles.sheet .items-list {
+  margin-bottom: 3ch;
+  top: 0;
+}
+
+/******** Token Action HUD ******/
+
+.tah-dialog-light-button {
+  background: var(--s2d6-background-nearly-opaque);
+  border: 1px solid var(--color-border-light-primary);
+}
+
+.tagify__tag__removeBtn, .tagify__tag>div, .tah-dialog-tagify .tagify__input, .tagify__input:focus:empty::before {
+  color: var(--s2d6-default-color);
+}
+
+.tah-fieldset > legend {
+  color: var(--s2d6-default-color);
+  text-shadow: 1px 1px 1px var(--s2d6-nav-background);
+}
+
+/******** Monk's Sound Enhancements *****/
+.sheet .sound-sheet .items-list,
+.sheet .sound-sheet .items-list .item .item-name {
+    color: var(--s2d6-default-color);
+}
+
+/****** Code Mirror ******/
+.CodeMirror-code {
+	color: revert !important;
+	background: revert !important;
+	background-color: revert !important;
+	border: none !important;
+}
+
+/**** Custom CSS ***/
+.customCssSettings .stylesheet-editor {
+	background-color: var(--s2d6-form-light);
+}
+
+
+/***** Quick Insert****/
+.quick-insert-app .search-editable-input {
+  background: var(--s2d6-background-nearly-opaque);
+  color: var(--s2d6-light-color);
+}
+
+.quick-insert-result {
+  background:var(--s2d6-background-nearly-opaque);
+  color: var(--s2d6-default-color);
+}
+
+.quick-insert-result li span.sub, .quick-insert-result li a i.action-icon {
+  background: var(--s2d6-background-nearly-transparent);
+  color: var(--s2d6-app-color);
+}
+
+.quick-insert-app .search-selected a, .quick-insert-result li a:hover {
+  background: var(--s2d6-background-semi-opaque);
+}
+
+.quick-insert-result li a strong {
+  background: var(--s2d6-background-nearly-opaque);
+  color: var(--s2d6-light-color);
+}
+
+.quick-insert-app .search-selected a:hover {
+  background: var(--s2d6-background-opaque);
+  color: var(--s2d6-light-color);
+}
+
+/**** Small Time ****/
+#smalltime-app {
+  padding: 0;
+}
+
+
+/******* FQL ******/
+/* Custom CSS */
+
+#forien-quest-log .editor,
+.window-app.forien-quest-preview .editor,
+#forien-quest-log nav.tabs,
+.window-app.forien-quest-preview nav.tabs,
+.window-app.forien-quest-preview .quest-body .details-header .quest-setup .quest-details,
+#forien-quest-log .actions,
+#forien-quest-log .window-content,
+.window-app.forien-quest-preview .window-content,
+.quest-body,
+#forien-quest-log .quest-log .table ul li.drag-quest {
+	background: var(--s2d6-background-nearly-opaque);
+}
+
+#forien-quest-log .editor, .window-app.forien-quest-preview .editor,
+#forien-quest-log .editor .editor-content, .window-app.forien-quest-preview .editor .editor-content {
+  background: var(--s2d6-background-nearly-opaque) !important;
+}
+
+#forien-quest-log .actions i, .window-app.forien-quest-preview .actions i,
+#forien-quest-log nav.tabs .item, .window-app.forien-quest-preview nav.tabs .item,
+#forien-quest-log .actions i, .window-app.forien-quest-preview .actions i  {
+	color: 	var(--s2d6-default-color) !important;
+}
+#forien-quest-log .actions i.fa-trash, .window-app.forien-quest-preview .actions i.fa-trash {
+    color: #f009 !important;
+}
+
+#forien-quest-log h2, .window-app.forien-quest-preview h2 {
+  border-bottom: 1px solid var(--color-underline-header);
+}
+
+
+/******* Token Action HUD ********/
+.tah-groups {
+  flex-direction: row;
+}
+
+/****** Theater Inserts *********/
+.theatre-control-group {
+    flex: 0 0 auto;
+    height: auto;
+    display: flex;
+}
+
+.theatre-narrator-content, .theatre-control-group, .theatre-control-nav-bar, .theatre-narrator-backdrop, .no-scrollbar {
+  --color-scrollbar: transparent;
+  --color-scrollbar-track: transparent;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: none;
+}

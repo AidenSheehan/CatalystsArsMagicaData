@@ -1,0 +1,11 @@
+<div class="active_scene_actor combatant scene_actor_listener" data-combatant-id="{{combatant.id}}">
+  <div class="active_scene_actor_avatar" style="background-image: url('{{combatant.actor.img}}');">
+    {{#if mustRollInitiative}}
+    <div class="avatar_overlay roll_initiative" data-combatant-id="{{combatant.id}}" data-control="rollInitiative">
+      <i class="fas fa-dice"></i>
+      <div class="attack_txt">Initiative würfeln</div>
+    </div>
+    {{/if}}
+  </div>
+</div>
+

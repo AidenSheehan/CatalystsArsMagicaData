@@ -1,0 +1,123 @@
+{
+  "m3": {
+    "headerBtn": {
+      "addSaved": "Favorite",
+      "removeSaved": "Unfavorite"
+    },
+    "presetpicker": {
+      "title": "Masterworks Preset Picker" 
+    },
+    "workshop":{
+      "help": "Help",
+      "zoomMost": "Most",
+      "zoomLeast": "Least",
+      "zoomLevel": "Similarity",
+      "search": "Search",
+      "searchConfig": "Toggle Search Configuration Display (right-click to pin)",
+      "randomSearch": "Random Sample",
+      "savedImgs": "Favorites",
+      "title": "Melvin's Workshop",
+      "addSaved": "Add Selected to Favorites",
+      "removeSaved": "Remove Selected from Favorites",
+      "importSaved": "Import Favorites to Current Directory",
+      "importTokens": "Save Laminations to Current Directory",
+      "openWorkshop": "Browse from Melvin's Workshop",
+      "topPicks": "Popular",
+      "fullSet": "Default",
+      "prefix": "Prefix",
+      "suffix": "Suffix",
+      "root": "(root)",
+      "importPath": "Import Path",
+      "plug": "Thank you for visiting Melvin's Mechanical Masterworks. Artoe is hard at work bringing you the best assets for your tabletop game. Please consider supporting us at the Patreon link below to further development and bring new features to the Workshop.",
+      "plugSig": "~Melvin",
+      "resultSize": "Result Size",
+      "gridSize": "Grid Size",
+      "displayConfig": "Display",
+      "connect": "Start Session",
+      "openLaminator": "Artoe's Laminator",
+      "tools": "Tools",
+      "savedTokens": "Tokens",
+      "offlineMode": "Offline Mode",
+      "deleteTokens": {
+        "confirm": {
+          "title": "Remove Saved Tokens?",
+          "content": "<p>This operation will <strong>remove all saved tokens</strong> from the Workshop. Continue?</p>"
+        },
+        "hint": "Remove all tokens"
+      },
+      "tokenize": "Laminate selection as base (right-click for overlay)",
+      "crop": "Crop selected image",
+      "laminator": {
+        "crop": "Cropping mode (single image)",
+        "merge": "Overlay mode (dual images)"
+      }
+    },
+    "laminator": {
+      "title": "Artoe's Laminator",
+      "saveToken": {
+        "title": "Save",
+        "hint": "Store in Workshop for batch download"
+      },
+      "toggle": {
+        "left": "Apply to Left Canvas",
+        "right": "Apply to Right Canvas",
+        "mode": "Crop Canvas",
+        "modeHint": "Switch between \"crop\" and \"pad\"",
+        "source": "Source",
+        "sourceHint": "Pick new image for workspace",
+        "shape": "Crop Shape",
+        "shapeHint": "Changing shape will reset working canvas(es)",
+        "circle": "Switch cropping shape to a circle",
+        "square": "Switch cropping shape to a square"
+      },
+      "orientation": {
+        "mirror": {
+          "vert": "Flip cropped image vertically",
+          "hor": "Flip cropped image horizontally"
+        },
+        "rotateHint": "Rotate image clockwise"
+      },
+      "preview": {
+        "title": "Laminator Result Preview: {size}px"
+      },
+      "source": {
+        "browse": "Browse...",
+        "workshop": "From Workshop",
+        "preset": {
+          "borders": "Stock Borders"
+        },
+        "preview": "Use Preview",
+        "reset": "Reset Workspace",
+        "swap": "Swap Canvases"
+      },
+      "config": {
+        "resolution": "Set output resolution",
+        "preview": "Preview result",
+        "original": "Original"
+      }
+    },
+    "error": {
+      "fpDisconnect": "(Disconnected from FilePicker)",
+      "fpNoUpload": "(Cannot Upload to Target Folder)",
+      "fpNoAccess": "Cannot access '{path}'. Ensure path is valid and not hidden.",
+      
+      "laminator": {
+        "dragdrop": "Error occured when loading dropped image. It may be an unsupported format.",
+        "noWorkshop": "No selected image in Workshop or Workshop is disconnected from server",
+        "openOnClose": "Please close all Laminator applications opened from this application before closing."
+      }
+    },
+    "category": {
+      "all": "All Category",
+      "portraits": "Portrait",
+      "monsters": "Creature",
+      "scenes": "Scene",
+      "tokenrings": "Token Border",
+      "magicitems": "Magic Item"
+    },
+    "tags": {
+      "scifi": "Sci-Fi",
+      "fantasy": "Fantasy"
+    }
+  }
+}

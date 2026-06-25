@@ -1,0 +1,45 @@
+{
+    "id": "mels-masterworks",
+    "name": "mels-masterworks",
+    "title": "Melvin's Mechanical Masterworks",
+    "description": "Your one-stop shop for tabletop assets.",
+    "version": "2.4.0",
+    "author": "",
+    "authors": [
+        {
+            "name": "Matthew Haentschke",
+            "url": "https://ko-fi.com/badgerwerks"
+        },
+        {
+            "name": "Charles West",
+            "url": ""
+        },
+        {
+            "name": "Reid Sanders",
+            "url": "https://reidsanders.net/"
+        }
+    ],
+    "esmodules": [
+        "scripts/module.mjs"
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
+    ],
+    "styles": [
+        "styles/m3.css",
+        "scripts/module.css"
+    ],
+    "socket": false,
+    "url": "https://www.patreon.com/melvinsmechanicalmasterworks",
+    "manifest": "https://storage.googleapis.com/download/storage/v1/b/dist-mels-masterworks/o/module.json?alt=media",
+    "download": "https://storage.googleapis.com/download/storage/v1/b/dist-mels-masterworks/o/m3-2.4.0.zip?alt=media",
+    "minimumCoreVersion": "9",
+    "compatibility": {
+        "minimum": "9",
+        "verified": "10"
+    }
+}

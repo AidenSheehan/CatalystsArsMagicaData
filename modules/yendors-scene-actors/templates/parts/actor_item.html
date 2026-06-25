@@ -1,0 +1,20 @@
+<div class="actor_item" draggable="true" data-actor-id="{{actor.id}}">
+    <div class="actor_avatar selector_avatar" data-id="{{actor.id}}" style="background-image: url('{{actor.img}}')"></div>
+    <div class="actor_name toggle_name" data-tooltip="{{localize 'Canvas.tooltipClickNameLabel'}}" data-actor-id="{{actor.id}}">{{actor.name}}{{#unless actor.isNameRevealed}}<i class="fa fa-eye-slash" data-tooltip="{{localize 'Canvas.tooltipNameIsHidden'}}"></i>{{/unless}}</div>
+    <div class="actor_action_icon item_sheet" data-id="{{actor.id}}" data-tooltip="{{#if showTooltips}}{{localize 'Selector.openSheet'}}{{/if}}">
+        <i class="fas fa-scroll"></i>
+    </div>
+    <div class="actor_action_icon item_remove" data-id="{{actor.id}}" data-tooltip="{{#if showTooltips}}{{localize 'Selector.removeActor'}}{{/if}}">
+        <i class="fas fa-delete-right"></i>
+    </div>
+    <div class="actor_action_icon item_show{{#if actor.showOnScene}} active{{/if}}" data-id="{{actor.id}}" data-value="{{actor.showOnScene}}" data-tooltip="{{#if showTooltips}}{{localize 'Selector.showActor'}}{{/if}}">
+        {{#if actor.fullAvatar}}
+        <i class="far fa-image-portrait"></i>
+        {{else}}
+        <i class="fas fa-image-portrait"></i>
+        {{/if}}
+    </div>
+    <div class="actor_action_icon item_focus{{#if actor.isOnFocus}} active{{/if}}" data-id="{{actor.id}}" data-tooltip="{{#if showTooltips}}{{localize 'Selector.focusActor'}}{{/if}}">
+        <i class="far fa-users-viewfinder"></i>
+    </div>
+</div>

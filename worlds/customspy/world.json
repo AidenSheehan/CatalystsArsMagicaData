@@ -1,0 +1,14 @@
+{
+  "title": "CustomSpy",
+  "id": "customspy",
+  "system": "custom-system-builder",
+  "coreVersion": "13.351",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "systemVersion": "5.0.2",
+  "lastPlayed": "Sat Nov 29 2025 16:17:52 GMT+0100 (közép-európai téli idő)",
+  "description": "",
+  "flags": {}
+}

@@ -1,0 +1,10 @@
+<div class="health_bar_container">
+    <div class="health_bar in_pain_{{actor.system.condition.inpain}}" data-tooltip="{{actor.system.status.wounds.value}}/{{actor.system.status.wounds.max}} LeP{{#if actor.system.condition.inpain}}, Schmerz {{actor.system.condition.inpain}}{{/if}}">
+        <div class="health_track" style="--current: {{actor.system.status.wounds.value}}; --max: {{actor.system.status.wounds.max}}"></div>
+        {{#if combatantId}}
+        <div class="defeated_toggle" data-tooltip="Als besiegt markieren" data-combatant-id="{{combatantId}}">
+            <i class="fas fa-skull"></i>
+        </div>
+        {{/if}}
+    </div>
+</div>

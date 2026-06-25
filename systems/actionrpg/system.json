@@ -1,0 +1,6 @@
+﻿{
+  "id": "actionrpg",
+  "version": "1.0.0",
+  "title": "Action RPG",
+  "description": "A minimalist game system which provides configurable Actor and Item templates to support free-form system agnostic game-play."
+}
