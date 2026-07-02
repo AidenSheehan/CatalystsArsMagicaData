@@ -1,5 +1,1 @@
-2026/07/02-18:41:01.567 6b58 Log #63: 0 ops saved to Table #64 OK
-2026/07/02-18:41:01.569 6b58 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\macros/000063.log: OK
-2026/07/02-18:41:01.572 6b58 Table #5: 12 entries OK
-2026/07/02-18:41:01.575 6b58 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\macros/MANIFEST-000062: OK
-2026/07/02-18:41:01.579 6b58 **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\macros; recovered 1 files; 6080 bytes. Some data may have been lost. ****
+2026/07/02-18:41:01.590 6b58 Delete type=3 #1

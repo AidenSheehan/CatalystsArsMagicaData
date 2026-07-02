@@ -1,5 +1,1 @@
-2026/07/02-18:41:02.174 6b58 Log #67: 0 ops saved to Table #68 OK
-2026/07/02-18:41:02.175 6b58 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\boons/000067.log: OK
-2026/07/02-18:41:02.178 6b58 Table #5: 106 entries OK
-2026/07/02-18:41:02.180 6b58 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\boons/MANIFEST-000066: OK
-2026/07/02-18:41:02.184 6b58 **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\boons; recovered 1 files; 63874 bytes. Some data may have been lost. ****
+2026/07/02-18:41:02.194 6b58 Delete type=3 #1

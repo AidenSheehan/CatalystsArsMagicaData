@@ -1,4 +1,1 @@
-2026/07/02-18:40:59.984 5c90 Log #63: 0 ops saved to Table #64 OK
-2026/07/02-18:40:59.985 5c90 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/effects/000063.log: OK
-2026/07/02-18:40:59.987 5c90 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/effects/MANIFEST-000062: OK
-2026/07/02-18:40:59.991 5c90 **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/effects; recovered 0 files; 0 bytes. Some data may have been lost. ****
+2026/07/02-18:41:00.008 5c90 Delete type=3 #1

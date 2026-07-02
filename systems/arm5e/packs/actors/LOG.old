@@ -1,5 +1,1 @@
-2026/07/02-18:41:01.467 5c90 Log #63: 0 ops saved to Table #64 OK
-2026/07/02-18:41:01.468 5c90 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\actors/000063.log: OK
-2026/07/02-18:41:01.474 5c90 Table #5: 1606 entries OK
-2026/07/02-18:41:01.477 5c90 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\actors/MANIFEST-000062: OK
-2026/07/02-18:41:01.481 5c90 **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\actors; recovered 1 files; 392982 bytes. Some data may have been lost. ****
+2026/07/02-18:41:01.493 5c90 Delete type=3 #1

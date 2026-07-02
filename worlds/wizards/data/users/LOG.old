@@ -1,6 +1,1 @@
-2026/07/02-18:41:01.147 6b58 Log #138: 13 ops saved to Table #139 OK
-2026/07/02-18:41:01.148 6b58 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/users/000138.log: OK
-2026/07/02-18:41:01.160 6b58 Table #136: 6 entries OK
-2026/07/02-18:41:01.160 6b58 Table #139: 13 entries OK
-2026/07/02-18:41:01.162 6b58 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/users/MANIFEST-000137: OK
-2026/07/02-18:41:01.167 6b58 **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/users; recovered 2 files; 6141 bytes. Some data may have been lost. ****
+2026/07/02-18:41:01.176 6b58 Delete type=3 #1

@@ -1,6 +1,5 @@
-2026/07/02-18:41:00.118 36ec Log #327: 1437 ops saved to Table #330 OK
-2026/07/02-18:41:00.119 36ec Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors/000327.log: OK
-2026/07/02-18:41:00.128 36ec Table #329: 1794 entries OK
-2026/07/02-18:41:00.132 36ec Table #330: 1437 entries OK
-2026/07/02-18:41:00.134 36ec Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors/MANIFEST-000323: OK
-2026/07/02-18:41:00.139 36ec **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors; recovered 2 files; 2682231 bytes. Some data may have been lost. ****
+2026/07/02-18:41:00.150 36ec Delete type=3 #1
+2026/07/02-18:41:01.200 4e0c Compacting 2@0 + 0@1 files
+2026/07/02-18:41:01.240 4e0c Generated table #333@0: 1805 keys, 1504957 bytes
+2026/07/02-18:41:01.240 4e0c Compacted 2@0 + 0@1 files => 1504957 bytes
+2026/07/02-18:41:01.241 4e0c compacted to: files[ 0 1 0 0 0 0 0 ]

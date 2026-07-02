@@ -1,5 +1,22 @@
-2026/07/02-18:41:00.150 36ec Delete type=3 #1
-2026/07/02-18:41:01.200 4e0c Compacting 2@0 + 0@1 files
-2026/07/02-18:41:01.240 4e0c Generated table #333@0: 1805 keys, 1504957 bytes
-2026/07/02-18:41:01.240 4e0c Compacted 2@0 + 0@1 files => 1504957 bytes
-2026/07/02-18:41:01.241 4e0c compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/07/02-18:07:59.997 b35c Recovering log #332
+2026/07/02-18:07:59.997 b35c Level-0 table #335: started
+2026/07/02-18:08:00.002 b35c Level-0 table #335: 123544 bytes OK
+2026/07/02-18:08:00.013 b35c Delete type=2 #329
+2026/07/02-18:08:00.013 b35c Delete type=2 #330
+2026/07/02-18:08:00.014 b35c Delete type=0 #332
+2026/07/02-18:08:00.014 b35c Delete type=3 #331
+2026/07/02-18:08:00.285 8be8 Compacting 1@0 + 1@1 files
+2026/07/02-18:08:00.314 8be8 Generated table #337@0: 1812 keys, 1517548 bytes
+2026/07/02-18:08:00.314 8be8 Compacted 1@0 + 1@1 files => 1517548 bytes
+2026/07/02-18:08:00.317 8be8 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/07/02-19:56:33.622 8be8 Level-0 table #339: started
+2026/07/02-19:56:33.702 8be8 Level-0 table #339: 1446734 bytes OK
+2026/07/02-19:56:33.708 8be8 Delete type=2 #333
+2026/07/02-19:56:33.710 8be8 Delete type=2 #335
+2026/07/02-19:56:33.712 8be8 Delete type=0 #336
+2026/07/02-20:39:28.432 8be8 Compacting 1@0 + 1@1 files
+2026/07/02-20:39:28.569 8be8 Generated table #340@0: 1831 keys, 1531129 bytes
+2026/07/02-20:39:28.569 8be8 Compacted 1@0 + 1@1 files => 1531129 bytes
+2026/07/02-20:39:28.572 8be8 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/07/02-20:39:28.573 8be8 Delete type=2 #337
+2026/07/02-20:39:28.576 8be8 Delete type=2 #339

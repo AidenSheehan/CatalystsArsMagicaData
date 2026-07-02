@@ -1,5 +1,1 @@
-2026/07/02-18:41:01.790 5c90 Log #68: 0 ops saved to Table #69 OK
-2026/07/02-18:41:01.792 5c90 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\npcs/000068.log: OK
-2026/07/02-18:41:01.798 5c90 Table #10: 287 entries OK
-2026/07/02-18:41:01.803 5c90 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\npcs/MANIFEST-000067: OK
-2026/07/02-18:41:01.807 5c90 **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\npcs; recovered 1 files; 249728 bytes. Some data may have been lost. ****
+2026/07/02-18:41:01.817 5c90 Delete type=3 #1

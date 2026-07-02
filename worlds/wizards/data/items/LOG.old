@@ -1,5 +1,1 @@
-2026/07/02-18:41:00.678 5c90 Log #135: 0 ops saved to Table #136 OK
-2026/07/02-18:41:00.680 5c90 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/items/000135.log: OK
-2026/07/02-18:41:00.684 5c90 Table #133: 12 entries OK
-2026/07/02-18:41:00.688 5c90 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/items/MANIFEST-000134: OK
-2026/07/02-18:41:00.692 5c90 **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/items; recovered 1 files; 13799 bytes. Some data may have been lost. ****
+2026/07/02-18:41:00.709 5c90 Delete type=3 #1

@@ -1,5 +1,1 @@
-2026/07/02-18:41:00.931 3be4 Log #128: 0 ops saved to Table #129 OK
-2026/07/02-18:41:00.932 3be4 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/tables/000128.log: OK
-2026/07/02-18:41:00.940 3be4 Table #70: 1 entries OK
-2026/07/02-18:41:00.943 3be4 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/tables/MANIFEST-000127: OK
-2026/07/02-18:41:00.947 3be4 **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/tables; recovered 1 files; 674 bytes. Some data may have been lost. ****
+2026/07/02-18:41:00.958 3be4 Delete type=3 #1

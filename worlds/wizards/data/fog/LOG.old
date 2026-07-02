@@ -1,5 +1,1 @@
-2026/07/02-18:41:00.540 5c90 Log #134: 0 ops saved to Table #135 OK
-2026/07/02-18:41:00.541 5c90 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/fog/000134.log: OK
-2026/07/02-18:41:00.558 5c90 Table #132: 10 entries OK
-2026/07/02-18:41:00.562 5c90 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/fog/MANIFEST-000133: OK
-2026/07/02-18:41:00.568 5c90 **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/fog; recovered 1 files; 236336 bytes. Some data may have been lost. ****
+2026/07/02-18:41:00.592 5c90 Delete type=3 #1

@@ -1,4 +1,1 @@
-2026/07/02-18:41:00.900 6b58 Log #125: 0 ops saved to Table #126 OK
-2026/07/02-18:41:00.902 6b58 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/playlists/000125.log: OK
-2026/07/02-18:41:00.904 6b58 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/playlists/MANIFEST-000124: OK
-2026/07/02-18:41:00.908 6b58 **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/playlists; recovered 0 files; 0 bytes. Some data may have been lost. ****
+2026/07/02-18:41:00.918 6b58 Delete type=3 #1

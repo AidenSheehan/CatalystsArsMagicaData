@@ -1,5 +1,1 @@
-2026/07/02-18:41:01.521 3be4 Log #64: 0 ops saved to Table #65 OK
-2026/07/02-18:41:01.522 3be4 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\scenes/000064.log: OK
-2026/07/02-18:41:01.533 3be4 Table #62: 2 entries OK
-2026/07/02-18:41:01.536 3be4 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\scenes/MANIFEST-000063: OK
-2026/07/02-18:41:01.539 3be4 **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\scenes; recovered 1 files; 1562 bytes. Some data may have been lost. ****
+2026/07/02-18:41:01.551 3be4 Delete type=3 #1

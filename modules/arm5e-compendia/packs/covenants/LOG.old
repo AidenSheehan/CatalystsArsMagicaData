@@ -1,5 +1,1 @@
-2026/07/02-18:41:01.831 36ec Log #68: 0 ops saved to Table #69 OK
-2026/07/02-18:41:01.832 36ec Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\covenants/000068.log: OK
-2026/07/02-18:41:01.842 36ec Table #10: 5 entries OK
-2026/07/02-18:41:01.845 36ec Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\covenants/MANIFEST-000067: OK
-2026/07/02-18:41:01.849 36ec **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\covenants; recovered 1 files; 3310 bytes. Some data may have been lost. ****
+2026/07/02-18:41:01.859 36ec Delete type=3 #1

@@ -1,6 +1,1 @@
-2026/07/02-18:41:00.493 36ec Log #148: 287 ops saved to Table #149 OK
-2026/07/02-18:41:00.494 36ec Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/combats/000148.log: OK
-2026/07/02-18:41:00.503 36ec Table #146: 9 entries OK
-2026/07/02-18:41:00.504 36ec Table #149: 287 entries OK
-2026/07/02-18:41:00.506 36ec Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/combats/MANIFEST-000147: OK
-2026/07/02-18:41:00.508 36ec **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/combats; recovered 2 files; 26249 bytes. Some data may have been lost. ****
+2026/07/02-18:41:00.519 36ec Delete type=3 #1
