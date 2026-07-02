@@ -1,8 +1,5 @@
-2026/06/25-18:48:40.096 9ce8 Recovering log #61
-2026/06/25-18:48:40.110 9ce8 Delete type=0 #61
-2026/06/25-18:48:40.110 9ce8 Delete type=3 #60
-2026/06/25-18:48:49.865 5484 Level-0 table #65: started
-2026/06/25-18:48:49.865 5484 Level-0 table #65: 0 bytes OK
-2026/06/25-18:48:49.867 5484 Delete type=0 #63
-2026/06/25-18:48:49.881 5484 Manual compaction at level-0 from '!folders!1YMZoBULfx2GNHSx' @ 72057594037927935 : 1 .. '!journal.pages!zyAn85M0b37Ho2hE.ndqRoWkY6UORUMuB' @ 0 : 0; will stop at (end)
-2026/06/25-18:48:49.881 5484 Manual compaction at level-1 from '!folders!1YMZoBULfx2GNHSx' @ 72057594037927935 : 1 .. '!journal.pages!zyAn85M0b37Ho2hE.ndqRoWkY6UORUMuB' @ 0 : 0; will stop at (end)
+2026/07/02-18:41:01.912 36ec Log #67: 0 ops saved to Table #68 OK
+2026/07/02-18:41:01.913 36ec Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\journals/000067.log: OK
+2026/07/02-18:41:01.918 36ec Table #5: 84 entries OK
+2026/07/02-18:41:01.920 36ec Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\journals/MANIFEST-000066: OK
+2026/07/02-18:41:01.924 36ec **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\journals; recovered 1 files; 232392 bytes. Some data may have been lost. ****

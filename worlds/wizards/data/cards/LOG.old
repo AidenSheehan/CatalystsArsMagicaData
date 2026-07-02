@@ -1,7 +1,5 @@
-2026/06/25-18:48:39.253 9ce8 Recovering log #122
-2026/06/25-18:48:39.262 9ce8 Delete type=0 #122
-2026/06/25-18:48:39.262 9ce8 Delete type=3 #121
-2026/06/25-18:48:49.938 5484 Level-0 table #126: started
-2026/06/25-18:48:49.938 5484 Level-0 table #126: 0 bytes OK
-2026/06/25-18:48:49.946 5484 Delete type=0 #124
-2026/06/25-18:48:49.966 5484 Manual compaction at level-0 from '!cards!bJaBNDCBEPMtVK6w' @ 72057594037927935 : 1 .. '!cards.cards!bJaBNDCBEPMtVK6w.ds3ElcVuX2B20SiG' @ 0 : 0; will stop at (end)
+2026/07/02-18:41:00.199 36ec Log #128: 0 ops saved to Table #129 OK
+2026/07/02-18:41:00.200 36ec Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/cards/000128.log: OK
+2026/07/02-18:41:00.209 36ec Table #70: 2 entries OK
+2026/07/02-18:41:00.212 36ec Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/cards/MANIFEST-000127: OK
+2026/07/02-18:41:00.216 36ec **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/cards; recovered 1 files; 803 bytes. Some data may have been lost. ****

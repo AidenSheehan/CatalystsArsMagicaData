@@ -1,7 +1,5 @@
-2026/06/25-18:48:39.326 3af0 Recovering log #135
-2026/06/25-18:48:39.339 3af0 Delete type=0 #135
-2026/06/25-18:48:39.339 3af0 Delete type=3 #134
-2026/06/25-18:48:49.986 5484 Level-0 table #139: started
-2026/06/25-18:48:49.986 5484 Level-0 table #139: 0 bytes OK
-2026/06/25-18:48:49.996 5484 Delete type=0 #137
-2026/06/25-18:48:50.041 5484 Manual compaction at level-0 from '!folders!0d1oFsKPAfVCOQZD' @ 72057594037927935 : 1 .. '!folders!zOMgMcToSaZMJq7z' @ 0 : 0; will stop at (end)
+2026/07/02-18:41:00.619 6b58 Log #141: 0 ops saved to Table #142 OK
+2026/07/02-18:41:00.620 6b58 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/folders/000141.log: OK
+2026/07/02-18:41:00.624 6b58 Table #131: 33 entries OK
+2026/07/02-18:41:00.627 6b58 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/folders/MANIFEST-000140: OK
+2026/07/02-18:41:00.631 6b58 **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/folders; recovered 1 files; 4499 bytes. Some data may have been lost. ****

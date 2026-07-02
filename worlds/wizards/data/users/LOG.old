@@ -1,16 +1,6 @@
-2026/06/25-18:48:39.496 3af0 Recovering log #131
-2026/06/25-18:48:39.507 3af0 Delete type=0 #131
-2026/06/25-18:48:39.507 3af0 Delete type=3 #130
-2026/06/25-18:48:50.126 5484 Level-0 table #135: started
-2026/06/25-18:48:50.126 5484 Level-0 table #135: 0 bytes OK
-2026/06/25-18:48:50.126 5484 Delete type=0 #133
-2026/06/25-18:48:50.151 5484 Manual compaction at level-0 from '!users!JVXEtDTuZXIpcrTq' @ 72057594037927935 : 1 .. '!users!lzmy5CSGN6ZR6OuE' @ 0 : 0; will stop at '!users!lzmy5CSGN6ZR6OuE' @ 39 : 1
-2026/06/25-18:48:50.151 5484 Compacting 3@0 + 1@1 files
-2026/06/25-18:48:50.161 5484 Generated table #136@0: 6 keys, 2727 bytes
-2026/06/25-18:48:50.161 5484 Compacted 3@0 + 1@1 files => 2727 bytes
-2026/06/25-18:48:50.166 5484 compacted to: files[ 0 1 0 0 0 0 0 ]
-2026/06/25-18:48:50.166 5484 Delete type=2 #76
-2026/06/25-18:48:50.166 5484 Delete type=2 #106
-2026/06/25-18:48:50.166 5484 Delete type=2 #111
-2026/06/25-18:48:50.166 5484 Delete type=2 #124
-2026/06/25-18:48:50.187 5484 Manual compaction at level-0 from '!users!lzmy5CSGN6ZR6OuE' @ 39 : 1 .. '!users!lzmy5CSGN6ZR6OuE' @ 0 : 0; will stop at (end)
+2026/07/02-18:41:01.147 6b58 Log #138: 13 ops saved to Table #139 OK
+2026/07/02-18:41:01.148 6b58 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/users/000138.log: OK
+2026/07/02-18:41:01.160 6b58 Table #136: 6 entries OK
+2026/07/02-18:41:01.160 6b58 Table #139: 13 entries OK
+2026/07/02-18:41:01.162 6b58 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/users/MANIFEST-000137: OK
+2026/07/02-18:41:01.167 6b58 **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/users; recovered 2 files; 6141 bytes. Some data may have been lost. ****

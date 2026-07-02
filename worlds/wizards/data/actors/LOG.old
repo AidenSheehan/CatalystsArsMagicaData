@@ -1,10 +1,6 @@
-2026/06/25-18:48:39.206 3af0 Recovering log #317
-2026/06/25-18:48:39.216 3af0 Delete type=2 #312
-2026/06/25-18:48:39.227 3af0 Delete type=2 #314
-2026/06/25-18:48:39.227 3af0 Delete type=2 #316
-2026/06/25-18:48:39.227 3af0 Delete type=0 #317
-2026/06/25-18:48:39.227 3af0 Delete type=3 #315
-2026/06/25-18:48:49.960 5484 Level-0 table #322: started
-2026/06/25-18:48:49.960 5484 Level-0 table #322: 0 bytes OK
-2026/06/25-18:48:49.966 5484 Delete type=0 #320
-2026/06/25-18:48:49.966 5484 Manual compaction at level-0 from '!actors!0fyZ3oJnssQ6r09B' @ 72057594037927935 : 1 .. '!actors.items.effects!zn1Ijo5VkRBmGtWv.fLBFw8x3jxhNuypP.X6B4YrvuSkRKZ2Mi' @ 0 : 0; will stop at (end)
+2026/07/02-18:41:00.118 36ec Log #327: 1437 ops saved to Table #330 OK
+2026/07/02-18:41:00.119 36ec Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors/000327.log: OK
+2026/07/02-18:41:00.128 36ec Table #329: 1794 entries OK
+2026/07/02-18:41:00.132 36ec Table #330: 1437 entries OK
+2026/07/02-18:41:00.134 36ec Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors/MANIFEST-000323: OK
+2026/07/02-18:41:00.139 36ec **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors; recovered 2 files; 2682231 bytes. Some data may have been lost. ****

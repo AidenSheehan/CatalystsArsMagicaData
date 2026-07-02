@@ -1,7 +1,4 @@
-2026/06/25-18:48:39.889 8d64 Recovering log #57
-2026/06/25-18:48:39.906 8d64 Delete type=0 #57
-2026/06/25-18:48:39.908 8d64 Delete type=3 #56
-2026/06/25-18:48:49.793 5484 Level-0 table #61: started
-2026/06/25-18:48:49.793 5484 Level-0 table #61: 0 bytes OK
-2026/06/25-18:48:49.798 5484 Delete type=0 #59
-2026/06/25-18:48:49.812 5484 Manual compaction at level-0 from 'undefined' @ 72057594037927935 : 1 .. 'undefined' @ 0 : 0; will stop at (end)
+2026/07/02-18:41:01.599 5c90 Log #63: 0 ops saved to Table #64 OK
+2026/07/02-18:41:01.600 5c90 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\journals/000063.log: OK
+2026/07/02-18:41:01.604 5c90 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\journals/MANIFEST-000062: OK
+2026/07/02-18:41:01.607 5c90 **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\journals; recovered 0 files; 0 bytes. Some data may have been lost. ****
