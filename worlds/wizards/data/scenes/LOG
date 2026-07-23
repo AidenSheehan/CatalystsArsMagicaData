@@ -1,13 +1,23 @@
-2026/07/02-18:08:00.229 78f0 Recovering log #213
-2026/07/02-18:08:00.229 78f0 Level-0 table #216: started
-2026/07/02-18:08:00.232 78f0 Level-0 table #216: 8036 bytes OK
-2026/07/02-18:08:00.241 78f0 Delete type=2 #208
-2026/07/02-18:08:00.241 78f0 Delete type=2 #211
-2026/07/02-18:08:00.241 78f0 Delete type=0 #213
-2026/07/02-18:08:00.241 78f0 Delete type=3 #212
-2026/07/02-18:08:00.405 8be8 Compacting 1@0 + 1@1 files
-2026/07/02-18:08:00.413 8be8 Generated table #218@0: 460 keys, 169051 bytes
-2026/07/02-18:08:00.413 8be8 Compacted 1@0 + 1@1 files => 169051 bytes
-2026/07/02-18:08:00.415 8be8 compacted to: files[ 0 1 0 0 0 0 0 ]
-2026/07/02-18:08:00.416 8be8 Delete type=2 #214
-2026/07/02-18:08:00.416 8be8 Delete type=2 #216
+2026/07/23-19:25:32.448 105c Recovering log #225
+2026/07/23-19:25:32.450 105c Level-0 table #227: started
+2026/07/23-19:25:32.454 105c Level-0 table #227: 22485 bytes OK
+2026/07/23-19:25:32.468 105c Delete type=0 #225
+2026/07/23-19:25:32.470 105c Delete type=3 #223
+2026/07/23-19:25:32.779 54ec Compacting 2@0 + 1@1 files
+2026/07/23-19:25:32.797 54ec Generated table #229@0: 482 keys, 184860 bytes
+2026/07/23-19:25:32.797 54ec Compacted 2@0 + 1@1 files => 184860 bytes
+2026/07/23-19:25:32.798 54ec compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/07/23-23:04:03.798 54ec Level-0 table #231: started
+2026/07/23-23:04:03.827 54ec Level-0 table #231: 523824 bytes OK
+2026/07/23-23:04:03.831 54ec Delete type=2 #222
+2026/07/23-23:04:03.833 54ec Delete type=2 #224
+2026/07/23-23:04:03.833 54ec Delete type=2 #227
+2026/07/23-23:04:03.835 54ec Delete type=0 #228
+2026/07/23-23:04:03.865 54ec Manual compaction at level-0 from '!scenes!01xP0fs1kdqUNTm5' @ 72057594037927935 : 1 .. '!scenes.tokens.delta.items!r5V5wSObABFM1L3v.HvAeyhbNWunVylvE.HvAeyhbNWunVylvE.9zvWparFHJU3VNnH' @ 0 : 0; will stop at '!scenes.tokens.delta.items!r5V5wSObABFM1L3v.ahZw7v1Oro2dvjE2.ahZw7v1Oro2dvjE2.rnaGJwBzEttT2utk' @ 32930 : 1
+2026/07/23-23:04:03.865 54ec Compacting 1@0 + 1@1 files
+2026/07/23-23:04:03.935 54ec Generated table #232@0: 478 keys, 168513 bytes
+2026/07/23-23:04:03.935 54ec Compacted 1@0 + 1@1 files => 168513 bytes
+2026/07/23-23:04:03.937 54ec compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/07/23-23:04:03.941 54ec Delete type=2 #229
+2026/07/23-23:04:03.945 54ec Delete type=2 #231
+2026/07/23-23:04:03.967 54ec Manual compaction at level-0 from '!scenes.tokens.delta.items!r5V5wSObABFM1L3v.ahZw7v1Oro2dvjE2.ahZw7v1Oro2dvjE2.rnaGJwBzEttT2utk' @ 32930 : 1 .. '!scenes.tokens.delta.items!r5V5wSObABFM1L3v.HvAeyhbNWunVylvE.HvAeyhbNWunVylvE.9zvWparFHJU3VNnH' @ 0 : 0; will stop at (end)

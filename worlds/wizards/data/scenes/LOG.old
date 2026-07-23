@@ -1,5 +1,7 @@
-2026/07/02-18:41:01.036 6b58 Delete type=3 #1
-2026/07/02-18:41:01.400 4e0c Compacting 2@0 + 0@1 files
-2026/07/02-18:41:01.409 4e0c Generated table #214@0: 458 keys, 170029 bytes
-2026/07/02-18:41:01.409 4e0c Compacted 2@0 + 0@1 files => 170029 bytes
-2026/07/02-18:41:01.410 4e0c compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/07/23-18:18:27.684 42dc Recovering log #221
+2026/07/23-18:18:27.684 42dc Level-0 table #224: started
+2026/07/23-18:18:27.697 42dc Level-0 table #224: 270 bytes OK
+2026/07/23-18:18:27.702 42dc Delete type=2 #218
+2026/07/23-18:18:27.702 42dc Delete type=2 #219
+2026/07/23-18:18:27.704 42dc Delete type=0 #221
+2026/07/23-18:18:27.705 42dc Delete type=3 #220

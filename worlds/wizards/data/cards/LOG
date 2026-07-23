@@ -1,3 +1,13 @@
-2026/07/02-18:08:00.036 537c Recovering log #131
-2026/07/02-18:08:00.050 537c Delete type=0 #131
-2026/07/02-18:08:00.051 537c Delete type=3 #130
+2026/07/23-19:25:32.221 4f30 Recovering log #138
+2026/07/23-19:25:32.228 4f30 Delete type=0 #138
+2026/07/23-19:25:32.228 4f30 Delete type=3 #137
+2026/07/23-23:04:02.954 54ec Level-0 table #142: started
+2026/07/23-23:04:02.955 54ec Level-0 table #142: 0 bytes OK
+2026/07/23-23:04:02.956 54ec Delete type=0 #140
+2026/07/23-23:04:02.963 54ec Manual compaction at level-0 from '!cards!bJaBNDCBEPMtVK6w' @ 72057594037927935 : 1 .. '!cards.cards!bJaBNDCBEPMtVK6w.ds3ElcVuX2B20SiG' @ 0 : 0; will stop at '!cards.cards!bJaBNDCBEPMtVK6w.ds3ElcVuX2B20SiG' @ 8 : 1
+2026/07/23-23:04:02.963 54ec Compacting 1@0 + 0@1 files
+2026/07/23-23:04:02.979 54ec Generated table #143@0: 2 keys, 803 bytes
+2026/07/23-23:04:02.979 54ec Compacted 1@0 + 0@1 files => 803 bytes
+2026/07/23-23:04:02.980 54ec compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/07/23-23:04:02.980 54ec Delete type=2 #70
+2026/07/23-23:04:03.018 54ec Manual compaction at level-0 from '!cards.cards!bJaBNDCBEPMtVK6w.ds3ElcVuX2B20SiG' @ 8 : 1 .. '!cards.cards!bJaBNDCBEPMtVK6w.ds3ElcVuX2B20SiG' @ 0 : 0; will stop at (end)

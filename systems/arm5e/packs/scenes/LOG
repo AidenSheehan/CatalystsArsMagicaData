@@ -1,3 +1,13 @@
-2026/07/02-18:08:00.462 2170 Recovering log #67
-2026/07/02-18:08:00.472 2170 Delete type=0 #67
-2026/07/02-18:08:00.473 2170 Delete type=3 #66
+2026/07/23-19:25:32.888 58dc Recovering log #74
+2026/07/23-19:25:32.901 58dc Delete type=0 #74
+2026/07/23-19:25:32.901 58dc Delete type=3 #73
+2026/07/23-23:04:02.382 54ec Level-0 table #78: started
+2026/07/23-23:04:02.383 54ec Level-0 table #78: 0 bytes OK
+2026/07/23-23:04:02.386 54ec Delete type=0 #76
+2026/07/23-23:04:02.397 54ec Manual compaction at level-0 from '!scenes!U4dSCFtNliilJnqa' @ 72057594037927935 : 1 .. '!scenes.levels!U4dSCFtNliilJnqa.defaultLevel0000' @ 0 : 0; will stop at '!scenes.levels!U4dSCFtNliilJnqa.defaultLevel0000' @ 4 : 1
+2026/07/23-23:04:02.397 54ec Compacting 1@0 + 0@1 files
+2026/07/23-23:04:02.421 54ec Generated table #79@0: 2 keys, 1562 bytes
+2026/07/23-23:04:02.421 54ec Compacted 1@0 + 0@1 files => 1562 bytes
+2026/07/23-23:04:02.422 54ec compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/07/23-23:04:02.423 54ec Delete type=2 #62
+2026/07/23-23:04:02.464 54ec Manual compaction at level-0 from '!scenes.levels!U4dSCFtNliilJnqa.defaultLevel0000' @ 4 : 1 .. '!scenes.levels!U4dSCFtNliilJnqa.defaultLevel0000' @ 0 : 0; will stop at (end)
