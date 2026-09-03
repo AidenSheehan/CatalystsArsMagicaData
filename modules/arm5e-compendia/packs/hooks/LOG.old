@@ -1,3 +1,5 @@
-2026/08/06-19:32:24.836 5ef8 Recovering log #86
-2026/08/06-19:32:24.841 5ef8 Delete type=0 #86
-2026/08/06-19:32:24.841 5ef8 Delete type=3 #85
+2026/09/03-18:45:30.935 6f30 Log #90: 0 ops saved to Table #91 OK
+2026/09/03-18:45:30.936 6f30 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\hooks/000090.log: OK
+2026/09/03-18:45:30.937 6f30 Table #82: 127 entries OK
+2026/09/03-18:45:30.941 6f30 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\hooks/MANIFEST-000089: OK
+2026/09/03-18:45:30.946 6f30 **** Repaired leveldb C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\hooks; recovered 1 files; 65750 bytes. Some data may have been lost. ****

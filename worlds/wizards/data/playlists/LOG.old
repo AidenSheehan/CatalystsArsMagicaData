@@ -1,3 +1,4 @@
-2026/08/06-19:32:23.603 2ab4 Recovering log #143
-2026/08/06-19:32:23.609 2ab4 Delete type=0 #143
-2026/08/06-19:32:23.609 2ab4 Delete type=3 #142
+2026/09/03-18:45:29.920 4470 Log #147: 0 ops saved to Table #148 OK
+2026/09/03-18:45:29.921 4470 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/playlists/000147.log: OK
+2026/09/03-18:45:29.925 4470 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/playlists/MANIFEST-000146: OK
+2026/09/03-18:45:29.930 4470 **** Repaired leveldb C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/playlists; recovered 0 files; 0 bytes. Some data may have been lost. ****

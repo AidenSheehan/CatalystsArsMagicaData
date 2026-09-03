@@ -1,3 +1,4 @@
-2026/08/06-19:32:22.860 1db4 Recovering log #81
-2026/08/06-19:32:22.865 1db4 Delete type=0 #81
-2026/08/06-19:32:22.865 1db4 Delete type=3 #80
+2026/09/03-18:45:29.547 9da8 Log #85: 0 ops saved to Table #86 OK
+2026/09/03-18:45:29.548 9da8 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/effects/000085.log: OK
+2026/09/03-18:45:29.554 9da8 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/effects/MANIFEST-000084: OK
+2026/09/03-18:45:29.563 9da8 **** Repaired leveldb C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/effects; recovered 0 files; 0 bytes. Some data may have been lost. ****

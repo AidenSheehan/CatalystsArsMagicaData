@@ -1,11 +1,7 @@
-2026/08/06-19:32:23.014 2ab4 Recovering log #196
-2026/08/06-19:32:23.020 2ab4 Delete type=0 #196
-2026/08/06-19:32:23.020 2ab4 Delete type=3 #194
-2026/08/06-20:58:30.349 5058 Compacting 1@0 + 2@1 files
-2026/08/06-20:58:30.788 5058 Generated table #199@0: 1090 keys, 2149675 bytes
-2026/08/06-20:58:30.849 5058 Generated table #200@0: 220 keys, 357739 bytes
-2026/08/06-20:58:30.849 5058 Compacted 1@0 + 2@1 files => 2507414 bytes
-2026/08/06-20:58:30.850 5058 compacted to: files[ 0 2 0 0 0 0 0 ]
-2026/08/06-20:58:30.851 5058 Delete type=2 #190
-2026/08/06-20:58:30.854 5058 Delete type=2 #191
-2026/08/06-20:58:30.856 5058 Delete type=2 #195
+2026/09/03-18:45:29.700 2e5c Log #203: 0 ops saved to Table #204 OK
+2026/09/03-18:45:29.701 2e5c Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/messages/000203.log: OK
+2026/09/03-18:45:29.708 2e5c Table #199: 1090 entries OK
+2026/09/03-18:45:29.710 2e5c Table #200: 220 entries OK
+2026/09/03-18:45:29.710 2e5c Table #202: 111 entries OK
+2026/09/03-18:45:29.716 2e5c Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/messages/MANIFEST-000201: OK
+2026/09/03-18:45:29.723 2e5c **** Repaired leveldb C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/messages; recovered 3 files; 2635941 bytes. Some data may have been lost. ****

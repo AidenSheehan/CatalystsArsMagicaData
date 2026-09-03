@@ -1,3 +1,5 @@
-2026/08/06-19:32:24.342 5ef8 Recovering log #82
-2026/08/06-19:32:24.346 5ef8 Delete type=0 #82
-2026/08/06-19:32:24.347 5ef8 Delete type=3 #81
+2026/09/03-18:45:30.450 2e5c Log #86: 0 ops saved to Table #87 OK
+2026/09/03-18:45:30.451 2e5c Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\rolltables/000086.log: OK
+2026/09/03-18:45:30.452 2e5c Table #78: 22 entries OK
+2026/09/03-18:45:30.457 2e5c Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\rolltables/MANIFEST-000085: OK
+2026/09/03-18:45:30.461 2e5c **** Repaired leveldb C:\Users\aiden\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\rolltables; recovered 1 files; 3306 bytes. Some data may have been lost. ****

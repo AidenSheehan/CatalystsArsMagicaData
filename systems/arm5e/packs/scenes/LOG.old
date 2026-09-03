@@ -1,3 +1,5 @@
-2026/08/06-19:32:24.237 2ab4 Recovering log #83
-2026/08/06-19:32:24.241 2ab4 Delete type=0 #83
-2026/08/06-19:32:24.242 2ab4 Delete type=3 #82
+2026/09/03-18:45:30.350 6f30 Log #87: 0 ops saved to Table #88 OK
+2026/09/03-18:45:30.351 6f30 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\scenes/000087.log: OK
+2026/09/03-18:45:30.353 6f30 Table #79: 2 entries OK
+2026/09/03-18:45:30.357 6f30 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\scenes/MANIFEST-000086: OK
+2026/09/03-18:45:30.363 6f30 **** Repaired leveldb C:\Users\aiden\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\scenes; recovered 1 files; 1562 bytes. Some data may have been lost. ****

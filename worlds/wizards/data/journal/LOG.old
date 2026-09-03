@@ -1,3 +1,5 @@
-2026/08/06-19:32:23.516 2ab4 Recovering log #153
-2026/08/06-19:32:23.522 2ab4 Delete type=0 #153
-2026/08/06-19:32:23.522 2ab4 Delete type=3 #152
+2026/09/03-18:45:29.867 2e5c Log #157: 0 ops saved to Table #158 OK
+2026/09/03-18:45:29.868 2e5c Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/journal/000157.log: OK
+2026/09/03-18:45:29.868 2e5c Table #149: 9 entries OK
+2026/09/03-18:45:29.873 2e5c Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/journal/MANIFEST-000156: OK
+2026/09/03-18:45:29.877 2e5c **** Repaired leveldb C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/journal; recovered 1 files; 2004 bytes. Some data may have been lost. ****

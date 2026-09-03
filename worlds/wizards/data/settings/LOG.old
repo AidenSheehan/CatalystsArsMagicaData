@@ -1,5 +1,9 @@
-2026/08/06-19:32:23.772 1db4 Recovering log #213
-2026/08/06-19:32:23.772 1db4 Level-0 table #215: started
-2026/08/06-19:32:23.786 1db4 Level-0 table #215: 1343 bytes OK
-2026/08/06-19:32:23.791 1db4 Delete type=0 #213
-2026/08/06-19:32:23.791 1db4 Delete type=3 #211
+2026/09/03-18:45:30.034 2e5c Log #219: 2 ops saved to Table #220 OK
+2026/09/03-18:45:30.034 2e5c Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/settings/000219.log: OK
+2026/09/03-18:45:30.035 2e5c Table #208: 49 entries OK
+2026/09/03-18:45:30.035 2e5c Table #212: 2 entries OK
+2026/09/03-18:45:30.035 2e5c Table #215: 3 entries OK
+2026/09/03-18:45:30.035 2e5c Table #218: 2 entries OK
+2026/09/03-18:45:30.035 2e5c Table #220: 2 entries OK
+2026/09/03-18:45:30.040 2e5c Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/settings/MANIFEST-000217: OK
+2026/09/03-18:45:30.045 2e5c **** Repaired leveldb C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/settings; recovered 5 files; 12330 bytes. Some data may have been lost. ****
