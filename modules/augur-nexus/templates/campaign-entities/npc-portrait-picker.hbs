@@ -1,0 +1,71 @@
+<div class="augur-nexus site-icon-picker npc-portrait-picker">
+    <div class="site-icon-picker-header">
+        <div class="site-icon-picker-role">Showing {{pickerLabel}} Portraits</div>
+    </div>
+
+    <div class="site-icon-tabs" role="tablist" aria-label="Portrait Source">
+        <button type="button" class="site-icon-tab {{#if (eq currentTab "built-in")}}active{{/if}}" data-portrait-tab="built-in" aria-pressed="{{#if (eq currentTab "built-in")}}true{{else}}false{{/if}}">Built-In</button>
+        <button type="button" class="site-icon-tab {{#if (eq currentTab "custom")}}active{{/if}}" data-portrait-tab="custom" aria-pressed="{{#if (eq currentTab "custom")}}true{{else}}false{{/if}}">Custom</button>
+    </div>
+
+    <div class="site-icon-picker-body">
+    {{#if (eq currentTab "built-in")}}
+    <div class="site-icon-grid npc-portrait-grid">
+        <button type="button" class="site-icon-card site-icon-card-custom-file npc-portrait-card" data-action="chooseCustomPortraitFile" aria-label="Choose custom portrait">
+            <div class="site-icon-visual npc-portrait-visual site-icon-custom-file-visual">
+                <i class="fas fa-file-image"></i>
+            </div>
+            <div class="site-icon-name">Custom Portrait</div>
+            <div class="site-icon-meta">Choose File</div>
+        </button>
+        {{#each portraits}}
+        <button type="button" class="site-icon-card npc-portrait-card {{#if (eq this.imageSrc ../currentPortraitSrc)}}active{{/if}}" data-portrait-id="{{this.id}}" data-portrait-src="{{this.imageSrc}}" aria-label="{{this.label}}">
+            <div class="site-icon-visual npc-portrait-visual"><img src="{{this.imageSrc}}" alt="{{this.label}}"></div>
+            {{#if this.meta}}
+            <div class="site-icon-meta">{{this.meta}}</div>
+            {{/if}}
+        </button>
+        {{/each}}
+    </div>
+    {{#unless portraits.length}}
+    <div class="site-icon-empty">No built-in portrait catalogs have been registered.</div>
+    {{/unless}}
+    {{else}}
+    <div class="site-icon-custom-toolbar">
+        <button type="button" class="site-entry-clear" data-action="chooseCustomPortraitFolder" title="Choose custom portrait folder"><i class="fas fa-folder-open"></i></button>
+        <div class="site-icon-custom-folder" title="{{currentCustomFolderPathLabel}}">{{#if hasCustomFolder}}{{currentCustomFolderPathLabel}}{{else}}No custom portrait folder selected{{/if}}</div>
+        {{#if customFolderCanGoUp}}
+        <button type="button" class="site-entry-clear" data-action="customFolderUp" data-custom-folder-parent-path="{{customFolderParentPath}}" title="Up one folder"><i class="fas fa-arrow-up"></i></button>
+        {{/if}}
+        {{#if hasCustomFolder}}
+        <button type="button" class="site-entry-clear" data-action="clearCustomPortraitFolder" title="Clear custom portrait folder"><i class="fas fa-xmark"></i></button>
+        {{/if}}
+    </div>
+
+    <div class="site-icon-grid npc-portrait-grid">
+        {{#each customFolders}}
+        <button type="button" class="site-icon-card site-icon-card-folder npc-portrait-card" data-custom-folder-path="{{this.path}}" aria-label="Open {{this.label}}">
+            <div class="site-icon-visual npc-portrait-visual site-icon-folder-visual"><i class="fas fa-folder"></i></div>
+            <div class="site-icon-name">{{this.label}}</div>
+        </button>
+        {{/each}}
+        <button type="button" class="site-icon-card site-icon-card-custom-file npc-portrait-card" data-action="chooseCustomPortraitFile" aria-label="Choose custom portrait file">
+            <div class="site-icon-visual npc-portrait-visual site-icon-custom-file-visual">
+                <i class="fas fa-file-image"></i>
+            </div>
+            <div class="site-icon-name">Choose File</div>
+            <div class="site-icon-meta">Single Image</div>
+        </button>
+        {{#each customPortraits}}
+        <button type="button" class="site-icon-card npc-portrait-card {{#if (eq this.imageSrc ../currentPortraitSrc)}}active{{/if}}" data-portrait-id="{{this.id}}" data-portrait-src="{{this.imageSrc}}" aria-label="{{this.label}}">
+            <div class="site-icon-visual npc-portrait-visual"><img src="{{this.imageSrc}}" alt="{{this.label}}"></div>
+        </button>
+        {{/each}}
+    </div>
+
+    {{#unless customPortraits.length}}
+    <div class="site-icon-empty">{{#if hasCustomFolder}}{{#if customFolders.length}}Choose a folder or pick a single image.{{else}}No image files were found in the selected folder.{{/if}}{{else}}Choose a folder to show your custom portrait library here, or pick a single image.{{/if}}</div>
+    {{/unless}}
+    {{/if}}
+    </div>
+</div>

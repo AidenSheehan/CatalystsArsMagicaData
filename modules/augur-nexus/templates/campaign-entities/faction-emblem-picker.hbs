@@ -1,0 +1,36 @@
+<div class="augur-nexus site-icon-picker npc-portrait-picker faction-emblem-picker">
+    <div class="site-icon-picker-header">
+        <div class="site-icon-picker-role">Showing {{pickerLabel}} Badges</div>
+    </div>
+
+    <div class="site-icon-tabs" role="tablist" aria-label="Organization badge source">
+        <button type="button" class="site-icon-tab {{#if (eq currentTab 'built-in')}}active{{/if}}" data-emblem-tab="built-in">Built-In</button>
+        <button type="button" class="site-icon-tab {{#if (eq currentTab 'custom')}}active{{/if}}" data-emblem-tab="custom">Custom</button>
+    </div>
+
+    <div class="site-icon-picker-body">
+    {{#if (eq currentTab 'custom')}}
+    <div class="site-icon-grid npc-portrait-grid">
+        <button type="button" class="site-icon-card site-icon-card-custom-file npc-portrait-card" data-action="chooseCustomEmblemFile">
+            <div class="site-icon-visual npc-portrait-visual site-icon-custom-file-visual"><i class="fas fa-file-image"></i></div>
+            <div class="site-icon-name">Custom Badge</div>
+            <div class="site-icon-meta">Choose File</div>
+        </button>
+    </div>
+    {{else}}
+    <div class="site-icon-grid npc-portrait-grid">
+        <button type="button" class="site-icon-card site-icon-card-custom-file npc-portrait-card" data-action="chooseCustomEmblemFile">
+            <div class="site-icon-visual npc-portrait-visual site-icon-custom-file-visual"><i class="fas fa-file-image"></i></div>
+            <div class="site-icon-name">Custom Badge</div>
+            <div class="site-icon-meta">Choose File</div>
+        </button>
+        {{#each emblems}}
+        <button type="button" class="site-icon-card npc-portrait-card {{#if (eq imageSrc ../currentEmblemSrc)}}active{{/if}}" data-emblem-src="{{imageSrc}}" data-emblem-id="{{id}}">
+            <div class="site-icon-visual npc-portrait-visual"><img src="{{imageSrc}}" alt="{{label}}"></div>
+            {{#if meta}}<div class="site-icon-meta">{{meta}}</div>{{/if}}
+        </button>
+        {{/each}}
+    </div>
+    {{/if}}
+    </div>
+</div>

@@ -1,0 +1,53 @@
+<form class="npc-data-editor-shell faction-data-editor-shell">
+    {{#if missing}}
+    <div class="npc-dossier-missing">This organization could not be found.</div>
+    {{else}}
+    <header class="npc-data-editor-header">
+        <div class="npc-data-editor-portrait">{{#if faction.imageSrc}}<img src="{{faction.imageSrc}}" alt="{{faction.name}}">{{else}}<i class="fas fa-shield-halved"></i>{{/if}}</div>
+        <div><h3>{{faction.name}}</h3><p>{{faction.subtitle}}</p></div>
+        <div class="npc-data-editor-actions">
+            <button type="button" class="npc-data-editor-icon-action" data-action="renameFaction" title="Rename Organization" aria-label="Rename Organization"><i class="fas fa-pen"></i></button>
+            <button type="button" class="npc-data-editor-icon-action" data-action="changeEmblem" title="Change Emblem" aria-label="Change Emblem"><i class="fas fa-shield"></i></button>
+        </div>
+    </header>
+
+    <section class="npc-data-editor-fields">
+        {{#each fields}}
+        <div class="npc-data-editor-row">
+            <button type="button" class="npc-data-field-visibility {{#if this.hidden}}is-hidden-field{{/if}}" data-action="toggleDefaultField" title="{{#if this.hidden}}Show field{{else}}Hide field{{/if}}" aria-label="{{#if this.hidden}}Show field{{else}}Hide field{{/if}}">
+                <input type="checkbox" name="defaultFieldHidden" value="{{this.key}}" {{#if this.hidden}}checked{{/if}} hidden>
+                <i class="fas {{#if this.hidden}}fa-eye-slash{{else}}fa-eye{{/if}}"></i>
+            </button>
+            <label for="faction-data-{{this.key}}">{{this.label}}</label>
+            <div class="npc-data-combo" data-combo="{{this.key}}">
+                <input id="faction-data-{{this.key}}" type="text" name="profile.{{this.key}}" value="{{this.value}}" autocomplete="off">
+                <button type="button" class="npc-data-combo-toggle" data-action="toggleCombo" data-combo-key="{{this.key}}" aria-label="Show {{this.label}} options"><i class="fas fa-chevron-down"></i></button>
+                <div class="npc-data-combo-menu" data-combo-menu="{{this.key}}">
+                    {{#each this.options}}
+                    <button type="button" data-action="selectComboOption" data-combo-key="{{../key}}" data-combo-value="{{this.value}}" {{#if this.selected}}class="selected"{{/if}}>{{this.label}}</button>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        {{/each}}
+
+        <section class="npc-data-custom-fields">
+            <div class="npc-data-custom-fields-header"><h5>Custom Fields</h5><button type="button" class="npc-data-add-field" data-action="addCustomField"><i class="fas fa-plus"></i><span>Add Field</span></button></div>
+            <div class="npc-data-custom-field-list" data-custom-fields>
+                {{#each customFields}}
+                <div class="npc-data-custom-field-row" data-custom-field-row="{{id}}">
+                    <input type="hidden" name="customField.id" value="{{id}}">
+                    <input type="text" name="customField.label" value="{{label}}" placeholder="Field" autocomplete="off">
+                    <input type="text" name="customField.value" value="{{value}}" placeholder="Value" autocomplete="off">
+                    <button type="button" class="npc-data-custom-field-move" data-action="moveCustomFieldUp" title="Move field up" aria-label="Move field up"><i class="fas fa-arrow-up"></i></button>
+                    <button type="button" class="npc-data-custom-field-move" data-action="moveCustomFieldDown" title="Move field down" aria-label="Move field down"><i class="fas fa-arrow-down"></i></button>
+                    <button type="button" class="npc-data-custom-field-delete" data-action="deleteCustomField" title="Delete field" aria-label="Delete field"><i class="fas fa-trash"></i></button>
+                </div>
+                {{/each}}
+            </div>
+        </section>
+    </section>
+
+    <footer class="npc-data-editor-footer"><button type="button" class="npc-dossier-secondary" data-action="closeEditor"><span>Cancel</span></button><button type="button" class="npc-dossier-primary" data-action="save"><span>Apply Changes</span></button></footer>
+    {{/if}}
+</form>

@@ -1,0 +1,503 @@
+<div class="augur-nexus-tool nexus-browser-panel-shell">
+    <div class="nexus-browser-hero-wrap">
+        <div class="nexus-browser-hero {{#if hasRootScene}}has-root{{/if}}">
+            <span class="nexus-browser-hero-backdrop {{#unless rootSceneThumb}}no-thumb{{/unless}}">
+                {{#if rootSceneThumb}}
+                <img src="{{rootSceneThumb}}" alt="{{rootSceneName}}">
+                {{else}}
+                <i class="fas fa-map"></i>
+                {{/if}}
+            </span>
+            <span class="nexus-browser-hero-overlay"></span>
+            {{#if isGM}}
+            <button type="button" class="nexus-browser-hero-corner-action" data-action="setCurrentAsNexus" title="Set the current scene as the Nexus scene">
+                <i class="fas fa-crosshairs"></i>
+            </button>
+            {{/if}}
+            <div class="nexus-browser-hero-copy">
+                <div class="nexus-browser-root-name" title="{{rootSceneName}}">{{rootSceneName}}</div>
+                <div class="nexus-browser-pill-type">Nexus Scene</div>
+            </div>
+            <div class="nexus-browser-root-actions hero">
+                <button type="button" class="site-entry-clear nexus-browser-action icon-only" data-action="returnToParentScene" title="Return to the parent scene" aria-label="Return to the parent scene" {{#unless hasBackTarget}}disabled{{/unless}}>
+                    <i class="fas fa-circle-arrow-left"></i>
+                </button>
+                {{#if isGM}}
+                <button type="button" class="site-entry-clear nexus-browser-action icon-only" data-action="openSitesTool" title="Open Sites tool" aria-label="Open Sites tool" {{#unless canOpenSitesTool}}disabled{{/unless}}>
+                    <i class="fas fa-location-dot"></i>
+                </button>
+                {{/if}}
+                <button type="button" class="site-entry-clear nexus-browser-action" data-action="openRootScene" title="Open the Nexus scene" {{#unless canOpenRootScene}}disabled{{/unless}}>
+                    <i class="fas fa-map"></i>
+                    <span>{{#if canOpenRootScene}}Go To Nexus{{else if rootSceneIsCurrent}}Nexus Active{{else if hasRootScene}}Scene Locked{{else}}No Nexus Scene{{/if}}</span>
+                </button>
+            </div>
+        </div>
+        <div class="nexus-browser-summary-line under-pill">
+            <span class="nexus-browser-summary-chip" title="{{currentSceneName}}">Current: {{currentSceneName}}</span>
+            {{#if hasParentScene}}
+            <span class="nexus-browser-summary-chip" title="{{parentSceneName}}">Parent: {{parentSceneName}}</span>
+            {{/if}}
+        </div>
+    </div>
+
+    <div class="nexus-browser-tab-select">
+        <i class="fas fa-layer-group" aria-hidden="true"></i>
+        <select name="nexusBrowserTab" data-action="setNexusTab" aria-label="Nexus browser section">
+            <option value="sites" {{#if isSitesTab}}selected{{/if}}>Sites</option>
+            <option value="people" {{#if isPeopleTab}}selected{{/if}}>People</option>
+            <option value="factions" {{#if isFactionsTab}}selected{{/if}}>Organizations</option>
+            <option value="ships" {{#if isShipsTab}}selected{{/if}}>Ships</option>
+        </select>
+        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+    </div>
+
+    {{#if isSitesTab}}
+    <div class="nexus-browser-search-bar">
+        <i class="fas fa-search"></i>
+        <input type="search" name="nexusSceneSearch" value="{{searchQuery}}" placeholder="Search scenes" autocomplete="off" spellcheck="false" dir="ltr">
+        <button type="button" class="site-entry-clear nexus-browser-search-clear" data-action="clearSceneSearch" title="Clear search" {{#unless isSearching}}hidden{{/unless}}>
+            <i class="fas fa-times"></i>
+        </button>
+        <button type="button" class="site-entry-clear nexus-browser-collapse-all" data-action="collapseAllScenes" title="Collapse all scenes" {{#unless hasRows}}disabled{{/unless}}>
+            <i class="fas fa-compress-alt"></i>
+        </button>
+    </div>
+    <section class="nexus-browser-section nexus-browser-tree-section">
+        <div class="nexus-browser-tree" {{#unless hasRows}}hidden{{/unless}}>
+            {{#each rows}}
+            <div class="nexus-browser-pill-shell {{#if this.isPending}}pending-site{{/if}} {{#if this.hasIcon}}has-site-icon{{/if}} {{#if this.isPlayerHidden}}is-player-hidden{{/if}}" style="margin-left: {{this.indent}};" title="{{this.name}}" data-node-id="{{this.id}}" data-node-kind="{{this.nodeKind}}" data-scene-id="{{this.sceneId}}" data-parent-node-id="{{this.parentNodeId}}" data-parent-scene-id="{{this.parentSceneId}}" data-site-id="{{this.siteId}}" data-page-id="{{this.pageId}}" data-journal-entry-id="{{this.journalEntryId}}" data-depth="{{this.depth}}" data-name="{{this.name}}" data-thumb="{{this.thumb}}" data-icon-src="{{this.iconSrc}}" data-has-children="{{this.hasChildren}}" data-connection-target-id="{{this.connections.nodeId}}" data-player-visibility-label="{{this.playerVisibilityLabel}}" data-player-visibility-icon="{{this.playerVisibilityIcon}}" {{#if this.canDragPlace}}draggable="true" data-nexus-place-drag="true"{{/if}}>
+                {{#if ../showSceneIcons}}
+                {{#if this.iconSrc}}
+                <span class="nexus-browser-pill-emblem">
+                    <img src="{{this.iconSrc}}" alt="{{this.name}}">
+                </span>
+                {{/if}}
+                {{/if}}
+                <div class="nexus-browser-pill {{#if this.isCurrent}}current{{/if}} {{#if this.isCurrentAncestor}}current-ancestor{{/if}} {{#if this.isRoot}}root{{/if}} {{#if this.hasChildren}}has-children{{/if}}">
+                    {{#if this.isPending}}
+                    {{else}}
+                    <span class="nexus-browser-pill-backdrop {{#unless this.thumb}}no-thumb{{/unless}}">
+                        {{#if this.thumb}}
+                        <img src="{{this.thumb}}" alt="{{this.name}}">
+                        {{/if}}
+                    </span>
+                    <span class="nexus-browser-pill-overlay"></span>
+                    {{/if}}
+                    <span class="nexus-browser-pill-copy">
+                        <span class="nexus-browser-pill-name">
+                            {{#if this.isPlayerHidden}}<i class="fa-solid fa-eye-slash" aria-hidden="true"></i>{{/if}}
+                            {{this.name}}
+                        </span>
+                        <span class="nexus-browser-pill-type">{{this.nodeTypeLabel}}</span>
+                    </span>
+                    <span class="nexus-browser-pill-actions">
+                        {{#if this.hasOptions}}
+                        <span class="nexus-browser-pill-options">
+                            <button type="button" class="nexus-browser-pill-action secondary" data-action="toggleSceneOptions" data-node-kind="{{this.nodeKind}}" data-scene-id="{{this.sceneId}}" data-parent-scene-id="{{this.parentSceneId}}" data-site-id="{{this.siteId}}" data-page-id="{{this.pageId}}" data-journal-entry-id="{{this.journalEntryId}}" data-player-visibility-label="{{this.playerVisibilityLabel}}" data-player-visibility-icon="{{this.playerVisibilityIcon}}" data-can-rename="{{#if this.canRename}}true{{else}}false{{/if}}" data-can-configure="{{#if this.canConfigure}}true{{else}}false{{/if}}" data-can-delete="{{#if this.canDelete}}true{{else}}false{{/if}}" title="Scene options" aria-label="Scene options" aria-expanded="false">
+                                <i class="fas fa-ellipsis"></i>
+                            </button>
+                        </span>
+                        {{/if}}
+                        {{#if this.canOpen}}
+                        <button type="button" class="nexus-browser-pill-action secondary" data-action="openLineageScene" data-node-kind="{{this.nodeKind}}" data-scene-id="{{this.sceneId}}" data-site-id="{{this.siteId}}" data-page-id="{{this.pageId}}" data-journal-entry-id="{{this.journalEntryId}}" data-parent-scene-id="{{this.parentSceneId}}" title="{{this.openLabel}}">
+                            <i class="fas fa-map"></i>
+                        </button>
+                        {{/if}}
+                        {{#if this.connections.nodeId}}
+                        <button type="button" class="nexus-browser-pill-action secondary nexus-browser-connection-toggle {{#if this.connections.expanded}}active{{/if}} {{#if this.connections.hasConnections}}has-count{{/if}}" data-action="toggleLineageConnections" data-connection-target-id="{{this.connections.nodeId}}" title="Show connections" aria-label="Show connections">
+                            <i class="fas fa-share-nodes"></i>
+                            <span>{{this.connections.total}}</span>
+                        </button>
+                        {{/if}}
+                        {{#if this.hasChildren}}
+                        <button type="button" class="nexus-browser-pill-action {{#if this.isCollapsed}}collapsed{{/if}}" data-action="toggleLineageBranch" data-scene-id="{{this.id}}" title="Toggle child scenes">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        {{/if}}
+                    </span>
+                </div>
+                {{#if this.connections.expanded}}
+                <div class="nexus-browser-connection-drawer" data-connection-target-id="{{this.connections.nodeId}}">
+                    {{#each this.connections.groups}}
+                    <section class="nexus-browser-connection-group {{#if hiddenForPlayers}}is-player-hidden{{/if}}" data-connection-category-id="{{id}}" style="--connection-category-color: {{color}};">
+                        <h4>
+                            <i class="{{icon}}"></i>
+                            <span>{{label}}</span>
+                            {{#if hiddenForPlayers}}<i class="fa-solid fa-eye-slash nexus-browser-connection-group-hidden-icon" aria-hidden="true"></i>{{/if}}
+                            {{#if @root.isGM}}
+                            <span class="nexus-browser-connection-group-order">
+                                <button type="button" data-action="openLineageConnectionGroupActions" data-connection-target-id="{{../nodeId}}" data-connection-category-id="{{id}}" title="Group actions" aria-label="Group actions">
+                                    <i class="fas fa-ellipsis"></i>
+                                </button>
+                                {{#if canMoveUp}}
+                                <button type="button" data-action="moveLineageConnectionGroup" data-connection-target-id="{{../nodeId}}" data-connection-category-id="{{id}}" data-connection-group-move="-1" title="Move group up" aria-label="Move group up">
+                                    <i class="fas fa-chevron-up"></i>
+                                </button>
+                                {{/if}}
+                                {{#if canMoveDown}}
+                                <button type="button" data-action="moveLineageConnectionGroup" data-connection-target-id="{{../nodeId}}" data-connection-category-id="{{id}}" data-connection-group-move="1" title="Move group down" aria-label="Move group down">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                {{/if}}
+                            </span>
+                            {{/if}}
+                            <strong>{{count}}</strong>
+                        </h4>
+                        {{#each cards}}
+                        <div class="nexus-browser-connection-row-wrap {{#if isPlayerHidden}}is-player-hidden{{/if}}" style="--connection-category-color: {{color}};">
+                        <button type="button" class="nexus-browser-connection-row {{#if missing}}missing{{/if}} {{#if isPlayerHidden}}is-player-hidden{{/if}}" data-action="openLineageConnection" data-connection-edge-id="{{edgeId}}" data-connection-node-id="{{nodeId}}" {{#if @root.isGM}}draggable="true"{{/if}}>
+                            <span class="nexus-browser-connection-image">
+                                {{#if img}}
+                                <img src="{{img}}" alt="{{name}}">
+                                {{else}}
+                                <i class="{{icon}}"></i>
+                                {{/if}}
+                            </span>
+                            <span class="nexus-browser-connection-copy">
+                                <strong>
+                                    {{#if isPlayerHidden}}<i class="fa-solid fa-eye-slash" aria-hidden="true"></i>{{/if}}
+                                    {{name}}
+                                </strong>
+                                <em>{{subtitle}}</em>
+                                {{#if note}}
+                                <small>{{note}}</small>
+                                {{/if}}
+                            </span>
+                        </button>
+                        {{#if @root.isGM}}
+                        <button type="button" class="nexus-browser-connection-row-action" data-action="openLineageConnectionActions" data-connection-edge-id="{{edgeId}}" data-connection-node-id="{{nodeId}}" title="Connection actions" aria-label="Connection actions">
+                            <i class="fas fa-ellipsis"></i>
+                        </button>
+                        {{/if}}
+                        </div>
+                        {{/each}}
+                    </section>
+                    {{/each}}
+                </div>
+                {{/if}}
+            </div>
+            {{/each}}
+        </div>
+        <div class="nexus-browser-empty" {{#if hasRows}}hidden{{/if}}>{{#if isSearching}}No scenes match this search.{{else}}No lineage data yet. Use Sites or set the current scene as the Nexus scene.{{/if}}</div>
+    </section>
+    {{/if}}
+
+    {{#if isPeopleTab}}
+    <div class="nexus-browser-search-bar">
+        <i class="fas fa-search"></i>
+        <input type="search" name="nexusPeopleSearch" value="{{peopleSearchQuery}}" placeholder="Search people" autocomplete="off" spellcheck="false" dir="ltr">
+        <button type="button" class="site-entry-clear nexus-browser-search-clear" data-action="clearPeopleSearch" title="Clear search" {{#unless isPeopleSearching}}hidden{{/unless}}>
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <section class="nexus-browser-section nexus-browser-tree-section">
+        <div class="nexus-browser-tree nexus-browser-people-tree" {{#unless people.hasRows}}hidden{{/unless}}>
+            {{#each people.rows}}
+            <div class="nexus-browser-pill-shell npc-pill-shell has-site-icon {{#if isPlayerHidden}}is-player-hidden{{/if}}" title="{{name}}" data-node-id="{{id}}" data-entity-id="{{entityId}}" data-entity-type="{{entityType}}" data-name="{{name}}" data-search-text="{{searchText}}" data-image-src="{{imageSrc}}" data-placement-image-src="{{placementImageSrc}}" data-connection-target-id="{{connections.nodeId}}" data-player-visibility-label="{{playerVisibilityLabel}}" data-player-visibility-icon="{{playerVisibilityIcon}}" {{#if @root.isGM}}draggable="true" data-nexus-entity-drag="true"{{/if}}>
+                <span class="nexus-browser-pill-emblem npc-pill-portrait" style="--npc-accent: {{accent}};">
+                    {{#if imageSrc}}
+                    <img src="{{imageSrc}}" alt="{{name}}">
+                    {{else}}
+                    <i class="fas fa-user"></i>
+                    {{/if}}
+                </span>
+                <div class="nexus-browser-pill npc-pill" style="--npc-accent: {{accent}};">
+                    <span class="nexus-browser-pill-overlay"></span>
+                    <span class="nexus-browser-pill-copy">
+                        <span class="nexus-browser-pill-name">
+                            {{#if isPlayerHidden}}<i class="fa-solid fa-eye-slash" aria-hidden="true"></i>{{/if}}
+                            {{name}}
+                        </span>
+                        <span class="nexus-browser-pill-type">{{subtitle}}</span>
+                    </span>
+                    <span class="nexus-browser-pill-actions">
+                        {{#if hasOptions}}
+                        <span class="nexus-browser-pill-options">
+                            <button type="button" class="nexus-browser-pill-action secondary" data-action="toggleNpcOptions" data-entity-id="{{entityId}}" data-player-visibility-label="{{playerVisibilityLabel}}" data-player-visibility-icon="{{playerVisibilityIcon}}" title="Person options" aria-label="Person options" aria-expanded="false">
+                                <i class="fas fa-ellipsis"></i>
+                            </button>
+                        </span>
+                        {{/if}}
+                        {{#if connections.nodeId}}
+                        <button type="button" class="nexus-browser-pill-action secondary nexus-browser-connection-toggle {{#if connections.expanded}}active{{/if}} {{#if connections.hasConnections}}has-count{{/if}}" data-action="toggleLineageConnections" data-connection-target-id="{{connections.nodeId}}" title="Show connections" aria-label="Show connections">
+                            <i class="fas fa-share-nodes"></i>
+                            <span>{{connections.total}}</span>
+                        </button>
+                        {{/if}}
+                    </span>
+                </div>
+                {{#if connections.expanded}}
+                <div class="nexus-browser-connection-drawer" data-connection-target-id="{{connections.nodeId}}">
+                    {{#each connections.groups}}
+                    <section class="nexus-browser-connection-group {{#if hiddenForPlayers}}is-player-hidden{{/if}}" data-connection-category-id="{{id}}" style="--connection-category-color: {{color}};">
+                        <h4>
+                            <i class="{{icon}}"></i>
+                            <span>{{label}}</span>
+                            {{#if hiddenForPlayers}}<i class="fa-solid fa-eye-slash nexus-browser-connection-group-hidden-icon" aria-hidden="true"></i>{{/if}}
+                            {{#if @root.isGM}}
+                            <span class="nexus-browser-connection-group-order">
+                                <button type="button" data-action="openLineageConnectionGroupActions" data-connection-target-id="{{../nodeId}}" data-connection-category-id="{{id}}" title="Group actions" aria-label="Group actions">
+                                    <i class="fas fa-ellipsis"></i>
+                                </button>
+                                {{#if canMoveUp}}
+                                <button type="button" data-action="moveLineageConnectionGroup" data-connection-target-id="{{../nodeId}}" data-connection-category-id="{{id}}" data-connection-group-move="-1" title="Move group up" aria-label="Move group up">
+                                    <i class="fas fa-chevron-up"></i>
+                                </button>
+                                {{/if}}
+                                {{#if canMoveDown}}
+                                <button type="button" data-action="moveLineageConnectionGroup" data-connection-target-id="{{../nodeId}}" data-connection-category-id="{{id}}" data-connection-group-move="1" title="Move group down" aria-label="Move group down">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                {{/if}}
+                            </span>
+                            {{/if}}
+                            <strong>{{count}}</strong>
+                        </h4>
+                        {{#each cards}}
+                        <div class="nexus-browser-connection-row-wrap {{#if isPlayerHidden}}is-player-hidden{{/if}}" style="--connection-category-color: {{color}};">
+                        <button type="button" class="nexus-browser-connection-row {{#if missing}}missing{{/if}} {{#if isPlayerHidden}}is-player-hidden{{/if}}" data-action="openLineageConnection" data-connection-edge-id="{{edgeId}}" data-connection-node-id="{{nodeId}}" {{#if @root.isGM}}draggable="true"{{/if}}>
+                            <span class="nexus-browser-connection-image">
+                                {{#if img}}
+                                <img src="{{img}}" alt="{{name}}">
+                                {{else}}
+                                <i class="{{icon}}"></i>
+                                {{/if}}
+                            </span>
+                            <span class="nexus-browser-connection-copy">
+                                <strong>
+                                    {{#if isPlayerHidden}}<i class="fa-solid fa-eye-slash" aria-hidden="true"></i>{{/if}}
+                                    {{name}}
+                                </strong>
+                                <em>{{subtitle}}</em>
+                                {{#if note}}
+                                <small>{{note}}</small>
+                                {{/if}}
+                            </span>
+                        </button>
+                        {{#if @root.isGM}}
+                        <button type="button" class="nexus-browser-connection-row-action" data-action="openLineageConnectionActions" data-connection-edge-id="{{edgeId}}" data-connection-node-id="{{nodeId}}" title="Connection actions" aria-label="Connection actions">
+                            <i class="fas fa-ellipsis"></i>
+                        </button>
+                        {{/if}}
+                        </div>
+                        {{/each}}
+                    </section>
+                    {{/each}}
+                </div>
+                {{/if}}
+            </div>
+            {{/each}}
+        </div>
+        <div class="nexus-browser-empty" {{#if people.hasRows}}hidden{{/if}}>{{people.emptyLabel}}</div>
+    </section>
+    {{/if}}
+
+    {{#if isFactionsTab}}
+    <div class="nexus-browser-search-bar">
+        <i class="fas fa-search"></i>
+        <input type="search" name="nexusFactionSearch" value="{{factionSearchQuery}}" placeholder="Search organizations" autocomplete="off" spellcheck="false" dir="ltr">
+        <button type="button" class="site-entry-clear nexus-browser-search-clear" data-action="clearFactionSearch" title="Clear search" {{#unless isFactionSearching}}hidden{{/unless}}>
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <section class="nexus-browser-section nexus-browser-tree-section">
+        <div class="nexus-browser-tree nexus-browser-people-tree nexus-browser-faction-tree" {{#unless factions.hasRows}}hidden{{/unless}}>
+            {{#each factions.rows}}
+            <div class="nexus-browser-pill-shell npc-pill-shell faction-pill-shell has-site-icon {{#if isPlayerHidden}}is-player-hidden{{/if}}" title="{{name}}" data-node-id="{{id}}" data-entity-id="{{entityId}}" data-entity-type="{{entityType}}" data-name="{{name}}" data-search-text="{{searchText}}" data-image-src="{{imageSrc}}" data-placement-image-src="{{placementImageSrc}}" data-connection-target-id="{{connections.nodeId}}" data-player-visibility-label="{{playerVisibilityLabel}}" data-player-visibility-icon="{{playerVisibilityIcon}}" {{#if @root.isGM}}draggable="true" data-nexus-entity-drag="true"{{/if}}>
+                <span class="nexus-browser-pill-emblem npc-pill-portrait faction-pill-emblem" style="--npc-accent: {{accent}};">
+                    {{#if imageSrc}}
+                    <img src="{{imageSrc}}" alt="{{name}}">
+                    {{else}}
+                    <i class="fas fa-shield-halved"></i>
+                    {{/if}}
+                </span>
+                <div class="nexus-browser-pill npc-pill faction-pill" style="--npc-accent: {{accent}};">
+                    <span class="nexus-browser-pill-overlay"></span>
+                    <span class="nexus-browser-pill-copy">
+                        <span class="nexus-browser-pill-name">
+                            {{#if isPlayerHidden}}<i class="fa-solid fa-eye-slash" aria-hidden="true"></i>{{/if}}
+                            {{name}}
+                        </span>
+                        <span class="nexus-browser-pill-type">{{subtitle}}</span>
+                    </span>
+                    <span class="nexus-browser-pill-actions">
+                        {{#if hasOptions}}
+                        <span class="nexus-browser-pill-options">
+                            <button type="button" class="nexus-browser-pill-action secondary" data-action="toggleFactionOptions" data-entity-id="{{entityId}}" data-player-visibility-label="{{playerVisibilityLabel}}" data-player-visibility-icon="{{playerVisibilityIcon}}" title="Organization options" aria-label="Organization options" aria-expanded="false">
+                                <i class="fas fa-ellipsis"></i>
+                            </button>
+                        </span>
+                        {{/if}}
+                        {{#if connections.nodeId}}
+                        <button type="button" class="nexus-browser-pill-action secondary nexus-browser-connection-toggle {{#if connections.expanded}}active{{/if}} {{#if connections.hasConnections}}has-count{{/if}}" data-action="toggleLineageConnections" data-connection-target-id="{{connections.nodeId}}" title="Show connections" aria-label="Show connections">
+                            <i class="fas fa-share-nodes"></i>
+                            <span>{{connections.total}}</span>
+                        </button>
+                        {{/if}}
+                    </span>
+                </div>
+                {{#if connections.expanded}}
+                <div class="nexus-browser-connection-drawer" data-connection-target-id="{{connections.nodeId}}">
+                    {{#each connections.groups}}
+                    <section class="nexus-browser-connection-group {{#if hiddenForPlayers}}is-player-hidden{{/if}}" data-connection-category-id="{{id}}" style="--connection-category-color: {{color}};">
+                        <h4>
+                            <i class="{{icon}}"></i>
+                            <span>{{label}}</span>
+                            {{#if hiddenForPlayers}}<i class="fa-solid fa-eye-slash nexus-browser-connection-group-hidden-icon" aria-hidden="true"></i>{{/if}}
+                            {{#if @root.isGM}}
+                            <span class="nexus-browser-connection-group-order">
+                                <button type="button" data-action="openLineageConnectionGroupActions" data-connection-target-id="{{../nodeId}}" data-connection-category-id="{{id}}" title="Group actions" aria-label="Group actions">
+                                    <i class="fas fa-ellipsis"></i>
+                                </button>
+                                {{#if canMoveUp}}
+                                <button type="button" data-action="moveLineageConnectionGroup" data-connection-target-id="{{../nodeId}}" data-connection-category-id="{{id}}" data-connection-group-move="-1" title="Move group up" aria-label="Move group up">
+                                    <i class="fas fa-chevron-up"></i>
+                                </button>
+                                {{/if}}
+                                {{#if canMoveDown}}
+                                <button type="button" data-action="moveLineageConnectionGroup" data-connection-target-id="{{../nodeId}}" data-connection-category-id="{{id}}" data-connection-group-move="1" title="Move group down" aria-label="Move group down">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                {{/if}}
+                            </span>
+                            {{/if}}
+                            <strong>{{count}}</strong>
+                        </h4>
+                        {{#each cards}}
+                        <div class="nexus-browser-connection-row-wrap {{#if isPlayerHidden}}is-player-hidden{{/if}}" style="--connection-category-color: {{color}};">
+                        <button type="button" class="nexus-browser-connection-row {{#if missing}}missing{{/if}} {{#if isPlayerHidden}}is-player-hidden{{/if}}" data-action="openLineageConnection" data-connection-edge-id="{{edgeId}}" data-connection-node-id="{{nodeId}}" {{#if @root.isGM}}draggable="true"{{/if}}>
+                            <span class="nexus-browser-connection-image">
+                                {{#if img}}
+                                <img src="{{img}}" alt="{{name}}">
+                                {{else}}
+                                <i class="{{icon}}"></i>
+                                {{/if}}
+                            </span>
+                            <span class="nexus-browser-connection-copy">
+                                <strong>
+                                    {{#if isPlayerHidden}}<i class="fa-solid fa-eye-slash" aria-hidden="true"></i>{{/if}}
+                                    {{name}}
+                                </strong>
+                                <em>{{subtitle}}</em>
+                                {{#if note}}
+                                <small>{{note}}</small>
+                                {{/if}}
+                            </span>
+                        </button>
+                        {{#if @root.isGM}}
+                        <button type="button" class="nexus-browser-connection-row-action" data-action="openLineageConnectionActions" data-connection-edge-id="{{edgeId}}" data-connection-node-id="{{nodeId}}" title="Connection actions" aria-label="Connection actions">
+                            <i class="fas fa-ellipsis"></i>
+                        </button>
+                        {{/if}}
+                        </div>
+                        {{/each}}
+                    </section>
+                    {{/each}}
+                </div>
+                {{/if}}
+            </div>
+            {{/each}}
+        </div>
+        <div class="nexus-browser-empty" {{#if factions.hasRows}}hidden{{/if}}>{{factions.emptyLabel}}</div>
+    </section>
+    {{/if}}
+
+    {{#if isShipsTab}}
+    <div class="nexus-browser-search-bar">
+        <i class="fas fa-search"></i>
+        <input type="search" name="nexusShipSearch" value="{{shipSearchQuery}}" placeholder="Search ships" autocomplete="off" spellcheck="false" dir="ltr">
+        <button type="button" class="site-entry-clear nexus-browser-search-clear" data-action="clearShipSearch" title="Clear search" {{#unless isShipSearching}}hidden{{/unless}}>
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <section class="nexus-browser-section nexus-browser-tree-section">
+        <div class="nexus-browser-tree nexus-browser-people-tree nexus-browser-ship-tree" {{#unless ships.hasRows}}hidden{{/unless}}>
+            {{#each ships.rows}}
+            <div class="nexus-browser-pill-shell npc-pill-shell ship-pill-shell has-site-icon {{#if isPlayerHidden}}is-player-hidden{{/if}}" title="{{name}}" data-node-id="{{id}}" data-entity-id="{{entityId}}" data-entity-type="{{entityType}}" data-name="{{name}}" data-search-text="{{searchText}}" data-image-src="{{imageSrc}}" data-placement-image-src="{{placementImageSrc}}" data-connection-target-id="{{connections.nodeId}}" data-player-visibility-label="{{playerVisibilityLabel}}" data-player-visibility-icon="{{playerVisibilityIcon}}" {{#if @root.isGM}}draggable="true" data-nexus-entity-drag="true"{{/if}}>
+                <span class="nexus-browser-pill-emblem npc-pill-portrait ship-pill-image" style="--npc-accent: {{accent}};">
+                    {{#if imageSrc}}<img src="{{imageSrc}}" alt="{{name}}">{{else}}<i class="fas fa-rocket"></i>{{/if}}
+                </span>
+                <div class="nexus-browser-pill npc-pill ship-pill" style="--npc-accent: {{accent}};">
+                    <span class="nexus-browser-pill-overlay"></span>
+                    <span class="nexus-browser-pill-copy">
+                        <span class="nexus-browser-pill-name">{{#if isPlayerHidden}}<i class="fa-solid fa-eye-slash" aria-hidden="true"></i>{{/if}}{{name}}</span>
+                        <span class="nexus-browser-pill-type">{{subtitle}}</span>
+                    </span>
+                    <span class="nexus-browser-pill-actions">
+                        {{#if hasOptions}}
+                        <span class="nexus-browser-pill-options">
+                            <button type="button" class="nexus-browser-pill-action secondary" data-action="toggleShipOptions" data-entity-id="{{entityId}}" data-player-visibility-label="{{playerVisibilityLabel}}" data-player-visibility-icon="{{playerVisibilityIcon}}" title="Ship options" aria-label="Ship options" aria-expanded="false"><i class="fas fa-ellipsis"></i></button>
+                        </span>
+                        {{/if}}
+                        {{#if connections.nodeId}}
+                        <button type="button" class="nexus-browser-pill-action secondary nexus-browser-connection-toggle {{#if connections.expanded}}active{{/if}} {{#if connections.hasConnections}}has-count{{/if}}" data-action="toggleLineageConnections" data-connection-target-id="{{connections.nodeId}}" title="Show connections" aria-label="Show connections">
+                            <i class="fas fa-share-nodes"></i><span>{{connections.total}}</span>
+                        </button>
+                        {{/if}}
+                    </span>
+                </div>
+                {{#if connections.expanded}}
+                <div class="nexus-browser-connection-drawer" data-connection-target-id="{{connections.nodeId}}">
+                    {{#each connections.groups}}
+                    <section class="nexus-browser-connection-group {{#if hiddenForPlayers}}is-player-hidden{{/if}}" data-connection-category-id="{{id}}" style="--connection-category-color: {{color}};">
+                        <h4><i class="{{icon}}"></i><span>{{label}}</span>{{#if hiddenForPlayers}}<i class="fa-solid fa-eye-slash nexus-browser-connection-group-hidden-icon" aria-hidden="true"></i>{{/if}}{{#if @root.isGM}}<span class="nexus-browser-connection-group-order"><button type="button" data-action="openLineageConnectionGroupActions" data-connection-target-id="{{../nodeId}}" data-connection-category-id="{{id}}" title="Group actions" aria-label="Group actions"><i class="fas fa-ellipsis"></i></button>{{#if canMoveUp}}<button type="button" data-action="moveLineageConnectionGroup" data-connection-target-id="{{../nodeId}}" data-connection-category-id="{{id}}" data-connection-group-move="-1" title="Move group up" aria-label="Move group up"><i class="fas fa-chevron-up"></i></button>{{/if}}{{#if canMoveDown}}<button type="button" data-action="moveLineageConnectionGroup" data-connection-target-id="{{../nodeId}}" data-connection-category-id="{{id}}" data-connection-group-move="1" title="Move group down" aria-label="Move group down"><i class="fas fa-chevron-down"></i></button>{{/if}}</span>{{/if}}<strong>{{count}}</strong></h4>
+                        {{#each cards}}
+                        <div class="nexus-browser-connection-row-wrap {{#if isPlayerHidden}}is-player-hidden{{/if}}" style="--connection-category-color: {{color}};">
+                        <button type="button" class="nexus-browser-connection-row {{#if missing}}missing{{/if}} {{#if isPlayerHidden}}is-player-hidden{{/if}}" data-action="openLineageConnection" data-connection-edge-id="{{edgeId}}" data-connection-node-id="{{nodeId}}" {{#if @root.isGM}}draggable="true"{{/if}}>
+                            <span class="nexus-browser-connection-image">{{#if img}}<img src="{{img}}" alt="{{name}}">{{else}}<i class="{{icon}}"></i>{{/if}}</span>
+                            <span class="nexus-browser-connection-copy"><strong>{{#if isPlayerHidden}}<i class="fa-solid fa-eye-slash" aria-hidden="true"></i>{{/if}}{{name}}</strong><em>{{subtitle}}</em>{{#if note}}<small>{{note}}</small>{{/if}}</span>
+                        </button>
+                        {{#if @root.isGM}}<button type="button" class="nexus-browser-connection-row-action" data-action="openLineageConnectionActions" data-connection-edge-id="{{edgeId}}" data-connection-node-id="{{nodeId}}" title="Connection actions" aria-label="Connection actions"><i class="fas fa-ellipsis"></i></button>{{/if}}
+                        </div>
+                        {{/each}}
+                    </section>
+                    {{/each}}
+                </div>
+                {{/if}}
+            </div>
+            {{/each}}
+        </div>
+        <div class="nexus-browser-empty" {{#if ships.hasRows}}hidden{{/if}}>{{ships.emptyLabel}}</div>
+    </section>
+    {{/if}}
+
+    <div class="nexus-browser-footer">
+        {{#if isSitesTab}}
+        <label class="nexus-browser-icon-toggle">
+            <input type="checkbox" name="nexusBrowserShowIcons" {{#if showSceneIcons}}checked{{/if}}>
+            <span class="nexus-browser-icon-toggle-box" aria-hidden="true">
+                <i class="fas fa-check"></i>
+            </span>
+            <span class="nexus-browser-icon-toggle-label">Show Icons</span>
+        </label>
+        {{else}}
+        <span></span>
+        {{/if}}
+        {{#if isGM}}
+        <div class="nexus-browser-root-create">
+            {{#if isSitesTab}}
+            <button type="button" class="site-entry-clear nexus-browser-new-root" data-action="toggleRootSceneMenu" title="Create a new root scene" aria-expanded="false">
+                <i class="fas fa-plus"></i>
+                <span>New Root Scene</span>
+            </button>
+            {{else if isPeopleTab}}
+            <button type="button" class="site-entry-clear nexus-browser-new-root" data-action="createNpc" title="Create a new person">
+                <i class="fas fa-user-plus"></i>
+                <span>New Person</span>
+            </button>
+            {{else if isFactionsTab}}
+            <button type="button" class="site-entry-clear nexus-browser-new-root" data-action="createFaction" title="Create a new organization">
+                <i class="fas fa-plus"></i>
+                <span>New Organization</span>
+            </button>
+            {{else}}
+            <button type="button" class="site-entry-clear nexus-browser-new-root" data-action="createShip" title="Create a new ship">
+                <i class="fas fa-plus"></i>
+                <span>New Ship</span>
+            </button>
+            {{/if}}
+        </div>
+        {{/if}}
+    </div>
+</div>

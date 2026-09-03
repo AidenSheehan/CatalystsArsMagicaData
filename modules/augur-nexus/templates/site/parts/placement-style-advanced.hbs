@@ -1,0 +1,87 @@
+{{#if staticAdvanced}}
+{{#if advancedOpen}}
+<fieldset class="site-panel-section site-advanced-section placement-advanced-static" data-placement-advanced>
+    <legend><i class="fas fa-sliders"></i> Advanced</legend>
+{{else}}
+<details class="site-panel-section site-advanced-section" data-placement-advanced>
+    <summary><i class="fas fa-sliders"></i> Advanced</summary>
+{{/if}}
+{{else}}
+<details class="site-panel-section site-advanced-section" data-placement-advanced {{#if advancedOpen}}open{{/if}}>
+    <summary><i class="fas fa-sliders"></i> Advanced</summary>
+{{/if}}
+
+    <div class="form-group">
+        <label>Icon Size</label>
+        <div class="form-fields">
+            <input type="range" name="iconSize" min="50" max="256" step="1" value="{{selectedIconSize}}" {{#if controlsDisabled}}disabled{{/if}}>
+            <span class="range-value" data-site-icon-size-value>{{selectedIconSize}}</span>
+            {{#if showResetIconSize}}
+            <button type="button" class="site-entry-clear" data-action="resetIconSize" title="Reset to current scene grid size" {{#if iconSizeUsesSceneDefault}}disabled{{/if}}><i class="fas fa-rotate-left"></i></button>
+            {{/if}}
+        </div>
+    </div>
+
+    {{#if showLabelToggleInAdvanced}}
+    <div class="form-group">
+        <label class="checkbox"><input type="checkbox" name="showLabel" {{#if showLabel}}checked{{/if}} {{#if controlsDisabled}}disabled{{/if}}> Show Label</label>
+    </div>
+    {{/if}}
+
+    {{#if showLabel}}
+    <div class="site-label-controls-row">
+        <div class="form-group site-label-size-control">
+            <label>Label Size</label>
+            <div class="form-fields">
+                <input type="range" name="labelFontSize" min="{{minLabelFontSize}}" max="{{maxLabelFontSize}}" step="1" value="{{selectedLabelFontSize}}" {{#if controlsDisabled}}disabled{{/if}}>
+                <span class="range-value" data-site-label-font-size-value>{{selectedLabelFontSize}}</span>
+                {{#if showResetLabelFontSize}}
+                <button type="button" class="site-entry-clear" data-action="resetLabelFontSize" title="Reset to icon-based size" {{#if labelFontSizeUsesAuto}}disabled{{/if}}><i class="fas fa-rotate-left"></i></button>
+                {{/if}}
+            </div>
+        </div>
+
+        <div class="form-group site-label-font-control">
+            <label>Label Font</label>
+            <select name="labelFontFamily" {{#if controlsDisabled}}disabled{{/if}}>
+                {{#each labelFontOptions}}
+                <option value="{{this.family}}" {{#if (eq ../selectedLabelFontFamily this.family)}}selected{{/if}}>{{this.label}}</option>
+                {{/each}}
+            </select>
+        </div>
+    </div>
+
+    {{#if showLabelColorControls}}
+    <div class="form-group">
+        <label>Label Color</label>
+        <div class="site-color-grid">
+            {{#each colors}}
+            <button type="button" class="site-color-swatch {{#if (eq ../selectedLabelColor this.value)}}active{{/if}}" data-placement-label-color="{{this.value}}" title="{{this.label}}" style="--site-color: {{this.value}};" {{#if ../controlsDisabled}}disabled{{/if}}></button>
+            {{/each}}
+        </div>
+    </div>
+    {{/if}}
+    {{/if}}
+
+    <div class="site-behavior-row">
+        {{#if showSnapToGrid}}
+        <div class="form-group site-randomize-toggle">
+            <label class="checkbox"><input type="checkbox" name="snapToGrid" {{#if snapToGrid}}checked{{/if}} {{#if controlsDisabled}}disabled{{/if}}> Snap to grid</label>
+        </div>
+        {{/if}}
+
+        {{#if showRandomizeToggle}}
+        <div class="form-group site-randomize-toggle">
+            <label class="checkbox"><input type="checkbox" name="randomizeAfterPlacement" {{#if randomizeAfterPlacement}}checked{{/if}} {{#if controlsDisabled}}disabled{{/if}}> Randomize next site</label>
+        </div>
+        {{/if}}
+    </div>
+{{#if staticAdvanced}}
+{{#if advancedOpen}}
+</fieldset>
+{{else}}
+</details>
+{{/if}}
+{{else}}
+</details>
+{{/if}}

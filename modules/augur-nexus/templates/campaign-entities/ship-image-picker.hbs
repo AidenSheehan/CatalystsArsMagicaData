@@ -1,0 +1,95 @@
+<div class="augur-nexus site-icon-picker npc-portrait-picker ship-image-picker">
+    <div class="site-icon-picker-header">
+        <div class="site-icon-picker-role">{{#if selectedModel}}Choose {{selectedModel.label}} Style{{else}}Showing {{pickerLabel}} Ships{{/if}}</div>
+    </div>
+
+    {{#unless selectedModel}}
+    <div class="site-icon-tabs" role="tablist" aria-label="Ship Image Source">
+        <button type="button" class="site-icon-tab {{#if (eq currentTab "built-in")}}active{{/if}}" data-ship-image-tab="built-in" aria-pressed="{{#if (eq currentTab "built-in")}}true{{else}}false{{/if}}">Built-In</button>
+        <button type="button" class="site-icon-tab {{#if (eq currentTab "custom")}}active{{/if}}" data-ship-image-tab="custom" aria-pressed="{{#if (eq currentTab "custom")}}true{{else}}false{{/if}}">Custom</button>
+    </div>
+    {{/unless}}
+
+    {{#if selectedModel}}
+    <div class="site-icon-custom-toolbar">
+        <button type="button" class="site-entry-clear" data-action="backToShipModels" title="Back to models"><i class="fas fa-arrow-left"></i></button>
+        <div class="site-icon-custom-folder">{{selectedModel.label}}</div>
+    </div>
+    <div class="site-icon-picker-body">
+        <div class="site-icon-grid npc-portrait-grid ship-image-grid">
+            {{#each selectedModel.variants}}
+            <button type="button" class="site-icon-card npc-portrait-card {{#if (eq imageSrc ../currentShipImageSrc)}}active{{/if}}" data-ship-image-src="{{imageSrc}}" data-model-id="{{../selectedModel.modelId}}" data-model-label="{{../selectedModel.label}}" data-style-id="{{styleId}}">
+                <div class="site-icon-visual npc-portrait-visual ship-image-visual"><img src="{{imageSrc}}" alt="{{../selectedModel.label}} {{styleLabel}}"></div>
+                <div class="site-icon-meta">{{styleLabel}}</div>
+            </button>
+            {{/each}}
+        </div>
+    </div>
+    {{else}}
+    <div class="site-icon-picker-body">
+        {{#if (eq currentTab "built-in")}}
+        {{#if showShipModelCategories}}
+        <div class="site-icon-tabs ship-model-category-tabs" role="tablist" aria-label="Ship Model Category">
+            {{#each shipModelCategories}}
+            <button type="button" class="site-icon-tab {{#if (eq id ../selectedShipModelCategoryId)}}active{{/if}}" data-ship-model-category="{{id}}" aria-pressed="{{#if (eq id ../selectedShipModelCategoryId)}}true{{else}}false{{/if}}">{{label}}</button>
+            {{/each}}
+        </div>
+        {{/if}}
+        <div class="site-icon-grid npc-portrait-grid ship-image-grid">
+            <button type="button" class="site-icon-card site-icon-card-custom-file npc-portrait-card" data-action="chooseCustomShipImageFile" aria-label="Choose custom ship image">
+                <div class="site-icon-visual npc-portrait-visual site-icon-custom-file-visual">
+                    <i class="fas fa-file-image"></i>
+                </div>
+                <div class="site-icon-name">Custom Ship</div>
+                <div class="site-icon-meta">Choose File</div>
+            </button>
+            {{#each models}}
+            <button type="button" class="site-icon-card npc-portrait-card" data-ship-model-id="{{modelId}}">
+                <div class="site-icon-visual npc-portrait-visual ship-image-visual"><img src="{{imageSrc}}" alt="{{label}}"></div>
+                <div class="site-icon-name">{{label}}</div>
+            </button>
+            {{/each}}
+        </div>
+        {{#unless models.length}}
+        <div class="site-icon-empty">No built-in ship model catalogs have been registered.</div>
+        {{/unless}}
+        {{else}}
+        <div class="site-icon-custom-toolbar">
+            <button type="button" class="site-entry-clear" data-action="chooseCustomShipImageFolder" title="Choose custom ship image folder"><i class="fas fa-folder-open"></i></button>
+            <div class="site-icon-custom-folder" title="{{currentCustomFolderPathLabel}}">{{#if hasCustomFolder}}{{currentCustomFolderPathLabel}}{{else}}No custom ship image folder selected{{/if}}</div>
+            {{#if customFolderCanGoUp}}
+            <button type="button" class="site-entry-clear" data-action="customFolderUp" data-custom-folder-parent-path="{{customFolderParentPath}}" title="Up one folder"><i class="fas fa-arrow-up"></i></button>
+            {{/if}}
+            {{#if hasCustomFolder}}
+            <button type="button" class="site-entry-clear" data-action="clearCustomShipImageFolder" title="Clear custom ship image folder"><i class="fas fa-xmark"></i></button>
+            {{/if}}
+        </div>
+
+        <div class="site-icon-grid npc-portrait-grid ship-image-grid">
+            {{#each customFolders}}
+            <button type="button" class="site-icon-card site-icon-card-folder npc-portrait-card" data-custom-folder-path="{{this.path}}" aria-label="Open {{this.label}}">
+                <div class="site-icon-visual npc-portrait-visual site-icon-folder-visual"><i class="fas fa-folder"></i></div>
+                <div class="site-icon-name">{{this.label}}</div>
+            </button>
+            {{/each}}
+            <button type="button" class="site-icon-card site-icon-card-custom-file npc-portrait-card" data-action="chooseCustomShipImageFile" aria-label="Choose custom ship image file">
+                <div class="site-icon-visual npc-portrait-visual site-icon-custom-file-visual">
+                    <i class="fas fa-file-image"></i>
+                </div>
+                <div class="site-icon-name">Choose File</div>
+                <div class="site-icon-meta">Single Image</div>
+            </button>
+            {{#each customImages}}
+            <button type="button" class="site-icon-card npc-portrait-card {{#if (eq this.imageSrc ../currentShipImageSrc)}}active{{/if}}" data-ship-image-src="{{this.imageSrc}}" data-model-id="" data-style-id="" data-custom-ship-image="true" aria-label="{{this.label}}">
+                <div class="site-icon-visual npc-portrait-visual ship-image-visual"><img src="{{this.imageSrc}}" alt="{{this.label}}"></div>
+            </button>
+            {{/each}}
+        </div>
+
+        {{#unless customImages.length}}
+        <div class="site-icon-empty">{{#if hasCustomFolder}}{{#if customFolders.length}}Choose a folder or pick a single image.{{else}}No image files were found in the selected folder.{{/if}}{{else}}Choose a folder to show your custom ship library here, or pick a single image.{{/if}}</div>
+        {{/unless}}
+        {{/if}}
+    </div>
+    {{/if}}
+</div>

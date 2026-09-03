@@ -1,5 +1,5 @@
-2026/07/23-18:18:27.760 42dc Recovering log #198
-2026/07/23-18:18:27.760 42dc Level-0 table #201: started
-2026/07/23-18:18:27.776 42dc Level-0 table #201: 986 bytes OK
-2026/07/23-18:18:27.782 42dc Delete type=0 #198
-2026/07/23-18:18:27.784 42dc Delete type=3 #197
+2026/08/06-19:32:23.772 1db4 Recovering log #213
+2026/08/06-19:32:23.772 1db4 Level-0 table #215: started
+2026/08/06-19:32:23.786 1db4 Level-0 table #215: 1343 bytes OK
+2026/08/06-19:32:23.791 1db4 Delete type=0 #213
+2026/08/06-19:32:23.791 1db4 Delete type=3 #211

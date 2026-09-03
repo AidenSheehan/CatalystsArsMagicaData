@@ -1,0 +1,43 @@
+<header class="npc-dossier-header ship-dossier-header" style="--npc-accent: {{profile.accent}};">
+    <div class="npc-dossier-portrait ship-dossier-image">
+        {{#if profile.imageSrc}}<img src="{{profile.imageSrc}}" alt="{{profile.name}}">{{else}}<i class="fas fa-rocket"></i>{{/if}}
+    </div>
+    <div class="npc-dossier-title">
+        <h2>{{profile.name}}</h2>
+        <p>{{profile.subtitle}}</p>
+        {{#if profile.showTabs}}
+        <nav class="npc-dossier-tabs" aria-label="Ship dossier tabs">
+            <button type="button" class="{{#if profile.tabs.isProfileTab}}active{{/if}}" data-action="setShipDossierTab" data-tab="profile">Profile</button>
+            <button type="button" class="{{#if profile.tabs.isJournalTab}}active{{/if}}" data-action="setShipDossierTab" data-tab="journal">Journal</button>
+            {{#if profile.linkedActor}}
+            <button type="button" class="npc-dossier-tab-icon" data-action="openShipLinkedActor" title="Open linked Actor" aria-label="Open linked Actor">
+                <i class="fas fa-user-circle"></i>
+            </button>
+            {{/if}}
+        </nav>
+        {{/if}}
+    </div>
+    {{#if profile.showActions}}
+    <button type="button" class="npc-dossier-action" data-action="openShipActions" title="Ship actions" aria-label="Ship actions"><i class="fas fa-ellipsis"></i></button>
+    {{/if}}
+</header>
+
+{{#if profile.showBody}}
+<section class="npc-dossier-section">
+    {{#if profile.identityChips.length}}
+    <div class="npc-dossier-chip-row npc-dossier-chip-row-primary">
+        {{#each profile.identityChips}}<span><em>{{label}}</em><strong>{{value}}</strong></span>{{/each}}
+    </div>
+    {{/if}}
+    {{#if profile.chips.length}}
+    <div class="npc-dossier-chip-row">
+        {{#each profile.chips}}<span><em>{{label}}</em><strong>{{value}}</strong></span>{{/each}}
+    </div>
+    {{/if}}
+    {{#if profile.profileRows.length}}
+    <div class="npc-dossier-custom-row">
+        {{#each profile.profileRows}}<span><em>{{label}}</em><strong>{{value}}</strong></span>{{/each}}
+    </div>
+    {{/if}}
+</section>
+{{/if}}

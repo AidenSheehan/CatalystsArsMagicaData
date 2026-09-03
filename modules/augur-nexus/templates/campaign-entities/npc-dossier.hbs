@@ -1,0 +1,54 @@
+<section class="site-preview-shell place-preview-shell npc-dossier-shell" style="{{backgroundStyle}}">
+    <div class="site-preview-shade"></div>
+
+    {{#if missing}}
+    <div class="npc-dossier-missing">This person could not be found.</div>
+    {{else}}
+    <div class="site-preview-stage npc-dossier-stage">
+        <aside class="site-preview-dossier place-preview-dossier npc-dossier-profile" data-connections-drop-surface>
+            {{> "modules/augur-nexus/templates/campaign-entities/npc-profile-panel.hbs" profile=npc.profile}}
+
+            {{#if dossier.isJournalTab}}
+            <section class="npc-dossier-section npc-dossier-journal">
+                <div class="npc-dossier-journal-body">
+                {{#if journal.hasPage}}
+                {{#if journal.hasContent}}
+                <div class="npc-dossier-journal-content">
+                    {{{journal.content}}}
+                </div>
+                {{else}}
+                <div class="npc-dossier-empty">This journal is blank.</div>
+                {{/if}}
+                {{else}}
+                <div class="npc-dossier-empty">No journal has been created for this person.</div>
+                {{/if}}
+                </div>
+                {{#if journal.hasPage}}
+                {{#if isGM}}
+                <footer class="npc-dossier-journal-footer">
+                    <button type="button" class="npc-dossier-secondary" data-action="openNpcJournal">
+                        <i class="fas fa-book-open"></i>
+                        <span>Edit Journal</span>
+                    </button>
+                </footer>
+                {{/if}}
+                {{else}}
+                {{#if isGM}}
+                <footer class="npc-dossier-journal-footer">
+                    <button type="button" class="npc-dossier-secondary" data-action="createNpcJournal">
+                        <i class="fas fa-book-medical"></i>
+                        <span>Create Journal</span>
+                    </button>
+                </footer>
+                {{/if}}
+                {{/if}}
+            </section>
+            {{/if}}
+        </aside>
+
+        <section class="site-preview-cover npc-dossier-connections" aria-label="Person connections">
+            {{> "modules/augur-nexus/templates/connections/connections-board.hbs" connections.board}}
+        </section>
+    </div>
+    {{/if}}
+</section>

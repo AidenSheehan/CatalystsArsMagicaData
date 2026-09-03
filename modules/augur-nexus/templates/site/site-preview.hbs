@@ -1,0 +1,99 @@
+<section class="site-preview-shell" style="{{backgroundStyle}}">
+    <div class="site-preview-shade"></div>
+
+    <div class="site-preview-stage">
+        <section class="site-preview-cover" aria-label="Site cover image">
+            {{> "modules/augur-nexus/templates/connections/connections-board.hbs" connections.board}}
+        </section>
+
+        <aside class="site-preview-dossier">
+            <header class="site-preview-header">
+                <div class="site-preview-icon" style="--site-color: {{site.siteColor}};">
+                    {{#if site.siteIconSrc}}
+                    <img src="{{site.siteIconSrc}}" alt="{{site.siteName}}">
+                    {{else}}
+                    <i class="fas fa-location-dot"></i>
+                    {{/if}}
+                </div>
+                <div class="site-preview-title">
+                    <h2>{{site.siteName}}</h2>
+                    <div class="site-preview-subtitle-row">
+                        <p>{{site.siteGenreLabel}} &middot; {{site.siteSceneTypeLabel}}</p>
+                        {{#if isGM}}
+                        <button type="button" class="site-preview-icon-action" data-action="openSiteActions" title="Site actions" aria-label="Site actions">
+                            <i class="fas fa-ellipsis"></i>
+                        </button>
+                        {{/if}}
+                    </div>
+                </div>
+            </header>
+
+            <nav class="site-preview-tabs" aria-label="Site dossier tabs">
+                <button type="button" class="{{#if dossier.isProfileTab}}active{{/if}}" data-action="setDossierTab" data-tab="profile">Profile</button>
+                <button type="button" class="{{#if dossier.isJournalTab}}active{{/if}}" data-action="setDossierTab" data-tab="journal">Journal</button>
+            </nav>
+
+            {{#if dossier.isProfileTab}}
+            <section class="site-preview-section">
+                <h3>Site Profile</h3>
+                <div class="site-preview-table">
+                    {{#each site.rows}}
+                    <div>
+                        <span>{{this.label}}</span>
+                        <strong>{{this.value}}</strong>
+                    </div>
+                    {{/each}}
+                </div>
+                {{#if connections.summary.hasConnections}}
+                <section class="site-preview-connection-summary">
+                    <h3>Connection Summary</h3>
+                    <div class="site-preview-table">
+                        {{#each connections.summary.rows}}
+                        <div>
+                            <span><i class="{{icon}}" style="color: {{color}};"></i> {{label}}</span>
+                            <strong>{{count}}</strong>
+                        </div>
+                        {{/each}}
+                        <div class="total">
+                            <span>Total Connections</span>
+                            <strong>{{connections.summary.total}}</strong>
+                        </div>
+                    </div>
+                </section>
+                {{/if}}
+            </section>
+            {{/if}}
+
+            {{#if dossier.isJournalTab}}
+            <section class="site-preview-section site-preview-journal">
+                {{#if journal.hasPage}}
+                {{#if journal.hasContent}}
+                <div class="site-preview-journal-content">
+                    {{{journal.content}}}
+                </div>
+                {{else}}
+                <div class="site-preview-empty">This journal is blank.</div>
+                {{/if}}
+                {{else}}
+                <div class="site-preview-empty">No journal notes exist for this site.</div>
+                {{#if isGM}}
+                <button type="button" class="site-preview-secondary" data-action="createJournalPage">
+                    <i class="fas fa-book-medical"></i>
+                    <span>Create Journal</span>
+                </button>
+                {{/if}}
+                {{/if}}
+            </section>
+            {{/if}}
+
+            {{#if isGM}}
+            <footer class="site-preview-footer">
+                <button type="button" class="site-preview-open" data-action="openSiteScene">
+                    <i class="fas fa-map-location-dot"></i>
+                    <span>{{site.openSceneLabel}}</span>
+                </button>
+            </footer>
+            {{/if}}
+        </aside>
+    </div>
+</section>

@@ -1,0 +1,177 @@
+{
+  "themes": [
+    {
+      "id": "castle",
+      "label": "Castle",
+      "iconId": "castle",
+      "mapColorId": "green",
+      "defaultNames": [
+        "Ruined Castle",
+        "Forgotten Keep",
+        "Blackstone Hold",
+        "Old Watchcastle",
+        "Greywall Keep",
+        "Ravenfort",
+        "Highwatch Castle",
+        "Ironbridge Hold",
+        "Stormgate",
+        "Dunmere Keep",
+        "Redstone Bastion",
+        "Northwatch"
+      ],
+      "defaultIconByRole": {
+        "landmark": "castle",
+        "entrance": "portcullis"
+      }
+    },
+    {
+      "id": "temple",
+      "label": "Temple",
+      "iconId": "domed-temple",
+      "mapColorId": "magenta",
+      "defaultNames": [
+        "Silent Temple",
+        "Sunken Temple",
+        "Forgotten Shrine",
+        "Ancient Sanctum",
+        "Moonlit Fane",
+        "Ashen Abbey",
+        "Temple of Bells",
+        "Dawnspire Shrine",
+        "Hollow Sanctum",
+        "Saintsfall",
+        "The Quiet Chapel",
+        "Old Sun Temple"
+      ],
+      "defaultIconByRole": {
+        "landmark": "domed-temple",
+        "entrance": "ornate-door"
+      }
+    },
+    {
+      "id": "ruins",
+      "label": "Ruins",
+      "iconId": "ancient-ruins",
+      "mapColorId": "yellow",
+      "defaultNames": [
+        "Ancient Ruins",
+        "Collapsed Ruins",
+        "Forgotten Ruins",
+        "Broken Stones",
+        "Fallen Halls",
+        "Old Crownstones",
+        "The Shattered Court",
+        "Mossdeep Ruins",
+        "Cracked Pillars",
+        "The Sunken Walls",
+        "Briarfallen",
+        "The Lost Arcade"
+      ],
+      "defaultIconByRole": {
+        "landmark": "ancient-ruins",
+        "entrance": "barred-entrance"
+      }
+    },
+    {
+      "id": "tomb",
+      "label": "Tomb",
+      "iconId": "pyramid",
+      "mapColorId": "red",
+      "defaultNames": [
+        "Ancient Tomb",
+        "Silent Tomb",
+        "Buried Tomb",
+        "Forgotten Sepulcher",
+        "Ashbarrow",
+        "The Closed Crypt",
+        "Moon Cairn",
+        "Kingsleep Tomb",
+        "The Hollow Barrow",
+        "Blackroot Sepulcher",
+        "The Dust Vault",
+        "Grave of Lanterns"
+      ],
+      "defaultIconByRole": {
+        "landmark": "pyramid",
+        "entrance": "crypt-entrance"
+      }
+    },
+    {
+      "id": "manor",
+      "label": "Manor",
+      "iconId": "noble-house",
+      "mapColorId": "white",
+      "defaultNames": [
+        "Old Manor",
+        "Blackthorn Manor",
+        "Forgotten Estate",
+        "Ruined Hall",
+        "Crowmere House",
+        "Hollowfield Estate",
+        "Greywillow Manor",
+        "The Withered Hall",
+        "Briarwick House",
+        "Ashbourne Estate",
+        "Coldwater Hall",
+        "The Locked Villa"
+      ],
+      "defaultIconByRole": {
+        "landmark": "noble-house",
+        "entrance": "wooden-door"
+      }
+    },
+    {
+      "id": "settlement",
+      "label": "Settlement",
+      "iconId": "block-house",
+      "mapColorId": "white",
+      "defaultNames": [
+        "Millcross",
+        "Old Briar",
+        "Stoneford",
+        "Hearthmere",
+        "Redbrook",
+        "Crowfield",
+        "Westmere",
+        "Ashford",
+        "Greenhollow",
+        "Mossbank",
+        "Dunwick",
+        "Oakbridge",
+        "Larkstead",
+        "Briarford",
+        "Lowmarket",
+        "Tallowby"
+      ],
+      "defaultIconByRole": {
+        "landmark": "block-house",
+        "entrance": "gatehouse"
+      }
+    },
+    {
+      "id": "vault",
+      "label": "Vault",
+      "iconId": "guardian-statue",
+      "mapColorId": "blue",
+      "defaultNames": [
+        "Sealed Vault",
+        "Ancient Vault",
+        "Hidden Vault",
+        "Forgotten Repository",
+        "The Iron Archive",
+        "Deep Lock",
+        "The Silent Reliquary",
+        "Glass-Sealed Vault",
+        "The Buried Treasury",
+        "Black Door Repository",
+        "The Lower Archive",
+        "Vault of Ashes"
+      ],
+      "defaultIconByRole": {
+        "landmark": "guardian-statue",
+        "entrance": "steel-door"
+      }
+    }
+  ]
+}
+

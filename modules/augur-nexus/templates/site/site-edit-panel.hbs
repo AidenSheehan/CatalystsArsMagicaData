@@ -1,0 +1,107 @@
+<div class="site-edit-shell">
+    <fieldset class="site-panel-section">
+        <legend><i class="fas fa-sliders"></i> Scene Controls</legend>
+        <div class="site-scene-tab-summary">
+            <strong>{{sceneName}}</strong>
+            <span>{{siteCount}} sites</span>
+        </div>
+
+        <div class="site-edit-scene-visibility">
+            <label class="checkbox"><input type="checkbox" name="sceneShowMarkers" {{#if showMarkers}}checked{{/if}}> Show site markers</label>
+            <label class="checkbox"><input type="checkbox" name="sceneShowLabels" {{#if showLabels}}checked{{/if}}> Show site labels</label>
+        </div>
+    </fieldset>
+
+    <fieldset class="site-panel-section {{#unless hasSelection}}site-panel-section-disabled{{/unless}}">
+        <legend><i class="fas fa-pen-to-square"></i> Edit Marker</legend>
+        <div class="site-edit-status">
+            {{#if hasSelection}}
+            <div class="site-edit-selected">
+                {{#if selectedSiteIconSrc}}
+                <div class="picker-btn-thumb site-edit-selected-thumb">
+                    <img src="{{selectedSiteIconSrc}}" alt="{{selectedMarkerTitle}}">
+                </div>
+                {{else}}
+                <div class="picker-btn-thumb site-edit-selected-thumb">
+                    <i class="{{selectedMarkerIconClass}}"></i>
+                </div>
+                {{/if}}
+                <div class="site-edit-selected-copy">
+                    <strong>{{selectedMarkerTitle}}</strong>
+                    <span>{{selectedMarkerSubtitle}}</span>
+                </div>
+            </div>
+            {{else}}
+            <div class="site-edit-empty">
+                <i class="fas fa-location-dot"></i>
+                <span>Click a site, person, ship, or organization marker on the map to edit it.</span>
+            </div>
+            {{/if}}
+        </div>
+
+        {{#if supportsName}}
+        <div class="form-group">
+            <label>Marker Label</label>
+            <div class="site-name-entry">
+                <input type="text" name="markerName" value="{{siteName}}" placeholder="Marker" {{#unless hasSelection}}disabled{{/unless}}>
+                <button type="button" class="site-entry-clear" data-action="applyMarkerName" title="Apply marker label" hidden {{#unless hasSelection}}disabled{{/unless}}><i class="fas fa-check"></i></button>
+                {{#if canResetMarkerName}}
+                <button type="button" class="site-entry-clear" data-action="resetMarkerName" title="Use linked target label" {{#unless hasSelection}}disabled{{/unless}}><i class="fas fa-rotate-left"></i></button>
+                {{/if}}
+            </div>
+        </div>
+        {{/if}}
+
+        {{#if supportsIconRole}}
+        <div class="form-group">
+            <label>Icon Type</label>
+            <div class="site-role-switcher site-icon-type-switcher" role="tablist" aria-label="Icon Type">
+                {{#each iconRoles}}
+                <button type="button" class="site-role-option {{#if (eq ../selectedIconRole this.id)}}active{{/if}}" data-site-icon-role="{{this.id}}" {{#unless ../hasSelection}}disabled{{/unless}}>{{this.label}}</button>
+                {{/each}}
+            </div>
+        </div>
+        {{/if}}
+
+        {{#if supportsIconPicker}}
+        <div class="form-group">
+            <label>Marker Icon</label>
+            <div class="site-icon-picker-row">
+                <button type="button" class="picker-btn" data-action="pickSiteIcon" {{#unless hasSelection}}disabled{{/unless}}>
+                    <div class="picker-btn-thumb">
+                        {{#if selectedIconSrc}}
+                        <img src="{{selectedIconSrc}}" alt="{{selectedIconLabel}}" style="filter: drop-shadow(0 0 4px {{selectedIconColor}});">
+                        {{else}}
+                        <i class="fas fa-location-dot"></i>
+                        {{/if}}
+                    </div>
+                    <span class="picker-btn-label">{{selectedIconLabel}}</span>
+                    <i class="fas fa-image picker-btn-icon"></i>
+                </button>
+                {{#if canResetMarkerIcon}}
+                <button type="button" class="site-entry-clear" data-action="resetMarkerIcon" title="Use linked target icon" {{#unless hasSelection}}disabled{{/unless}}><i class="fas fa-rotate-left"></i></button>
+                {{/if}}
+            </div>
+        </div>
+        {{/if}}
+
+        {{#if hasSelection}}
+        <div class="form-group">
+            <label class="checkbox site-label-toggle"><input type="checkbox" name="showLabel" {{#if showLabel}}checked{{/if}} {{#unless hasSelection}}disabled{{/unless}}> Show Label</label>
+        </div>
+        {{/if}}
+
+        {{{styleHtml}}}
+    </fieldset>
+
+    <div class="site-info compact">
+        <div class="site-action place"><i class="fas fa-hand-pointer"></i><span><strong>Left Click</strong> to select a marker</span></div>
+        <div class="site-action edit"><i class="fas fa-sliders"></i><span><strong>Panel Controls</strong> update it</span></div>
+        <div class="site-action move site-action-full"><i class="fas fa-arrows-up-down-left-right"></i><span><strong>Drag Selected Marker</strong> to move it on the map</span></div>
+        <div class="site-action gesture"><i class="fas fa-rotate"></i><span><strong>Q / E</strong> rotate while dragging</span></div>
+        <div class="site-action gesture"><i class="fas fa-up-down-left-right"></i><span><strong>W/S</strong> size, <strong>A</strong> reset</span></div>
+        <div class="site-action cancel"><i class="fas fa-rotate-left"></i><span><strong>ESC</strong> to cancel drag</span></div>
+        <div class="site-action delete"><i class="fas fa-eraser"></i><span><strong>Shift + Click</strong> to delete</span></div>
+    </div>
+
+</div>

@@ -1,0 +1,70 @@
+<header class="npc-dossier-header" style="--npc-accent: {{profile.accent}};">
+    <div class="npc-dossier-portrait">
+        {{#if profile.imageSrc}}
+        <img src="{{profile.imageSrc}}" alt="{{profile.name}}">
+        {{else}}
+        <i class="fas fa-user"></i>
+        {{/if}}
+    </div>
+    <div class="npc-dossier-title">
+        <h2>{{profile.name}}</h2>
+        <p>{{profile.subtitle}}</p>
+        {{#if profile.showTabs}}
+        <nav class="npc-dossier-tabs" aria-label="Person dossier tabs">
+            <button type="button" class="{{#if profile.tabs.isProfileTab}}active{{/if}}" data-action="setNpcDossierTab" data-tab="profile">Profile</button>
+            <button type="button" class="{{#if profile.tabs.isJournalTab}}active{{/if}}" data-action="setNpcDossierTab" data-tab="journal">Journal</button>
+            {{#if profile.linkedActor}}
+            <button type="button" class="npc-dossier-tab-icon" data-action="openNpcLinkedActor" title="Open linked Actor" aria-label="Open linked Actor">
+                <i class="fas fa-user-circle"></i>
+            </button>
+            {{/if}}
+        </nav>
+        {{/if}}
+    </div>
+    {{#if profile.showActions}}
+    <button type="button" class="npc-dossier-action" data-action="openNpcActions" title="Person actions" aria-label="Person actions">
+        <i class="fas fa-ellipsis"></i>
+    </button>
+    {{/if}}
+</header>
+
+{{#if profile.showBody}}
+<section class="npc-dossier-section">
+    {{#if profile.hasTraits}}
+    <div class="npc-trait-row">
+        {{#each profile.traits}}
+        <span class="npc-trait-chip {{#if missing}}missing{{/if}}" title="{{label}}">
+            {{#if iconSrc}}<img src="{{iconSrc}}" alt="{{label}}">{{else}}<i class="fas fa-user"></i>{{/if}}
+            <span>{{label}}</span>
+        </span>
+        {{/each}}
+    </div>
+    {{else}}
+    <div class="npc-dossier-empty compact">{{profile.emptyTraitsLabel}}</div>
+    {{/if}}
+
+    {{#if profile.identityChips.length}}
+    <div class="npc-dossier-chip-row npc-dossier-chip-row-primary">
+        {{#each profile.identityChips}}
+        <span><em>{{label}}</em><strong>{{value}}</strong></span>
+        {{/each}}
+    </div>
+    {{/if}}
+
+    {{#if profile.chips.length}}
+    <div class="npc-dossier-chip-row">
+        {{#each profile.chips}}
+        <span><em>{{label}}</em><strong>{{value}}</strong></span>
+        {{/each}}
+    </div>
+    {{/if}}
+
+    {{#if profile.profileRows.length}}
+    <div class="npc-dossier-custom-row">
+        {{#each profile.profileRows}}
+        <span><em>{{label}}</em><strong>{{value}}</strong></span>
+        {{/each}}
+    </div>
+    {{/if}}
+</section>
+{{/if}}

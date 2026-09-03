@@ -1,0 +1,78 @@
+<form class="npc-create-form">
+    {{#if hasGenerators}}
+    <section class="npc-create-generator">
+        <label>
+            <span>Generator</span>
+            <select name="generatorId">
+                {{#each generators}}
+                <option value="{{id}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+                {{/each}}
+            </select>
+        </label>
+        <div class="npc-create-generator-grid">
+            {{#if hasGeneratorSelected}}
+            {{#if generatorOptions.hasRoles}}
+            <label>
+                <span>Role</span>
+                <select name="generatorRoleId">
+                    {{#each generatorOptions.roles}}
+                    <option value="{{id}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+                    {{/each}}
+                </select>
+            </label>
+            {{/if}}
+            {{#if generatorOptions.hasGenders}}
+            <label>
+                <span>Appearance</span>
+                <select name="generatorGender">
+                    {{#each generatorOptions.genders}}
+                    <option value="{{id}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+                    {{/each}}
+                </select>
+            </label>
+            {{/if}}
+            {{/if}}
+        </div>
+    </section>
+    {{/if}}
+
+    {{#if hasCandidate}}
+    <section class="npc-candidate-panel">
+        {{> "modules/augur-nexus/templates/campaign-entities/npc-profile-panel.hbs" profile=candidate.profile}}
+    </section>
+
+    <footer class="npc-create-candidate-actions">
+        <button type="button" data-action="cancel">Cancel</button>
+        <button type="button" data-action="rerollCandidate">
+            <i class="fas fa-dice"></i>
+            <span>Reroll</span>
+        </button>
+        <button type="button" data-action="editCandidate">
+            <i class="fas fa-pen"></i>
+            <span>Edit</span>
+        </button>
+        <button type="button" data-action="acceptCandidate">
+            <i class="fas fa-check"></i>
+            <span>Accept</span>
+        </button>
+    </footer>
+    {{else}}
+    {{#unless hasGeneratorSelected}}
+    <label>
+        <span>Name</span>
+        <input type="text" name="name" value="{{name}}" autocomplete="off">
+    </label>
+    <label>
+        <span>Role</span>
+        <input type="text" name="roleLabel" placeholder="Pilot, Soldier, Settler..." autocomplete="off">
+    </label>
+    {{/unless}}
+    <footer>
+        <button type="button" data-action="cancel">Cancel</button>
+        <button type="submit">
+            <i class="fas {{#if hasGeneratorSelected}}fa-dice{{else}}fa-user-plus{{/if}}"></i>
+            <span>{{#if hasGeneratorSelected}}Generate Candidate{{else}}Create Person{{/if}}</span>
+        </button>
+    </footer>
+    {{/if}}
+</form>

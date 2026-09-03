@@ -1,0 +1,14 @@
+{
+  "title": "Testing",
+  "system": "worldbuilding",
+  "id": "testing",
+  "coreVersion": "14.364",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "systemVersion": "0.8.2",
+  "lastPlayed": "Fri Aug 14 2026 16:37:55 GMT+0200 (közép-európai nyári idő)",
+  "description": "",
+  "flags": {}
+}

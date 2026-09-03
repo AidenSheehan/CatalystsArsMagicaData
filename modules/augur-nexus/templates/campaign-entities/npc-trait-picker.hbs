@@ -1,0 +1,40 @@
+<div class="npc-trait-picker-shell">
+    <header class="npc-trait-picker-header">
+        <h2>Edit Traits</h2>
+        <span>{{selectedCount}}/{{maxTraits}}</span>
+    </header>
+
+    <section class="npc-trait-picker-current">
+        <h3>Current Traits</h3>
+        {{#if currentTraits.length}}
+        <div class="npc-trait-picker-current-grid">
+            {{#each currentTraits}}
+            <button type="button" class="npc-trait-option selected {{#if missing}}missing{{/if}}" data-action="toggleTrait" data-trait-id="{{id}}" title="Remove {{label}}">
+                {{#if iconSrc}}<img src="{{iconSrc}}" alt="{{label}}">{{else}}<i class="fas fa-user"></i>{{/if}}
+                <span>{{label}}</span>
+            </button>
+            {{/each}}
+        </div>
+        {{else}}
+        <div class="npc-dossier-empty compact">No traits selected.</div>
+        {{/if}}
+    </section>
+
+    {{#if message}}
+    <div class="npc-trait-picker-message">{{message}}</div>
+    {{/if}}
+
+    <section class="npc-trait-picker-grid" aria-label="Available traits">
+        {{#each traits}}
+        <button type="button" class="npc-trait-option {{#if selected}}selected{{/if}} {{#if disabled}}disabled{{/if}}" data-action="toggleTrait" data-trait-id="{{id}}" title="{{title}}" {{#if disabled}}aria-disabled="true"{{/if}}>
+            {{#if iconSrc}}<img src="{{iconSrc}}" alt="{{label}}">{{else}}<i class="fas fa-user"></i>{{/if}}
+            <span>{{label}}</span>
+        </button>
+        {{/each}}
+    </section>
+
+    <footer class="npc-trait-picker-footer">
+        <button type="button" class="npc-dossier-secondary" data-action="cancel">Cancel</button>
+        <button type="button" class="npc-dossier-primary" data-action="saveTraits">Save Traits</button>
+    </footer>
+</div>

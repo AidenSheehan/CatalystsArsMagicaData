@@ -1,0 +1,35 @@
+<div class="site-cover-picker">
+    <div class="site-cover-grid">
+        {{#if sourceCover}}
+        <button type="button" class="site-cover-item source {{#if sourceCover.active}}active{{/if}}" data-action="useSourceCover">
+            <span class="site-cover-custom-content">
+                <span class="site-cover-thumb custom-preview">
+                    <img src="{{sourceCover.src}}" alt="{{sourceCover.label}}" loading="lazy">
+                </span>
+                <span class="site-cover-name">{{sourceCover.label}}</span>
+            </span>
+        </button>
+        {{/if}}
+
+        <button type="button" class="site-cover-item custom {{#if customActive}}active{{/if}}" data-action="pickCustomCover">
+            <span class="site-cover-custom-content">
+                {{#if customActive}}
+                <span class="site-cover-thumb custom-preview">
+                    <img src="{{customSrc}}" alt="Custom cover" loading="lazy">
+                </span>
+                {{else}}
+                <i class="fas fa-folder-open"></i>
+                {{/if}}
+                <span class="site-cover-name">Custom Image</span>
+            </span>
+        </button>
+
+        {{#each covers}}
+        <button type="button" class="site-cover-item {{#if active}}active{{/if}}" data-cover-src="{{src}}">
+            <span class="site-cover-thumb">
+                <img src="{{thumb}}" alt="{{name}}" loading="lazy">
+            </span>
+        </button>
+        {{/each}}
+    </div>
+</div>

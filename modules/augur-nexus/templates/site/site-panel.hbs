@@ -1,0 +1,25 @@
+<div class="augur-nexus-tool nexus-site-panel nexus-site-tabs-shell">
+    <nav class="site-mode-strip" aria-label="{{ariaLabel}} workflow">
+        {{#each modeTabs}}
+        <button type="button" class="site-mode-button {{#if this.active}}active{{/if}}" data-site-mode="{{this.id}}" aria-pressed="{{#if this.active}}true{{else}}false{{/if}}">
+            <i class="{{this.icon}}"></i>
+            <span>{{this.label}}</span>
+        </button>
+        {{/each}}
+    </nav>
+
+    {{#if isCreateMode}}
+    <nav class="site-tab-strip" aria-label="{{ariaLabel}} creation types">
+        {{#each creationTabs}}
+        <button type="button" class="site-tab-button {{#if this.active}}active{{/if}}" data-site-tab="{{this.id}}" aria-pressed="{{#if this.active}}true{{else}}false{{/if}}">
+            <i class="{{this.icon}}"></i>
+            <span>{{this.label}}</span>
+        </button>
+        {{/each}}
+    </nav>
+    {{/if}}
+
+    <div class="site-tab-content" data-site-active-tab="{{activeTab}}">
+        {{{tabHtml}}}
+    </div>
+</div>

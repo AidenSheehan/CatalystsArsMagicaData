@@ -1,0 +1,63 @@
+<section class="site-marker-style-editor">
+    <div class="form-group">
+        <label>Icon Size</label>
+        <div class="form-fields">
+            <input type="range" name="iconSize" min="50" max="256" step="1" value="{{selectedIconSize}}" {{#if controlsDisabled}}disabled{{/if}}>
+            <span class="range-value" data-site-icon-size-value>{{selectedIconSize}}</span>
+        </div>
+    </div>
+
+    {{#if showLabel}}
+    <div class="site-label-controls-row">
+        <div class="form-group site-label-size-control">
+            <label>Label Size</label>
+            <div class="form-fields">
+                <input type="range" name="labelFontSize" min="{{minLabelFontSize}}" max="{{maxLabelFontSize}}" step="1" value="{{selectedLabelFontSize}}" {{#if controlsDisabled}}disabled{{/if}}>
+                <span class="range-value" data-site-label-font-size-value>{{selectedLabelFontSize}}</span>
+            </div>
+        </div>
+
+        <div class="form-group site-label-font-control">
+            <label>Label Font</label>
+            <select name="labelFontFamily" {{#if controlsDisabled}}disabled{{/if}}>
+                {{#each labelFontOptions}}
+                <option value="{{this.family}}" {{#if (eq ../selectedLabelFontFamily this.family)}}selected{{/if}}>{{this.label}}</option>
+                {{/each}}
+            </select>
+        </div>
+    </div>
+
+    {{#if showLabelColorControls}}
+    <div class="form-group">
+        <label>Label Color</label>
+        <div class="site-color-grid">
+            {{#each colors}}
+            <button type="button" class="site-color-swatch {{#if (eq ../selectedLabelColor this.value)}}active{{/if}}" data-placement-label-color="{{this.value}}" title="{{this.label}}" style="--site-color: {{this.value}};" {{#if ../controlsDisabled}}disabled{{/if}}></button>
+            {{/each}}
+        </div>
+    </div>
+    {{/if}}
+    {{/if}}
+
+    {{#if supportsIconColor}}
+    <div class="form-group">
+        <label>Icon Color</label>
+        <div class="site-color-grid">
+            {{#each colors}}
+            <button type="button" class="site-color-swatch {{#if (eq ../selectedIconColor this.value)}}active{{/if}}" data-site-icon-color="{{this.value}}" title="{{this.label}}" style="--site-color: {{this.value}};" {{#if ../controlsDisabled}}disabled{{/if}}></button>
+            {{/each}}
+        </div>
+        {{#if canResetMarkerIconColor}}
+        <button type="button" class="site-entry-clear" data-action="resetMarkerIconColor" title="Use linked target icon color" {{#if controlsDisabled}}disabled{{/if}}><i class="fas fa-rotate-left"></i></button>
+        {{/if}}
+    </div>
+    {{/if}}
+
+    {{#if showSnapToGrid}}
+    <div class="site-behavior-row">
+        <div class="form-group site-randomize-toggle">
+            <label class="checkbox"><input type="checkbox" name="snapToGrid" {{#if snapToGrid}}checked{{/if}} {{#if controlsDisabled}}disabled{{/if}}> Snap to grid</label>
+        </div>
+    </div>
+    {{/if}}
+</section>

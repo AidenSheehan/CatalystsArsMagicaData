@@ -1,0 +1,32 @@
+<section class="site-preview-shell place-preview-shell npc-dossier-shell ship-dossier-shell" style="{{backgroundStyle}}">
+    <div class="site-preview-shade"></div>
+    {{#if missing}}
+    <div class="npc-dossier-missing">This ship could not be found.</div>
+    {{else}}
+    <div class="site-preview-stage npc-dossier-stage">
+        <aside class="site-preview-dossier place-preview-dossier npc-dossier-profile" data-connections-drop-surface>
+            {{> "modules/augur-nexus/templates/campaign-entities/ship-profile-panel.hbs" profile=ship.profile}}
+            {{#if dossier.isJournalTab}}
+            <section class="npc-dossier-section npc-dossier-journal">
+                <div class="npc-dossier-journal-body">
+                {{#if journal.hasPage}}
+                {{#if journal.hasContent}}<div class="npc-dossier-journal-content">{{{journal.content}}}</div>{{else}}<div class="npc-dossier-empty">This journal is blank.</div>{{/if}}
+                {{else}}<div class="npc-dossier-empty">No journal has been created for this ship.</div>{{/if}}
+                </div>
+                {{#if isGM}}
+                <footer class="npc-dossier-journal-footer">
+                    <button type="button" class="npc-dossier-secondary" data-action="{{#if journal.hasPage}}openShipJournal{{else}}createShipJournal{{/if}}">
+                        <i class="fas {{#if journal.hasPage}}fa-book-open{{else}}fa-book-medical{{/if}}"></i>
+                        <span>{{#if journal.hasPage}}Edit Journal{{else}}Create Journal{{/if}}</span>
+                    </button>
+                </footer>
+                {{/if}}
+            </section>
+            {{/if}}
+        </aside>
+        <section class="site-preview-cover npc-dossier-connections" aria-label="Ship connections">
+            {{> "modules/augur-nexus/templates/connections/connections-board.hbs" connections.board}}
+        </section>
+    </div>
+    {{/if}}
+</section>

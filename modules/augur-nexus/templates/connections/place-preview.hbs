@@ -1,0 +1,61 @@
+<section class="site-preview-shell place-preview-shell" style="{{backgroundStyle}}">
+    <div class="site-preview-shade"></div>
+
+    <div class="site-preview-stage">
+        <aside class="site-preview-dossier place-preview-dossier">
+            <header class="site-preview-header">
+                <div class="site-preview-icon">
+                    {{#if place.icon}}
+                    <img src="{{place.icon}}" alt="{{place.name}}">
+                    {{else}}
+                    <i class="fas fa-map"></i>
+                    {{/if}}
+                </div>
+                <div class="site-preview-title">
+                    <h2>{{place.name}}</h2>
+                    <div class="site-preview-subtitle-row">
+                        <p>{{place.subtitle}}</p>
+                        {{#if canShowPlaceActions}}
+                        <button type="button" class="site-preview-icon-action" data-action="openPlaceActions" title="Connection actions" aria-label="Connection actions">
+                            <i class="fas fa-ellipsis"></i>
+                        </button>
+                        {{/if}}
+                    </div>
+                </div>
+            </header>
+
+            <section class="site-preview-section site-preview-journal place-preview-journal">
+                {{#if journal.hasPage}}
+                {{#if journal.hasContent}}
+                <div class="site-preview-journal-content">
+                    {{{journal.content}}}
+                </div>
+                {{else}}
+                <div class="site-preview-empty">This journal is blank.</div>
+                {{/if}}
+                {{else}}
+                <div class="site-preview-empty">No journal notes exist for this object.</div>
+                {{#if isGM}}
+                <button type="button" class="site-preview-secondary" data-action="createJournalPage">
+                    <i class="fas fa-book-medical"></i>
+                    <span>Create Journal</span>
+                </button>
+                {{/if}}
+                {{/if}}
+            </section>
+
+            <footer class="site-preview-footer">
+                {{#if place.canOpenScene}}
+                <button type="button" class="site-preview-open {{#if place.openSceneDisabled}}is-unavailable{{/if}}" data-action="openPlaceScene" data-unavailable-reason="{{place.openSceneUnavailableReason}}" title="{{place.openSceneTitle}}">
+                    <i class="fas fa-map-location-dot"></i>
+                    <span>{{place.openSceneLabel}}</span>
+                </button>
+                {{/if}}
+            </footer>
+        </aside>
+
+        <section class="site-preview-cover" aria-label="Connections">
+            {{> "modules/augur-nexus/templates/connections/connections-board.hbs" connections.board}}
+        </section>
+    </div>
+</section>

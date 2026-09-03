@@ -1,0 +1,59 @@
+<header class="npc-dossier-header faction-dossier-header" style="--npc-accent: {{profile.accent}};">
+    <div class="npc-dossier-portrait faction-dossier-emblem">
+        {{#if profile.imageSrc}}
+        <img src="{{profile.imageSrc}}" alt="{{profile.name}}">
+        {{else}}
+        <i class="fas fa-shield-halved"></i>
+        {{/if}}
+    </div>
+    <div class="npc-dossier-title">
+        <h2>{{profile.name}}</h2>
+        <p>{{profile.subtitle}}</p>
+        {{#if profile.showTabs}}
+        <nav class="npc-dossier-tabs" aria-label="Organization dossier tabs">
+            <button type="button" class="{{#if profile.tabs.isProfileTab}}active{{/if}}" data-action="setFactionDossierTab" data-tab="profile">Profile</button>
+            <button type="button" class="{{#if profile.tabs.isJournalTab}}active{{/if}}" data-action="setFactionDossierTab" data-tab="journal">Journal</button>
+        </nav>
+        {{/if}}
+    </div>
+    {{#if profile.showActions}}
+    <button type="button" class="npc-dossier-action" data-action="openFactionActions" title="Organization actions" aria-label="Organization actions">
+        <i class="fas fa-ellipsis"></i>
+    </button>
+    {{/if}}
+</header>
+
+{{#if profile.showBody}}
+<section class="npc-dossier-section">
+    {{#if profile.identityChips.length}}
+    <div class="npc-dossier-chip-row npc-dossier-chip-row-primary">
+        {{#each profile.identityChips}}
+        <span><em>{{label}}</em><strong>{{value}}</strong></span>
+        {{/each}}
+    </div>
+    {{/if}}
+
+    {{#if profile.chips.length}}
+    <div class="npc-dossier-chip-row">
+        {{#each profile.chips}}
+        <span><em>{{label}}</em><strong>{{value}}</strong></span>
+        {{/each}}
+    </div>
+    {{/if}}
+
+    {{#if profile.profileRows.length}}
+    <div class="npc-dossier-custom-row">
+        {{#each profile.profileRows}}
+        <span><em>{{label}}</em><strong>{{value}}</strong></span>
+        {{/each}}
+    </div>
+    {{/if}}
+    {{#unless profile.identityChips.length}}
+    {{#unless profile.chips.length}}
+    {{#unless profile.profileRows.length}}
+    <div class="npc-dossier-empty compact">{{profile.emptyLabel}}</div>
+    {{/unless}}
+    {{/unless}}
+    {{/unless}}
+</section>
+{{/if}}

@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "catalogId": "augur-nexus:personality-traits",
+  "label": "Nexus Personality Traits",
+  "traits": [
+    {
+      "id": "ambitious",
+      "label": "Ambitious",
+      "oppositeId": "content",
+      "pairId": "ambition",
+      "sort": 10,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/ambitious.png"
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "oppositeId": "ambitious",
+      "pairId": "ambition",
+      "sort": 20,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/content.png"
+    },
+    {
+      "id": "arbitrary",
+      "label": "Arbitrary",
+      "oppositeId": "just",
+      "pairId": "justice",
+      "sort": 30,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/arbitrary.png"
+    },
+    {
+      "id": "just",
+      "label": "Just",
+      "oppositeId": "arbitrary",
+      "pairId": "justice",
+      "sort": 40,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/just.png"
+    },
+    {
+      "id": "arrogant",
+      "label": "Arrogant",
+      "oppositeId": "humble",
+      "pairId": "humility",
+      "sort": 50,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/arrogant.png"
+    },
+    {
+      "id": "humble",
+      "label": "Humble",
+      "oppositeId": "arrogant",
+      "pairId": "humility",
+      "sort": 60,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/humble.png"
+    },
+    {
+      "id": "brave",
+      "label": "Brave",
+      "oppositeId": "coward",
+      "pairId": "bravery",
+      "sort": 70,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/brave.png"
+    },
+    {
+      "id": "coward",
+      "label": "Coward",
+      "oppositeId": "brave",
+      "pairId": "bravery",
+      "sort": 80,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/coward.png"
+    },
+    {
+      "id": "calm",
+      "label": "Calm",
+      "oppositeId": "wrathful",
+      "pairId": "temper",
+      "sort": 90,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/calm.png"
+    },
+    {
+      "id": "wrathful",
+      "label": "Wrathful",
+      "oppositeId": "calm",
+      "pairId": "temper",
+      "sort": 100,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/wrathful.png"
+    },
+    {
+      "id": "chaste",
+      "label": "Chaste",
+      "oppositeId": "lustful",
+      "pairId": "desire",
+      "sort": 110,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/chaste.png"
+    },
+    {
+      "id": "lustful",
+      "label": "Lustful",
+      "oppositeId": "chaste",
+      "pairId": "desire",
+      "sort": 120,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/lustful.png"
+    },
+    {
+      "id": "cynical",
+      "label": "Cynical",
+      "oppositeId": "zealous",
+      "pairId": "faith",
+      "sort": 130,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/cynical.png"
+    },
+    {
+      "id": "zealous",
+      "label": "Zealous",
+      "oppositeId": "cynical",
+      "pairId": "faith",
+      "sort": 140,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/zealous.png"
+    },
+    {
+      "id": "deceitful",
+      "label": "Deceitful",
+      "oppositeId": "honest",
+      "pairId": "honesty",
+      "sort": 150,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/deceitful.png"
+    },
+    {
+      "id": "honest",
+      "label": "Honest",
+      "oppositeId": "deceitful",
+      "pairId": "honesty",
+      "sort": 160,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/honest.png"
+    },
+    {
+      "id": "diligent",
+      "label": "Diligent",
+      "oppositeId": "lazy",
+      "pairId": "industry",
+      "sort": 170,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/diligent.png"
+    },
+    {
+      "id": "lazy",
+      "label": "Lazy",
+      "oppositeId": "diligent",
+      "pairId": "industry",
+      "sort": 180,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/lazy.png"
+    },
+    {
+      "id": "fickle",
+      "label": "Fickle",
+      "oppositeId": "stubborn",
+      "pairId": "resolve",
+      "sort": 190,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/fickle.png"
+    },
+    {
+      "id": "stubborn",
+      "label": "Stubborn",
+      "oppositeId": "fickle",
+      "pairId": "resolve",
+      "sort": 200,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/stubborn.png"
+    },
+    {
+      "id": "forgiving",
+      "label": "Forgiving",
+      "oppositeId": "vengeful",
+      "pairId": "mercy",
+      "sort": 210,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/forgiving.png"
+    },
+    {
+      "id": "vengeful",
+      "label": "Vengeful",
+      "oppositeId": "forgiving",
+      "pairId": "mercy",
+      "sort": 220,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/vengeful.png"
+    },
+    {
+      "id": "generous",
+      "label": "Generous",
+      "oppositeId": "greedy",
+      "pairId": "generosity",
+      "sort": 230,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/generous.png"
+    },
+    {
+      "id": "greedy",
+      "label": "Greedy",
+      "oppositeId": "generous",
+      "pairId": "generosity",
+      "sort": 240,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/greedy.png"
+    },
+    {
+      "id": "gregarious",
+      "label": "Gregarious",
+      "oppositeId": "shy",
+      "pairId": "sociability",
+      "sort": 250,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/gregarious.png"
+    },
+    {
+      "id": "shy",
+      "label": "Shy",
+      "oppositeId": "gregarious",
+      "pairId": "sociability",
+      "sort": 260,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/shy.png"
+    },
+    {
+      "id": "kind",
+      "label": "Kind",
+      "oppositeId": "sadistic",
+      "pairId": "kindness",
+      "sort": 270,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/kind.png"
+    },
+    {
+      "id": "sadistic",
+      "label": "Sadistic",
+      "oppositeId": "kind",
+      "pairId": "kindness",
+      "sort": 280,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/sadistic.png"
+    },
+    {
+      "id": "paranoid",
+      "label": "Paranoid",
+      "oppositeId": "trusting",
+      "pairId": "trust",
+      "sort": 290,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/paranoid.png"
+    },
+    {
+      "id": "trusting",
+      "label": "Trusting",
+      "oppositeId": "paranoid",
+      "pairId": "trust",
+      "sort": 300,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/trusting.png"
+    },
+    {
+      "id": "patient",
+      "label": "Patient",
+      "oppositeId": "impatient",
+      "pairId": "patience",
+      "sort": 310,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/patient.png"
+    },
+    {
+      "id": "impatient",
+      "label": "Impatient",
+      "oppositeId": "patient",
+      "pairId": "patience",
+      "sort": 320,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/impatient.png"
+    },
+    {
+      "id": "temperate",
+      "label": "Temperate",
+      "oppositeId": "gluttonous",
+      "pairId": "appetite",
+      "sort": 330,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/temperate.png"
+    },
+    {
+      "id": "gluttonous",
+      "label": "Gluttonous",
+      "oppositeId": "temperate",
+      "pairId": "appetite",
+      "sort": 340,
+      "iconSrc": "modules/augur-nexus/assets/traits/personality/gluttonous.png"
+    }
+  ]
+}

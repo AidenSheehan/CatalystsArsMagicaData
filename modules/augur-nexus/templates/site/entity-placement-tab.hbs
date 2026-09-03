@@ -1,0 +1,143 @@
+<div class="entity-placement-pane" data-entity-placement="{{entityType}}">
+    {{#if hasProvider}}
+    <div class="entity-placement-mode site-role-switcher" role="tablist" aria-label="{{label}} placement mode">
+        <button type="button" class="site-role-option {{#if isNewMode}}active{{/if}}" data-entity-mode="new" aria-pressed="{{#if isNewMode}}true{{else}}false{{/if}}">
+            <i class="fas fa-dice"></i>
+            <span>New</span>
+        </button>
+        <button type="button" class="site-role-option {{#if isExistingMode}}active{{/if}}" data-entity-mode="existing" aria-pressed="{{#if isExistingMode}}true{{else}}false{{/if}}">
+            <i class="fas fa-list"></i>
+            <span>Existing</span>
+        </button>
+    </div>
+
+    {{#if isNewMode}}
+    <fieldset class="site-panel-section entity-generator-section">
+        <legend><i class="{{icon}}"></i> {{label}}</legend>
+
+        {{#if compactGeneratorControls}}
+        <div class="entity-generator-row compact">
+            <div class="form-group">
+                <label>{{label}} Generator</label>
+                <select name="generatorId">
+                    {{#each generators}}
+                    <option value="{{id}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            {{#each optionGroups}}
+            <div class="form-group">
+                <label>{{label}}</label>
+                <select name="{{name}}">
+                    {{#each options}}
+                    <option value="{{id}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            {{/each}}
+        </div>
+        {{else}}
+        <div class="form-group">
+            <label>{{label}} Generator</label>
+            <select name="generatorId">
+                {{#each generators}}
+                <option value="{{id}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+                {{/each}}
+            </select>
+        </div>
+
+        {{#if hasOptionGroups}}
+        <div class="entity-option-grid">
+            {{#each optionGroups}}
+            <div class="form-group">
+                <label>{{label}}</label>
+                <select name="{{name}}">
+                    {{#each options}}
+                    <option value="{{id}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            {{/each}}
+        </div>
+        {{/if}}
+        {{/if}}
+
+        {{#if hasCandidate}}
+        <section class="entity-candidate-panel">
+            {{{candidate.html}}}
+        </section>
+        <footer class="entity-placement-actions">
+            <button type="button" class="site-mode-action" data-action="rerollCandidate"><i class="fas fa-dice"></i><span>Reroll</span></button>
+            <button type="button" class="site-mode-action" data-action="editCandidate"><i class="fas fa-pen"></i><span>Edit</span></button>
+            <button type="button" class="site-mode-action" data-action="clearCandidate"><i class="fas fa-xmark"></i><span>Clear</span></button>
+        </footer>
+        {{else}}
+        <button type="button" class="site-mode-action entity-generate-button" data-action="generateCandidate">
+            <i class="fas fa-dice"></i>
+            <span>Generate Candidate</span>
+        </button>
+        {{/if}}
+    </fieldset>
+    {{else}}
+    <fieldset class="site-panel-section entity-existing-section">
+        <legend><i class="{{icon}}"></i> Existing {{plural}}</legend>
+
+        <div class="form-group">
+            <label>Search</label>
+            <input type="search" name="entitySearch" value="{{search}}" placeholder="Search {{plural}}" autocomplete="off" spellcheck="false">
+        </div>
+
+        {{#if hasExistingRows}}
+        <div class="entity-existing-list">
+            {{#each existingRows}}
+            <button type="button" class="entity-existing-row {{#if selected}}active{{/if}}" data-existing-entity-id="{{id}}">
+                <span class="entity-existing-thumb" style="--entity-accent: {{accent}};">
+                    {{#if imageSrc}}<img src="{{imageSrc}}" alt="{{name}}">{{else}}<i class="fas fa-circle"></i>{{/if}}
+                </span>
+                <span class="entity-existing-copy">
+                    <strong>{{name}}</strong>
+                    <small>{{subtitle}}</small>
+                </span>
+            </button>
+            {{/each}}
+        </div>
+        <button type="button" class="site-mode-action entity-open-selected" data-action="openSelectedEntity">
+            <i class="fas fa-up-right-from-square"></i>
+            <span>Open Selected</span>
+        </button>
+        {{else}}
+        <div class="site-panel-empty compact">
+            <p>No {{plural}} match this search.</p>
+        </div>
+        {{/if}}
+    </fieldset>
+    {{/if}}
+
+    {{{advancedHtml}}}
+
+    <div class="site-info compact">
+        <div class="site-action place"><i class="{{icon}}"></i><span><strong>Left Click</strong> to place</span></div>
+        <div class="site-action delete"><i class="fas fa-eraser"></i><span><strong>Shift + Click</strong> to delete marker</span></div>
+        <div class="site-action gesture"><i class="fas fa-rotate"></i><span><strong>Q / E</strong> rotate preview</span></div>
+        <div class="site-action gesture"><i class="fas fa-up-down-left-right"></i><span><strong>W/S</strong> size, <strong>A</strong> reset</span></div>
+        <div class="site-action cancel site-action-full"><i class="fas fa-rotate-left"></i><span><strong>ESC</strong> to cancel drag or hide preview</span></div>
+    </div>
+    {{else}}
+    <section class="entity-promo-pane">
+        <div class="entity-promo-card">
+            <i class="{{icon}}"></i>
+            <h3>{{promoTitle}}</h3>
+            <p>{{promoText}}</p>
+            <button type="button" class="site-mode-action" data-action="openPatreon">
+                <i class="fas fa-up-right-from-square"></i>
+                <span>Get Augur: Sci-Fi</span>
+            </button>
+        </div>
+        <div class="entity-promo-card muted">
+            <i class="fas fa-hat-wizard"></i>
+            <h3>Fantasy {{plural}}</h3>
+            <p>Fantasy support is planned for a future Augur module.</p>
+        </div>
+    </section>
+    {{/if}}
+</div>

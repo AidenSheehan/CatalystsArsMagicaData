@@ -1,0 +1,24 @@
+<div class="nexus-player-info-panel">
+    <h3>
+        <i class="{{icon}}"></i>
+        <span>{{title}}</span>
+    </h3>
+    <p>{{intro}}</p>
+
+    <div class="nexus-player-info-rows">
+        {{#each rows}}
+        <section>
+            <strong>
+                <i class="{{icon}}"></i>
+                <span>{{label}}</span>
+            </strong>
+            <p>{{text}}</p>
+        </section>
+        {{/each}}
+    </div>
+
+    <div class="nexus-player-info-note">
+        <i class="fas fa-circle-info"></i>
+        <span>{{note}}</span>
+    </div>
+</div>
