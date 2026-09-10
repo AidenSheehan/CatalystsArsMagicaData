@@ -1,5 +1,1 @@
-2026/09/03-18:45:30.725 6f30 Log #91: 0 ops saved to Table #92 OK
-2026/09/03-18:45:30.727 6f30 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\virtues/000091.log: OK
-2026/09/03-18:45:30.730 6f30 Table #83: 614 entries OK
-2026/09/03-18:45:30.735 6f30 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\virtues/MANIFEST-000090: OK
-2026/09/03-18:45:30.739 6f30 **** Repaired leveldb C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\virtues; recovered 1 files; 411191 bytes. Some data may have been lost. ****
+2026/09/03-18:45:30.751 6f30 Delete type=3 #1

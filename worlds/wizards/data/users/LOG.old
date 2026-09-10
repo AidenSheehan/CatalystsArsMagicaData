@@ -1,5 +1,1 @@
-2026/09/03-18:45:30.067 6f30 Log #161: 0 ops saved to Table #162 OK
-2026/09/03-18:45:30.068 6f30 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/users/000161.log: OK
-2026/09/03-18:45:30.068 6f30 Table #153: 6 entries OK
-2026/09/03-18:45:30.074 6f30 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/users/MANIFEST-000160: OK
-2026/09/03-18:45:30.080 6f30 **** Repaired leveldb C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/users; recovered 1 files; 3107 bytes. Some data may have been lost. ****
+2026/09/03-18:45:30.096 6f30 Delete type=3 #1

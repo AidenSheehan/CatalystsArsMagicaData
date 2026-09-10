@@ -1,5 +1,1 @@
-2026/09/03-18:45:30.802 6f30 Log #90: 0 ops saved to Table #91 OK
-2026/09/03-18:45:30.802 6f30 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\spells/000090.log: OK
-2026/09/03-18:45:30.808 6f30 Table #82: 2106 entries OK
-2026/09/03-18:45:30.813 6f30 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\spells/MANIFEST-000089: OK
-2026/09/03-18:45:30.817 6f30 **** Repaired leveldb C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\spells; recovered 1 files; 1377542 bytes. Some data may have been lost. ****
+2026/09/03-18:45:30.827 6f30 Delete type=3 #1

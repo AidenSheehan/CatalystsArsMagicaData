@@ -1,7 +1,21 @@
-2026/09/03-18:45:29.591 2e5c Log #413: 0 ops saved to Table #415 OK
-2026/09/03-18:45:29.593 2e5c Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors/000413.log: OK
-2026/09/03-18:45:29.602 2e5c Table #410: 2125 entries OK
-2026/09/03-18:45:29.609 2e5c Table #412: 1917 entries OK
-2026/09/03-18:45:29.615 2e5c Table #414: 2135 entries OK
-2026/09/03-18:45:29.619 2e5c Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors/MANIFEST-000411: OK
-2026/09/03-18:45:29.624 2e5c **** Repaired leveldb C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors; recovered 3 files; 4274350 bytes. Some data may have been lost. ****
+2026/09/03-18:45:29.636 2e5c Delete type=3 #1
+2026/09/03-19:38:29.552 8444 Level-0 table #419: started
+2026/09/03-19:38:29.650 8444 Level-0 table #419: 1325348 bytes OK
+2026/09/03-19:38:29.656 8444 Delete type=0 #417
+2026/09/03-19:38:29.658 8444 Compacting 4@0 + 0@1 files
+2026/09/03-19:38:29.814 8444 Generated table #420@0: 2143 keys, 1678145 bytes
+2026/09/03-19:38:29.814 8444 Compacted 4@0 + 0@1 files => 1678145 bytes
+2026/09/03-19:38:29.817 8444 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/09/03-19:38:29.818 8444 Delete type=2 #410
+2026/09/03-19:38:29.820 8444 Delete type=2 #412
+2026/09/03-19:38:29.823 8444 Delete type=2 #414
+2026/09/03-19:38:29.824 8444 Delete type=2 #419
+2026/09/03-21:20:10.101 8444 Level-0 table #422: started
+2026/09/03-21:20:10.183 8444 Level-0 table #422: 1518451 bytes OK
+2026/09/03-21:20:10.188 8444 Delete type=0 #418
+2026/09/03-21:55:10.120 8444 Compacting 1@0 + 1@1 files
+2026/09/03-21:55:10.309 8444 Generated table #423@0: 2197 keys, 1719485 bytes
+2026/09/03-21:55:10.309 8444 Compacted 1@0 + 1@1 files => 1719485 bytes
+2026/09/03-21:55:10.312 8444 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/09/03-21:55:10.312 8444 Delete type=2 #420
+2026/09/03-21:55:10.320 8444 Delete type=2 #422

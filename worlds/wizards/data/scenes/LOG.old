@@ -1,9 +1,5 @@
-2026/09/03-18:45:29.983 6f30 Log #244: 4 ops saved to Table #246 OK
-2026/09/03-18:45:29.984 6f30 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/scenes/000244.log: OK
-2026/09/03-18:45:29.984 6f30 Table #238: 484 entries OK
-2026/09/03-18:45:29.986 6f30 Table #240: 755 entries OK
-2026/09/03-18:45:29.988 6f30 Table #243: 1208 entries OK
-2026/09/03-18:45:29.989 6f30 Table #245: 504 entries OK
-2026/09/03-18:45:29.989 6f30 Table #246: 4 entries OK
-2026/09/03-18:45:29.991 6f30 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/scenes/MANIFEST-000242: OK
-2026/09/03-18:45:29.997 6f30 **** Repaired leveldb C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/scenes; recovered 5 files; 1086853 bytes. Some data may have been lost. ****
+2026/09/03-18:45:30.007 6f30 Delete type=3 #1
+2026/09/03-18:45:30.008 8444 Compacting 5@0 + 0@1 files
+2026/09/03-18:45:30.020 8444 Generated table #249@0: 506 keys, 190001 bytes
+2026/09/03-18:45:30.020 8444 Compacted 5@0 + 0@1 files => 190001 bytes
+2026/09/03-18:45:30.023 8444 compacted to: files[ 0 1 0 0 0 0 0 ]

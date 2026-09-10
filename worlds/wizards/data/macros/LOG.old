@@ -1,5 +1,1 @@
-2026/09/03-18:45:29.893 6f30 Log #155: 0 ops saved to Table #156 OK
-2026/09/03-18:45:29.894 6f30 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/macros/000155.log: OK
-2026/09/03-18:45:29.894 6f30 Table #147: 17 entries OK
-2026/09/03-18:45:29.898 6f30 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/macros/MANIFEST-000154: OK
-2026/09/03-18:45:29.902 6f30 **** Repaired leveldb C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/macros; recovered 1 files; 4151 bytes. Some data may have been lost. ****
+2026/09/03-18:45:29.912 6f30 Delete type=3 #1

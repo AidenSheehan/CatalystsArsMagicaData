@@ -1,4 +1,1 @@
-2026/09/03-18:45:30.419 9da8 Log #85: 0 ops saved to Table #86 OK
-2026/09/03-18:45:30.420 9da8 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\journals/000085.log: OK
-2026/09/03-18:45:30.425 9da8 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\journals/MANIFEST-000084: OK
-2026/09/03-18:45:30.428 9da8 **** Repaired leveldb C:\Users\aiden\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\journals; recovered 0 files; 0 bytes. Some data may have been lost. ****
+2026/09/03-18:45:30.442 9da8 Delete type=3 #1
