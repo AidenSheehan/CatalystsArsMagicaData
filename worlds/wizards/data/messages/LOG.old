@@ -1,16 +1,12 @@
-2026/09/10-18:58:08.380 586c Recovering log #206
-2026/09/10-18:58:08.383 586c Level-0 table #210: started
-2026/09/10-18:58:08.385 586c Level-0 table #210: 38817 bytes OK
-2026/09/10-18:58:08.390 586c Delete type=2 #199
-2026/09/10-18:58:08.391 586c Delete type=2 #200
-2026/09/10-18:58:08.392 586c Delete type=2 #202
-2026/09/10-18:58:08.392 586c Delete type=0 #206
-2026/09/10-18:58:08.392 586c Delete type=3 #205
-2026/09/10-19:20:24.928 4e10 Compacting 1@0 + 2@1 files
-2026/09/10-19:20:25.035 4e10 Generated table #212@0: 1103 keys, 2115320 bytes
-2026/09/10-19:20:25.075 4e10 Generated table #213@0: 301 keys, 517284 bytes
-2026/09/10-19:20:25.075 4e10 Compacted 1@0 + 2@1 files => 2632604 bytes
-2026/09/10-19:20:25.079 4e10 compacted to: files[ 0 2 0 0 0 0 0 ]
-2026/09/10-19:20:25.079 4e10 Delete type=2 #207
-2026/09/10-19:20:25.086 4e10 Delete type=2 #208
-2026/09/10-19:20:25.086 4e10 Delete type=2 #210
+2026/09/24-19:13:44.366 1dcc Log #211: 0 ops saved to Table #219 OK
+2026/09/24-19:13:44.367 1dcc Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/messages/000211.log: OK
+2026/09/24-19:13:44.389 1dcc Log #216: 82 ops saved to Table #220 OK
+2026/09/24-19:13:44.389 1dcc Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/messages/000216.log: OK
+2026/09/24-19:13:44.572 1dcc Table #212: 1103 entries OK
+2026/09/24-19:13:44.584 1dcc Table #213: 301 entries OK
+2026/09/24-19:13:44.751 1dcc Table #217: 1096 entries OK
+2026/09/24-19:13:44.789 1dcc Table #218: 387 entries OK
+2026/09/24-19:13:44.789 1dcc Table #220: 82 entries OK
+2026/09/24-19:13:44.792 1dcc Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/messages/MANIFEST-000210: OK
+2026/09/24-19:13:44.793 1dcc Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/messages/MANIFEST-000214: OK
+2026/09/24-19:13:44.797 1dcc **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/messages; recovered 5 files; 5445639 bytes. Some data may have been lost. ****

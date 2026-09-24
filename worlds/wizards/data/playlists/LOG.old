@@ -1,3 +1,7 @@
-2026/09/10-18:58:08.474 5874 Recovering log #150
-2026/09/10-18:58:08.479 5874 Delete type=0 #150
-2026/09/10-18:58:08.479 5874 Delete type=3 #149
+2026/09/24-19:13:45.171 2ebc Log #153: 0 ops saved to Table #155 OK
+2026/09/24-19:13:45.172 2ebc Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/playlists/000153.log: OK
+2026/09/24-19:13:45.172 2ebc Log #154: 0 ops saved to Table #156 OK
+2026/09/24-19:13:45.173 2ebc Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/playlists/000154.log: OK
+2026/09/24-19:13:45.177 2ebc Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/playlists/MANIFEST-000152: OK
+2026/09/24-19:13:45.179 2ebc Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/playlists/MANIFEST-000153: OK
+2026/09/24-19:13:45.183 2ebc **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/playlists; recovered 0 files; 0 bytes. Some data may have been lost. ****

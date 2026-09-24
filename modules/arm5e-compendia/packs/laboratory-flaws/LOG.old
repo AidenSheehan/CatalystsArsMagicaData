@@ -1,3 +1,8 @@
-2026/09/10-18:58:08.961 586c Recovering log #94
-2026/09/10-18:58:08.967 586c Delete type=0 #94
-2026/09/10-18:58:08.968 586c Delete type=3 #93
+2026/09/24-19:13:46.603 1dcc Log #97: 0 ops saved to Table #99 OK
+2026/09/24-19:13:46.604 1dcc Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\laboratory-flaws/000097.log: OK
+2026/09/24-19:13:46.604 1dcc Log #98: 0 ops saved to Table #100 OK
+2026/09/24-19:13:46.605 1dcc Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\laboratory-flaws/000098.log: OK
+2026/09/24-19:13:46.607 1dcc Table #83: 138 entries OK
+2026/09/24-19:13:46.610 1dcc Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\laboratory-flaws/MANIFEST-000096: OK
+2026/09/24-19:13:46.611 1dcc Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\laboratory-flaws/MANIFEST-000097: OK
+2026/09/24-19:13:46.616 1dcc **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\laboratory-flaws; recovered 1 files; 32179 bytes. Some data may have been lost. ****

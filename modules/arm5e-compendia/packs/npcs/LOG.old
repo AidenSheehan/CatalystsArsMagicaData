@@ -1,3 +1,8 @@
-2026/09/10-18:58:08.850 5870 Recovering log #94
-2026/09/10-18:58:08.852 5870 Delete type=0 #94
-2026/09/10-18:58:08.852 5870 Delete type=3 #93
+2026/09/24-19:13:46.226 1dcc Log #97: 0 ops saved to Table #99 OK
+2026/09/24-19:13:46.227 1dcc Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\npcs/000097.log: OK
+2026/09/24-19:13:46.228 1dcc Log #98: 0 ops saved to Table #100 OK
+2026/09/24-19:13:46.229 1dcc Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\npcs/000098.log: OK
+2026/09/24-19:13:46.236 1dcc Table #83: 287 entries OK
+2026/09/24-19:13:46.239 1dcc Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\npcs/MANIFEST-000096: OK
+2026/09/24-19:13:46.241 1dcc Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\npcs/MANIFEST-000097: OK
+2026/09/24-19:13:46.245 1dcc **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\npcs; recovered 1 files; 249728 bytes. Some data may have been lost. ****

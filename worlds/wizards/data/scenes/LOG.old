@@ -1,14 +1,12 @@
-2026/09/10-18:58:08.505 5874 Recovering log #248
-2026/09/10-18:58:08.505 5874 Level-0 table #251: started
-2026/09/10-18:58:08.511 5874 Level-0 table #251: 325736 bytes OK
-2026/09/10-18:58:08.515 5874 Delete type=2 #238
-2026/09/10-18:58:08.516 5874 Delete type=2 #240
-2026/09/10-18:58:08.517 5874 Delete type=2 #243
-2026/09/10-18:58:08.517 5874 Delete type=2 #245
-2026/09/10-18:58:08.517 5874 Delete type=2 #246
-2026/09/10-18:58:08.517 5874 Delete type=0 #248
-2026/09/10-18:58:08.517 5874 Delete type=3 #247
-2026/09/10-18:58:08.693 4e10 Compacting 1@0 + 1@1 files
-2026/09/10-18:58:08.700 4e10 Generated table #253@0: 501 keys, 189194 bytes
-2026/09/10-18:58:08.700 4e10 Compacted 1@0 + 1@1 files => 189194 bytes
-2026/09/10-18:58:08.703 4e10 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/09/24-19:13:45.276 1dcc Log #252: 0 ops saved to Table #258 OK
+2026/09/24-19:13:45.277 1dcc Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/scenes/000252.log: OK
+2026/09/24-19:13:45.303 1dcc Log #256: 647 ops saved to Table #259 OK
+2026/09/24-19:13:45.304 1dcc Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/scenes/000256.log: OK
+2026/09/24-19:13:45.314 1dcc Table #250: 676 entries OK
+2026/09/24-19:13:45.320 1dcc Table #253: 501 entries OK
+2026/09/24-19:13:45.334 1dcc Table #255: 1225 entries OK
+2026/09/24-19:13:45.340 1dcc Table #257: 595 entries OK
+2026/09/24-19:13:45.341 1dcc Table #259: 647 entries OK
+2026/09/24-19:13:45.344 1dcc Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/scenes/MANIFEST-000251: OK
+2026/09/24-19:13:45.347 1dcc Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/scenes/MANIFEST-000254: OK
+2026/09/24-19:13:45.351 1dcc **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/scenes; recovered 5 files; 1359611 bytes. Some data may have been lost. ****

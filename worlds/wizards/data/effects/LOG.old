@@ -1,3 +1,7 @@
-2026/09/10-18:58:08.268 5870 Recovering log #88
-2026/09/10-18:58:08.269 5870 Delete type=0 #88
-2026/09/10-18:58:08.269 5870 Delete type=3 #87
+2026/09/24-19:13:44.011 1b18 Log #91: 0 ops saved to Table #93 OK
+2026/09/24-19:13:44.012 1b18 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/effects/000091.log: OK
+2026/09/24-19:13:44.012 1b18 Log #92: 0 ops saved to Table #94 OK
+2026/09/24-19:13:44.013 1b18 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/effects/000092.log: OK
+2026/09/24-19:13:44.017 1b18 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/effects/MANIFEST-000090: OK
+2026/09/24-19:13:44.018 1b18 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/effects/MANIFEST-000091: OK
+2026/09/24-19:13:44.022 1b18 **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/effects; recovered 0 files; 0 bytes. Some data may have been lost. ****

@@ -1,3 +1,8 @@
-2026/09/10-18:58:08.870 5870 Recovering log #93
-2026/09/10-18:58:08.878 5870 Delete type=0 #93
-2026/09/10-18:58:08.878 5870 Delete type=3 #92
+2026/09/24-19:13:46.311 1dcc Log #96: 0 ops saved to Table #98 OK
+2026/09/24-19:13:46.312 1dcc Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\macros/000096.log: OK
+2026/09/24-19:13:46.312 1dcc Log #97: 0 ops saved to Table #99 OK
+2026/09/24-19:13:46.313 1dcc Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\macros/000097.log: OK
+2026/09/24-19:13:46.316 1dcc Table #82: 26 entries OK
+2026/09/24-19:13:46.318 1dcc Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\macros/MANIFEST-000095: OK
+2026/09/24-19:13:46.319 1dcc Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\macros/MANIFEST-000096: OK
+2026/09/24-19:13:46.322 1dcc **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\macros; recovered 1 files; 10326 bytes. Some data may have been lost. ****

@@ -1,3 +1,8 @@
-2026/09/10-18:58:08.975 5874 Recovering log #93
-2026/09/10-18:58:08.981 5874 Delete type=0 #93
-2026/09/10-18:58:08.982 5874 Delete type=3 #92
+2026/09/24-19:13:46.638 2ebc Log #96: 0 ops saved to Table #98 OK
+2026/09/24-19:13:46.639 2ebc Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\boons/000096.log: OK
+2026/09/24-19:13:46.639 2ebc Log #97: 0 ops saved to Table #99 OK
+2026/09/24-19:13:46.640 2ebc Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\boons/000097.log: OK
+2026/09/24-19:13:46.642 2ebc Table #82: 106 entries OK
+2026/09/24-19:13:46.646 2ebc Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\boons/MANIFEST-000095: OK
+2026/09/24-19:13:46.647 2ebc Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\boons/MANIFEST-000096: OK
+2026/09/24-19:13:46.651 2ebc **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\boons; recovered 1 files; 63874 bytes. Some data may have been lost. ****

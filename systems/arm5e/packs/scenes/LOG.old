@@ -1,3 +1,8 @@
-2026/09/10-18:58:08.752 5868 Recovering log #90
-2026/09/10-18:58:08.753 5868 Delete type=0 #90
-2026/09/10-18:58:08.753 5868 Delete type=3 #89
+2026/09/24-19:13:45.932 c80 Log #93: 0 ops saved to Table #95 OK
+2026/09/24-19:13:45.933 c80 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\scenes/000093.log: OK
+2026/09/24-19:13:45.933 c80 Log #94: 0 ops saved to Table #96 OK
+2026/09/24-19:13:45.934 c80 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\scenes/000094.log: OK
+2026/09/24-19:13:45.944 c80 Table #79: 2 entries OK
+2026/09/24-19:13:45.947 c80 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\scenes/MANIFEST-000092: OK
+2026/09/24-19:13:45.949 c80 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\scenes/MANIFEST-000093: OK
+2026/09/24-19:13:45.952 c80 **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\scenes; recovered 1 files; 1562 bytes. Some data may have been lost. ****

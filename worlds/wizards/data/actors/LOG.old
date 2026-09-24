@@ -1,47 +1,12 @@
-2026/09/10-18:58:08.279 586c Recovering log #421
-2026/09/10-18:58:08.290 586c Level-0 table #425: started
-2026/09/10-18:58:08.305 586c Level-0 table #425: 1410837 bytes OK
-2026/09/10-18:58:08.314 586c Delete type=0 #421
-2026/09/10-18:58:08.315 586c Delete type=3 #416
-2026/09/10-18:58:08.560 4e10 Compacting 1@0 + 1@1 files
-2026/09/10-18:58:08.593 4e10 Generated table #427@0: 2205 keys, 1726189 bytes
-2026/09/10-18:58:08.593 4e10 Compacted 1@0 + 1@1 files => 1726189 bytes
-2026/09/10-18:58:08.593 4e10 compacted to: files[ 0 1 0 0 0 0 0 ]
-2026/09/10-19:48:48.250 4e10 Level-0 table #429: started
-2026/09/10-19:48:48.324 4e10 Level-0 table #429: 1508362 bytes OK
-2026/09/10-19:48:48.328 4e10 Delete type=2 #423
-2026/09/10-19:48:48.328 4e10 Delete type=2 #425
-2026/09/10-19:48:48.331 4e10 Delete type=0 #426
-2026/09/10-19:59:57.423 4e10 Compacting 1@0 + 1@1 files
-2026/09/10-19:59:57.464 4e10 Generated table #430@0: 2227 keys, 1740551 bytes
-2026/09/10-19:59:57.464 4e10 Compacted 1@0 + 1@1 files => 1740551 bytes
-2026/09/10-19:59:57.466 4e10 compacted to: files[ 0 1 0 0 0 0 0 ]
-2026/09/10-19:59:57.467 4e10 Delete type=2 #427
-2026/09/10-19:59:57.472 4e10 Delete type=2 #429
-2026/09/10-20:19:25.475 4e10 Level-0 table #432: started
-2026/09/10-20:19:25.535 4e10 Level-0 table #432: 1381338 bytes OK
-2026/09/10-20:19:25.535 4e10 Delete type=0 #428
-2026/09/10-20:24:27.630 4e10 Compacting 1@0 + 1@1 files
-2026/09/10-20:24:27.672 4e10 Generated table #433@0: 2239 keys, 1743622 bytes
-2026/09/10-20:24:27.672 4e10 Compacted 1@0 + 1@1 files => 1743622 bytes
-2026/09/10-20:24:27.674 4e10 compacted to: files[ 0 1 0 0 0 0 0 ]
-2026/09/10-20:24:27.674 4e10 Delete type=2 #430
-2026/09/10-20:24:27.675 4e10 Delete type=2 #432
-2026/09/10-21:29:45.802 4e10 Level-0 table #435: started
-2026/09/10-21:29:45.863 4e10 Level-0 table #435: 1543850 bytes OK
-2026/09/10-21:29:45.866 4e10 Delete type=0 #431
-2026/09/10-21:40:08.492 4e10 Compacting 1@0 + 1@1 files
-2026/09/10-21:40:08.529 4e10 Generated table #436@0: 2252 keys, 1748239 bytes
-2026/09/10-21:40:08.529 4e10 Compacted 1@0 + 1@1 files => 1748239 bytes
-2026/09/10-21:40:08.532 4e10 compacted to: files[ 0 1 0 0 0 0 0 ]
-2026/09/10-21:59:42.053 4e10 Level-0 table #438: started
-2026/09/10-21:59:42.080 4e10 Level-0 table #438: 1828423 bytes OK
-2026/09/10-21:59:42.082 4e10 Delete type=2 #433
-2026/09/10-21:59:42.083 4e10 Delete type=0 #434
-2026/09/10-21:59:42.084 4e10 Delete type=2 #435
-2026/09/10-21:59:53.170 4e10 Compacting 1@0 + 1@1 files
-2026/09/10-21:59:53.204 4e10 Generated table #439@0: 2273 keys, 1765664 bytes
-2026/09/10-21:59:53.204 4e10 Compacted 1@0 + 1@1 files => 1765664 bytes
-2026/09/10-21:59:53.205 4e10 compacted to: files[ 0 1 0 0 0 0 0 ]
-2026/09/10-21:59:53.206 4e10 Delete type=2 #436
-2026/09/10-21:59:53.206 4e10 Delete type=2 #438
+2026/09/24-19:13:44.056 1b18 Log #426: 0 ops saved to Table #460 OK
+2026/09/24-19:13:44.056 1b18 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors/000426.log: OK
+2026/09/24-19:13:44.094 1b18 Log #458: 629 ops saved to Table #461 OK
+2026/09/24-19:13:44.095 1b18 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors/000458.log: OK
+2026/09/24-19:13:44.128 1b18 Table #424: 2772 entries OK
+2026/09/24-19:13:44.165 1b18 Table #427: 2205 entries OK
+2026/09/24-19:13:44.202 1b18 Table #457: 2353 entries OK
+2026/09/24-19:13:44.234 1b18 Table #459: 2563 entries OK
+2026/09/24-19:13:44.236 1b18 Table #461: 629 entries OK
+2026/09/24-19:13:44.238 1b18 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors/MANIFEST-000425: OK
+2026/09/24-19:13:44.239 1b18 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors/MANIFEST-000440: OK
+2026/09/24-19:13:44.243 1b18 **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors; recovered 5 files; 7132508 bytes. Some data may have been lost. ****
