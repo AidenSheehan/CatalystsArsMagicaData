@@ -1,8 +1,5 @@
-2026/09/24-19:13:45.124 1dcc Log #161: 0 ops saved to Table #163 OK
-2026/09/24-19:13:45.126 1dcc Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/macros/000161.log: OK
-2026/09/24-19:13:45.126 1dcc Log #162: 0 ops saved to Table #164 OK
-2026/09/24-19:13:45.127 1dcc Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/macros/000162.log: OK
-2026/09/24-19:13:45.130 1dcc Table #147: 17 entries OK
-2026/09/24-19:13:45.133 1dcc Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/macros/MANIFEST-000160: OK
-2026/09/24-19:13:45.134 1dcc Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/macros/MANIFEST-000161: OK
-2026/09/24-19:13:45.138 1dcc **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/macros; recovered 1 files; 4151 bytes. Some data may have been lost. ****
+2026/09/24-18:55:19.416 2b4c Log #166: 0 ops saved to Table #167 OK
+2026/09/24-18:55:19.416 2b4c Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/macros/000166.log: OK
+2026/09/24-18:55:19.416 2b4c Table #147: 17 entries OK
+2026/09/24-18:55:19.423 2b4c Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/macros/MANIFEST-000165: OK
+2026/09/24-18:55:19.429 2b4c **** Repaired leveldb C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/macros; recovered 1 files; 4151 bytes. Some data may have been lost. ****

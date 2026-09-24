@@ -1,13 +1,6 @@
-2026/09/24-19:13:45.419 1dcc Log #226: 2 ops saved to Table #230 OK
-2026/09/24-19:13:45.421 1dcc Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/settings/000226.log: OK
-2026/09/24-19:13:45.442 1dcc Log #229: 4 ops saved to Table #231 OK
-2026/09/24-19:13:45.443 1dcc Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/settings/000229.log: OK
-2026/09/24-19:13:45.446 1dcc Table #223: 49 entries OK
-2026/09/24-19:13:45.454 1dcc Table #224: 3 entries OK
-2026/09/24-19:13:45.464 1dcc Table #225: 3 entries OK
-2026/09/24-19:13:45.472 1dcc Table #228: 4 entries OK
-2026/09/24-19:13:45.472 1dcc Table #230: 2 entries OK
-2026/09/24-19:13:45.473 1dcc Table #231: 4 entries OK
-2026/09/24-19:13:45.475 1dcc Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/settings/MANIFEST-000225: OK
-2026/09/24-19:13:45.477 1dcc Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/settings/MANIFEST-000227: OK
-2026/09/24-19:13:45.482 1dcc **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/settings; recovered 6 files; 14624 bytes. Some data may have been lost. ****
+2026/09/24-18:55:19.562 a054 Log #233: 2 ops saved to Table #235 OK
+2026/09/24-18:55:19.562 a054 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/settings/000233.log: OK
+2026/09/24-18:55:19.562 a054 Table #234: 49 entries OK
+2026/09/24-18:55:19.562 a054 Table #235: 2 entries OK
+2026/09/24-18:55:19.567 a054 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/settings/MANIFEST-000232: OK
+2026/09/24-18:55:19.568 a054 **** Repaired leveldb C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/settings; recovered 2 files; 9045 bytes. Some data may have been lost. ****
