@@ -1,8 +1,5 @@
-2026/10/01-19:36:41.524 244 Log #103: 0 ops saved to Table #105 OK
-2026/10/01-19:36:41.526 244 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\abilities/000103.log: OK
-2026/10/01-19:36:41.526 244 Log #104: 0 ops saved to Table #106 OK
-2026/10/01-19:36:41.529 244 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\abilities/000104.log: OK
-2026/10/01-19:36:41.537 244 Table #82: 147 entries OK
-2026/10/01-19:36:41.541 244 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\abilities/MANIFEST-000102: OK
-2026/10/01-19:36:41.543 244 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\abilities/MANIFEST-000103: OK
-2026/10/01-19:36:41.550 244 **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\abilities; recovered 1 files; 141474 bytes. Some data may have been lost. ****
+2026/10/01-18:46:58.128 39c4 Log #108: 0 ops saved to Table #109 OK
+2026/10/01-18:46:58.128 39c4 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\abilities/000108.log: OK
+2026/10/01-18:46:58.128 39c4 Table #82: 147 entries OK
+2026/10/01-18:46:58.135 39c4 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\abilities/MANIFEST-000107: OK
+2026/10/01-18:46:58.141 39c4 **** Repaired leveldb C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\abilities; recovered 1 files; 141474 bytes. Some data may have been lost. ****

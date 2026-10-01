@@ -1,10 +1,32 @@
-2026/10/01-19:36:38.228 244 Delete type=3 #1
-2026/10/01-19:36:38.229 61f4 Compacting 5@0 + 0@1 files
-2026/10/01-19:36:38.358 61f4 Generated table #498@0: 2566 keys, 1936683 bytes
-2026/10/01-19:36:38.358 61f4 Compacted 5@0 + 0@1 files => 1936683 bytes
-2026/10/01-19:36:38.359 61f4 compacted to: files[ 0 1 0 0 0 0 0 ]
-2026/10/01-19:36:38.360 61f4 Delete type=2 #466
-2026/10/01-19:36:38.361 61f4 Delete type=2 #468
-2026/10/01-19:36:38.363 61f4 Delete type=2 #491
-2026/10/01-19:36:38.364 61f4 Delete type=2 #493
-2026/10/01-19:36:38.364 61f4 Delete type=2 #495
+2026/10/01-18:46:57.096 41f4 Delete type=3 #1
+2026/10/01-18:46:57.560 6d0c Compacting 2@0 + 0@1 files
+2026/10/01-18:46:57.605 6d0c Generated table #502@0: 2603 keys, 1974179 bytes
+2026/10/01-18:46:57.605 6d0c Compacted 2@0 + 0@1 files => 1974179 bytes
+2026/10/01-18:46:57.607 6d0c compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/10/01-20:26:52.800 6d0c Level-0 table #504: started
+2026/10/01-20:26:52.835 6d0c Level-0 table #504: 1570503 bytes OK
+2026/10/01-20:26:52.841 6d0c Delete type=2 #498
+2026/10/01-20:26:52.842 6d0c Delete type=2 #499
+2026/10/01-20:26:52.843 6d0c Delete type=0 #501
+2026/10/01-20:58:17.602 6d0c Compacting 1@0 + 1@1 files
+2026/10/01-20:58:17.675 6d0c Generated table #505@0: 2609 keys, 1975680 bytes
+2026/10/01-20:58:17.675 6d0c Compacted 1@0 + 1@1 files => 1975680 bytes
+2026/10/01-20:58:17.677 6d0c compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/10/01-20:58:17.680 6d0c Delete type=2 #502
+2026/10/01-20:58:17.680 6d0c Delete type=2 #504
+2026/10/01-21:12:59.875 6d0c Level-0 table #507: started
+2026/10/01-21:12:59.948 6d0c Level-0 table #507: 1424962 bytes OK
+2026/10/01-21:12:59.948 6d0c Delete type=0 #503
+2026/10/01-21:26:31.959 6d0c Level-0 table #509: started
+2026/10/01-21:26:31.982 6d0c Level-0 table #509: 1416980 bytes OK
+2026/10/01-21:26:31.985 6d0c Delete type=0 #506
+2026/10/01-21:26:58.457 6d0c Compacting 2@0 + 1@1 files
+2026/10/01-21:26:58.508 6d0c Generated table #510@0: 2624 keys, 1981887 bytes
+2026/10/01-21:26:58.508 6d0c Compacted 2@0 + 1@1 files => 1981887 bytes
+2026/10/01-21:26:58.510 6d0c compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/10/01-21:26:58.510 6d0c Delete type=2 #505
+2026/10/01-21:26:58.511 6d0c Delete type=2 #507
+2026/10/01-21:26:58.511 6d0c Delete type=2 #509
+2026/10/01-21:46:26.251 6d0c Level-0 table #512: started
+2026/10/01-21:46:26.278 6d0c Level-0 table #512: 1473759 bytes OK
+2026/10/01-21:46:26.282 6d0c Delete type=0 #508

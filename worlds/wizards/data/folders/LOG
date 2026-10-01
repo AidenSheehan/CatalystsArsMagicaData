@@ -1,1 +1,9 @@
-2026/10/01-19:36:39.200 6398 Delete type=3 #1
+2026/10/01-18:46:57.288 22fc Delete type=3 #1
+2026/10/01-18:46:57.288 6d0c Compacting 4@0 + 0@1 files
+2026/10/01-18:46:57.296 6d0c Generated table #189@0: 39 keys, 5270 bytes
+2026/10/01-18:46:57.296 6d0c Compacted 4@0 + 0@1 files => 5270 bytes
+2026/10/01-18:46:57.296 6d0c compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/10/01-18:46:57.300 6d0c Delete type=2 #157
+2026/10/01-18:46:57.300 6d0c Delete type=2 #161
+2026/10/01-18:46:57.301 6d0c Delete type=2 #164
+2026/10/01-18:46:57.301 6d0c Delete type=2 #186

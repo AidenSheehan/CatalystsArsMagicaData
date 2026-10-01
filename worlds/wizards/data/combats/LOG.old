@@ -1,9 +1,6 @@
-2026/10/01-19:36:38.934 6398 Log #188: 0 ops saved to Table #190 OK
-2026/10/01-19:36:38.936 6398 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/combats/000188.log: OK
-2026/10/01-19:36:38.958 6398 Log #189: 430 ops saved to Table #191 OK
-2026/10/01-19:36:38.960 6398 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/combats/000189.log: OK
-2026/10/01-19:36:38.974 6398 Table #182: 4 entries OK
-2026/10/01-19:36:38.974 6398 Table #191: 430 entries OK
-2026/10/01-19:36:38.980 6398 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/combats/MANIFEST-000187: OK
-2026/10/01-19:36:38.982 6398 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/combats/MANIFEST-000188: OK
-2026/10/01-19:36:38.989 6398 **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/combats; recovered 2 files; 36730 bytes. Some data may have been lost. ****
+2026/10/01-18:46:57.203 97b8 Log #193: 0 ops saved to Table #194 OK
+2026/10/01-18:46:57.203 97b8 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/combats/000193.log: OK
+2026/10/01-18:46:57.204 97b8 Table #182: 4 entries OK
+2026/10/01-18:46:57.204 97b8 Table #191: 430 entries OK
+2026/10/01-18:46:57.211 97b8 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/combats/MANIFEST-000192: OK
+2026/10/01-18:46:57.215 97b8 **** Repaired leveldb C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/combats; recovered 2 files; 36730 bytes. Some data may have been lost. ****

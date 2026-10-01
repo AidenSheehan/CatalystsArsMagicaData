@@ -1,8 +1,5 @@
-2026/10/01-19:36:40.856 244 Log #99: 0 ops saved to Table #101 OK
-2026/10/01-19:36:40.859 244 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\macros/000099.log: OK
-2026/10/01-19:36:40.860 244 Log #100: 0 ops saved to Table #102 OK
-2026/10/01-19:36:40.862 244 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\macros/000100.log: OK
-2026/10/01-19:36:40.893 244 Table #78: 6 entries OK
-2026/10/01-19:36:40.909 244 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\macros/MANIFEST-000098: OK
-2026/10/01-19:36:40.911 244 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\macros/MANIFEST-000099: OK
-2026/10/01-19:36:40.918 244 **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\macros; recovered 1 files; 3720 bytes. Some data may have been lost. ****
+2026/10/01-18:46:57.825 97b8 Log #104: 0 ops saved to Table #105 OK
+2026/10/01-18:46:57.825 97b8 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\macros/000104.log: OK
+2026/10/01-18:46:57.825 97b8 Table #78: 6 entries OK
+2026/10/01-18:46:57.831 97b8 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\macros/MANIFEST-000103: OK
+2026/10/01-18:46:57.836 97b8 **** Repaired leveldb C:\Users\aiden\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\macros; recovered 1 files; 3720 bytes. Some data may have been lost. ****

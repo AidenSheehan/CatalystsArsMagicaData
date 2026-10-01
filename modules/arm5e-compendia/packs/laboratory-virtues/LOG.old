@@ -1,8 +1,5 @@
-2026/10/01-19:36:41.817 7040 Log #104: 0 ops saved to Table #106 OK
-2026/10/01-19:36:41.819 7040 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\laboratory-virtues/000104.log: OK
-2026/10/01-19:36:41.820 7040 Log #105: 0 ops saved to Table #107 OK
-2026/10/01-19:36:41.822 7040 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\laboratory-virtues/000105.log: OK
-2026/10/01-19:36:41.826 7040 Table #83: 150 entries OK
-2026/10/01-19:36:41.831 7040 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\laboratory-virtues/MANIFEST-000103: OK
-2026/10/01-19:36:41.833 7040 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\laboratory-virtues/MANIFEST-000104: OK
-2026/10/01-19:36:41.839 7040 **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\laboratory-virtues; recovered 1 files; 52057 bytes. Some data may have been lost. ****
+2026/10/01-18:46:58.283 39c4 Log #109: 0 ops saved to Table #110 OK
+2026/10/01-18:46:58.283 39c4 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\laboratory-virtues/000109.log: OK
+2026/10/01-18:46:58.285 39c4 Table #83: 150 entries OK
+2026/10/01-18:46:58.288 39c4 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\laboratory-virtues/MANIFEST-000108: OK
+2026/10/01-18:46:58.294 39c4 **** Repaired leveldb C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\laboratory-virtues; recovered 1 files; 52057 bytes. Some data may have been lost. ****

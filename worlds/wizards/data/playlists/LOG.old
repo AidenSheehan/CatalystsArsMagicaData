@@ -1,7 +1,4 @@
-2026/10/01-19:36:39.458 7040 Log #160: 0 ops saved to Table #162 OK
-2026/10/01-19:36:39.460 7040 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/playlists/000160.log: OK
-2026/10/01-19:36:39.460 7040 Log #161: 0 ops saved to Table #163 OK
-2026/10/01-19:36:39.462 7040 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/playlists/000161.log: OK
-2026/10/01-19:36:39.468 7040 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/playlists/MANIFEST-000159: OK
-2026/10/01-19:36:39.470 7040 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/playlists/MANIFEST-000160: OK
-2026/10/01-19:36:39.477 7040 **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/playlists; recovered 0 files; 0 bytes. Some data may have been lost. ****
+2026/10/01-18:46:57.375 41f4 Log #165: 0 ops saved to Table #166 OK
+2026/10/01-18:46:57.375 41f4 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/playlists/000165.log: OK
+2026/10/01-18:46:57.377 41f4 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/playlists/MANIFEST-000164: OK
+2026/10/01-18:46:57.384 41f4 **** Repaired leveldb C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/playlists; recovered 0 files; 0 bytes. Some data may have been lost. ****
