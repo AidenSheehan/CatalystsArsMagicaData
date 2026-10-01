@@ -1,5 +1,8 @@
-2026/09/24-18:55:19.208 9a98 Log #162: 0 ops saved to Table #163 OK
-2026/09/24-18:55:19.208 9a98 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/cards/000162.log: OK
-2026/09/24-18:55:19.208 9a98 Table #143: 2 entries OK
-2026/09/24-18:55:19.216 9a98 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/cards/MANIFEST-000161: OK
-2026/09/24-18:55:19.221 9a98 **** Repaired leveldb C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/cards; recovered 1 files; 803 bytes. Some data may have been lost. ****
+2026/10/01-19:36:38.366 244 Log #164: 0 ops saved to Table #166 OK
+2026/10/01-19:36:38.368 244 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/cards/000164.log: OK
+2026/10/01-19:36:38.368 244 Log #165: 0 ops saved to Table #167 OK
+2026/10/01-19:36:38.370 244 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/cards/000165.log: OK
+2026/10/01-19:36:38.383 244 Table #143: 2 entries OK
+2026/10/01-19:36:38.387 244 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/cards/MANIFEST-000163: OK
+2026/10/01-19:36:38.389 244 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/cards/MANIFEST-000164: OK
+2026/10/01-19:36:38.395 244 **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/cards; recovered 1 files; 803 bytes. Some data may have been lost. ****

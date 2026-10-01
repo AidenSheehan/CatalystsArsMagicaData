@@ -1,5 +1,8 @@
-2026/09/24-18:55:20.499 9644 Log #101: 0 ops saved to Table #102 OK
-2026/09/24-18:55:20.499 9644 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\hooks/000101.log: OK
-2026/09/24-18:55:20.499 9644 Table #82: 127 entries OK
-2026/09/24-18:55:20.506 9644 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\hooks/MANIFEST-000100: OK
-2026/09/24-18:55:20.508 9644 **** Repaired leveldb C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\hooks; recovered 1 files; 65750 bytes. Some data may have been lost. ****
+2026/10/01-19:36:41.991 2ae4 Log #103: 0 ops saved to Table #105 OK
+2026/10/01-19:36:41.994 2ae4 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\hooks/000103.log: OK
+2026/10/01-19:36:41.994 2ae4 Log #104: 0 ops saved to Table #106 OK
+2026/10/01-19:36:41.996 2ae4 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\hooks/000104.log: OK
+2026/10/01-19:36:42.000 2ae4 Table #82: 127 entries OK
+2026/10/01-19:36:42.004 2ae4 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\hooks/MANIFEST-000102: OK
+2026/10/01-19:36:42.007 2ae4 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\hooks/MANIFEST-000103: OK
+2026/10/01-19:36:42.014 2ae4 **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\hooks; recovered 1 files; 65750 bytes. Some data may have been lost. ****

@@ -1,11 +1,12 @@
-2026/09/24-18:55:19.083 a054 Log #463: 760 ops saved to Table #465 OK
-2026/09/24-18:55:19.084 a054 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors/000463.log: OK
-2026/09/24-18:55:19.088 a054 Table #424: 2772 entries OK
-2026/09/24-18:55:19.095 a054 Table #427: 2205 entries OK
-2026/09/24-18:55:19.103 a054 Table #457: 2353 entries OK
-2026/09/24-18:55:19.111 a054 Table #459: 2563 entries OK
-2026/09/24-18:55:19.112 a054 Table #461: 629 entries OK
-2026/09/24-18:55:19.116 a054 Table #464: 2379 entries OK
-2026/09/24-18:55:19.116 a054 Table #465: 760 entries OK
-2026/09/24-18:55:19.122 a054 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors/MANIFEST-000462: OK
-2026/09/24-18:55:19.126 a054 **** Repaired leveldb C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors; recovered 7 files; 9693805 bytes. Some data may have been lost. ****
+2026/10/01-19:36:38.067 244 Log #467: 0 ops saved to Table #494 OK
+2026/10/01-19:36:38.069 244 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors/000467.log: OK
+2026/10/01-19:36:38.120 244 Log #492: 986 ops saved to Table #495 OK
+2026/10/01-19:36:38.121 244 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors/000492.log: OK
+2026/10/01-19:36:38.130 244 Table #466: 760 entries OK
+2026/10/01-19:36:38.153 244 Table #468: 2441 entries OK
+2026/10/01-19:36:38.172 244 Table #491: 2499 entries OK
+2026/10/01-19:36:38.190 244 Table #493: 3078 entries OK
+2026/10/01-19:36:38.194 244 Table #495: 986 entries OK
+2026/10/01-19:36:38.198 244 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors/MANIFEST-000465: OK
+2026/10/01-19:36:38.202 244 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors/MANIFEST-000466: OK
+2026/10/01-19:36:38.208 244 **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/actors; recovered 5 files; 6281117 bytes. Some data may have been lost. ****

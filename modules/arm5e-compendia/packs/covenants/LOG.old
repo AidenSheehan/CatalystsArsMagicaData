@@ -1,5 +1,8 @@
-2026/09/24-18:55:20.133 a054 Log #102: 0 ops saved to Table #103 OK
-2026/09/24-18:55:20.133 a054 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\covenants/000102.log: OK
-2026/09/24-18:55:20.136 a054 Table #83: 5 entries OK
-2026/09/24-18:55:20.138 a054 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\covenants/MANIFEST-000101: OK
-2026/09/24-18:55:20.147 a054 **** Repaired leveldb C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\covenants; recovered 1 files; 3310 bytes. Some data may have been lost. ****
+2026/10/01-19:36:41.343 6398 Log #104: 0 ops saved to Table #106 OK
+2026/10/01-19:36:41.345 6398 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\covenants/000104.log: OK
+2026/10/01-19:36:41.345 6398 Log #105: 0 ops saved to Table #107 OK
+2026/10/01-19:36:41.346 6398 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\covenants/000105.log: OK
+2026/10/01-19:36:41.358 6398 Table #83: 5 entries OK
+2026/10/01-19:36:41.363 6398 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\covenants/MANIFEST-000103: OK
+2026/10/01-19:36:41.364 6398 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\covenants/MANIFEST-000104: OK
+2026/10/01-19:36:41.370 6398 **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\covenants; recovered 1 files; 3310 bytes. Some data may have been lost. ****

@@ -1,7 +1,10 @@
-2026/09/24-18:55:19.311 a054 Log #169: 0 ops saved to Table #170 OK
-2026/09/24-18:55:19.311 a054 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/fog/000169.log: OK
-2026/09/24-18:55:19.311 a054 Table #149: 10 entries OK
-2026/09/24-18:55:19.311 a054 Table #157: 1 entries OK
-2026/09/24-18:55:19.311 a054 Table #167: 4 entries OK
-2026/09/24-18:55:19.318 a054 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/fog/MANIFEST-000168: OK
-2026/09/24-18:55:19.319 a054 **** Repaired leveldb C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/fog; recovered 3 files; 352362 bytes. Some data may have been lost. ****
+2026/10/01-19:36:39.042 2ae4 Log #171: 0 ops saved to Table #173 OK
+2026/10/01-19:36:39.044 2ae4 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/fog/000171.log: OK
+2026/10/01-19:36:39.044 2ae4 Log #172: 0 ops saved to Table #174 OK
+2026/10/01-19:36:39.047 2ae4 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/fog/000172.log: OK
+2026/10/01-19:36:39.068 2ae4 Table #149: 10 entries OK
+2026/10/01-19:36:39.071 2ae4 Table #157: 1 entries OK
+2026/10/01-19:36:39.076 2ae4 Table #167: 4 entries OK
+2026/10/01-19:36:39.081 2ae4 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/fog/MANIFEST-000170: OK
+2026/10/01-19:36:39.082 2ae4 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/fog/MANIFEST-000171: OK
+2026/10/01-19:36:39.089 2ae4 **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/fog; recovered 3 files; 352362 bytes. Some data may have been lost. ****

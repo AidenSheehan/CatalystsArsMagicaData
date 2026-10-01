@@ -1,5 +1,8 @@
-2026/09/24-18:55:20.346 9644 Log #101: 0 ops saved to Table #102 OK
-2026/09/24-18:55:20.346 9644 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\spells/000101.log: OK
-2026/09/24-18:55:20.356 9644 Table #82: 2106 entries OK
-2026/09/24-18:55:20.363 9644 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\spells/MANIFEST-000100: OK
-2026/09/24-18:55:20.367 9644 **** Repaired leveldb C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\spells; recovered 1 files; 1377542 bytes. Some data may have been lost. ****
+2026/10/01-19:36:41.734 2ae4 Log #103: 0 ops saved to Table #105 OK
+2026/10/01-19:36:41.737 2ae4 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\spells/000103.log: OK
+2026/10/01-19:36:41.737 2ae4 Log #104: 0 ops saved to Table #106 OK
+2026/10/01-19:36:41.739 2ae4 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\spells/000104.log: OK
+2026/10/01-19:36:41.753 2ae4 Table #82: 2106 entries OK
+2026/10/01-19:36:41.755 2ae4 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\spells/MANIFEST-000102: OK
+2026/10/01-19:36:41.757 2ae4 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\spells/MANIFEST-000103: OK
+2026/10/01-19:36:41.763 2ae4 **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\spells; recovered 1 files; 1377542 bytes. Some data may have been lost. ****

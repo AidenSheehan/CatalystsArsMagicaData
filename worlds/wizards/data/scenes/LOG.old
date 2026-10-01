@@ -1,11 +1,15 @@
-2026/09/24-18:55:19.512 a054 Log #261: 14 ops saved to Table #263 OK
-2026/09/24-18:55:19.512 a054 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/scenes/000261.log: OK
-2026/09/24-18:55:19.513 a054 Table #250: 676 entries OK
-2026/09/24-18:55:19.513 a054 Table #253: 501 entries OK
-2026/09/24-18:55:19.516 a054 Table #255: 1225 entries OK
-2026/09/24-18:55:19.520 a054 Table #257: 595 entries OK
-2026/09/24-18:55:19.520 a054 Table #259: 647 entries OK
-2026/09/24-18:55:19.520 a054 Table #262: 579 entries OK
-2026/09/24-18:55:19.520 a054 Table #263: 14 entries OK
-2026/09/24-18:55:19.520 a054 Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/scenes/MANIFEST-000260: OK
-2026/09/24-18:55:19.527 a054 **** Repaired leveldb C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/scenes; recovered 7 files; 1572914 bytes. Some data may have been lost. ****
+2026/10/01-19:36:39.686 244 Log #265: 842 ops saved to Table #267 OK
+2026/10/01-19:36:39.689 244 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/scenes/000265.log: OK
+2026/10/01-19:36:39.694 244 Table #250: 676 entries OK
+2026/10/01-19:36:39.698 244 Table #253: 501 entries OK
+2026/10/01-19:36:39.705 244 Table #255: 1225 entries OK
+2026/10/01-19:36:39.708 244 Table #257: 595 entries OK
+2026/10/01-19:36:39.713 244 Table #259: 647 entries OK
+2026/10/01-19:36:39.720 244 Table #262: 579 entries OK
+2026/10/01-19:36:39.724 244 Table #263: 14 entries OK
+2026/10/01-19:36:39.728 244 Table #264: 14 entries OK
+2026/10/01-19:36:39.734 244 Table #266: 579 entries OK
+2026/10/01-19:36:39.738 244 Table #267: 842 entries OK
+2026/10/01-19:36:39.743 244 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/scenes/MANIFEST-000263: OK
+2026/10/01-19:36:39.746 244 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/scenes/MANIFEST-000264: OK
+2026/10/01-19:36:39.752 244 **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/scenes; recovered 10 files; 2040448 bytes. Some data may have been lost. ****

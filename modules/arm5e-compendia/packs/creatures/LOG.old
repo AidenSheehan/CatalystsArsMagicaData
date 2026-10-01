@@ -1,5 +1,8 @@
-2026/09/24-18:55:20.036 a054 Log #102: 0 ops saved to Table #103 OK
-2026/09/24-18:55:20.039 a054 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\creatures/000102.log: OK
-2026/09/24-18:55:20.044 a054 Table #83: 1291 entries OK
-2026/09/24-18:55:20.049 a054 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\creatures/MANIFEST-000101: OK
-2026/09/24-18:55:20.055 a054 **** Repaired leveldb C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\creatures; recovered 1 files; 986643 bytes. Some data may have been lost. ****
+2026/10/01-19:36:41.196 244 Log #104: 0 ops saved to Table #106 OK
+2026/10/01-19:36:41.199 244 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\creatures/000104.log: OK
+2026/10/01-19:36:41.199 244 Log #105: 0 ops saved to Table #107 OK
+2026/10/01-19:36:41.201 244 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\creatures/000105.log: OK
+2026/10/01-19:36:41.211 244 Table #83: 1291 entries OK
+2026/10/01-19:36:41.216 244 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\creatures/MANIFEST-000103: OK
+2026/10/01-19:36:41.219 244 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\creatures/MANIFEST-000104: OK
+2026/10/01-19:36:41.224 244 **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\creatures; recovered 1 files; 986643 bytes. Some data may have been lost. ****

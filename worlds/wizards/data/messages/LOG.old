@@ -1,6 +1,10 @@
-2026/09/24-18:55:19.238 2b4c Log #222: 0 ops saved to Table #225 OK
-2026/09/24-18:55:19.238 2b4c Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/messages/000222.log: OK
-2026/09/24-18:55:19.245 2b4c Table #223: 1125 entries OK
-2026/09/24-18:55:19.248 2b4c Table #224: 405 entries OK
-2026/09/24-18:55:19.252 2b4c Archiving C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/messages/MANIFEST-000221: OK
-2026/09/24-18:55:19.256 2b4c **** Repaired leveldb C:/Users/aiden/AppData/Local/FoundryVTT/Data/worlds/wizards/data/messages; recovered 2 files; 2793097 bytes. Some data may have been lost. ****
+2026/10/01-19:36:38.447 7040 Log #226: 0 ops saved to Table #228 OK
+2026/10/01-19:36:38.449 7040 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/messages/000226.log: OK
+2026/10/01-19:36:38.520 7040 Log #227: 180 ops saved to Table #229 OK
+2026/10/01-19:36:38.521 7040 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/messages/000227.log: OK
+2026/10/01-19:36:38.839 7040 Table #223: 1125 entries OK
+2026/10/01-19:36:38.848 7040 Table #224: 405 entries OK
+2026/10/01-19:36:38.850 7040 Table #229: 180 entries OK
+2026/10/01-19:36:38.854 7040 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/messages/MANIFEST-000225: OK
+2026/10/01-19:36:38.857 7040 Archiving C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/messages/MANIFEST-000226: OK
+2026/10/01-19:36:38.864 7040 **** Repaired leveldb C:/Users/Gyurka/AppData/Local/FoundryVTT/Data/worlds/wizards/data/messages; recovered 3 files; 3127450 bytes. Some data may have been lost. ****

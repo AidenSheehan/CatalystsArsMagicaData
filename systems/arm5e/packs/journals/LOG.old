@@ -1,4 +1,7 @@
-2026/09/24-18:55:19.903 9a98 Log #96: 0 ops saved to Table #97 OK
-2026/09/24-18:55:19.903 9a98 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\journals/000096.log: OK
-2026/09/24-18:55:19.909 9a98 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\journals/MANIFEST-000095: OK
-2026/09/24-18:55:19.916 9a98 **** Repaired leveldb C:\Users\aiden\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\journals; recovered 0 files; 0 bytes. Some data may have been lost. ****
+2026/10/01-19:36:40.947 2ae4 Log #98: 0 ops saved to Table #100 OK
+2026/10/01-19:36:40.949 2ae4 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\journals/000098.log: OK
+2026/10/01-19:36:40.949 2ae4 Log #99: 0 ops saved to Table #101 OK
+2026/10/01-19:36:40.950 2ae4 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\journals/000099.log: OK
+2026/10/01-19:36:40.954 2ae4 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\journals/MANIFEST-000097: OK
+2026/10/01-19:36:40.956 2ae4 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\journals/MANIFEST-000098: OK
+2026/10/01-19:36:40.961 2ae4 **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\journals; recovered 0 files; 0 bytes. Some data may have been lost. ****

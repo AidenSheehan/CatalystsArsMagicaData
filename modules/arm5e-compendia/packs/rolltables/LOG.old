@@ -1,5 +1,8 @@
-2026/09/24-18:55:20.556 9644 Log #101: 0 ops saved to Table #102 OK
-2026/09/24-18:55:20.556 9644 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\rolltables/000101.log: OK
-2026/09/24-18:55:20.556 9644 Table #82: 74 entries OK
-2026/09/24-18:55:20.561 9644 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\rolltables/MANIFEST-000100: OK
-2026/09/24-18:55:20.569 9644 **** Repaired leveldb C:\Users\aiden\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\rolltables; recovered 1 files; 11188 bytes. Some data may have been lost. ****
+2026/10/01-19:36:42.121 6398 Log #103: 0 ops saved to Table #105 OK
+2026/10/01-19:36:42.122 6398 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\rolltables/000103.log: OK
+2026/10/01-19:36:42.123 6398 Log #104: 0 ops saved to Table #106 OK
+2026/10/01-19:36:42.124 6398 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\rolltables/000104.log: OK
+2026/10/01-19:36:42.140 6398 Table #82: 74 entries OK
+2026/10/01-19:36:42.145 6398 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\rolltables/MANIFEST-000102: OK
+2026/10/01-19:36:42.147 6398 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\rolltables/MANIFEST-000103: OK
+2026/10/01-19:36:42.153 6398 **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\modules\arm5e-compendia\packs\rolltables; recovered 1 files; 11188 bytes. Some data may have been lost. ****

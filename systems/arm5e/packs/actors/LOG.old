@@ -1,5 +1,8 @@
-2026/09/24-18:55:19.784 9a98 Log #97: 0 ops saved to Table #98 OK
-2026/09/24-18:55:19.786 9a98 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\actors/000097.log: OK
-2026/09/24-18:55:19.786 9a98 Table #78: 803 entries OK
-2026/09/24-18:55:19.791 9a98 Archiving C:\Users\aiden\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\actors/MANIFEST-000096: OK
-2026/09/24-18:55:19.798 9a98 **** Repaired leveldb C:\Users\aiden\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\actors; recovered 1 files; 230766 bytes. Some data may have been lost. ****
+2026/10/01-19:36:40.696 2ae4 Log #99: 0 ops saved to Table #101 OK
+2026/10/01-19:36:40.698 2ae4 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\actors/000099.log: OK
+2026/10/01-19:36:40.699 2ae4 Log #100: 0 ops saved to Table #102 OK
+2026/10/01-19:36:40.700 2ae4 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\actors/000100.log: OK
+2026/10/01-19:36:40.706 2ae4 Table #78: 803 entries OK
+2026/10/01-19:36:40.714 2ae4 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\actors/MANIFEST-000098: OK
+2026/10/01-19:36:40.717 2ae4 Archiving C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\actors/MANIFEST-000099: OK
+2026/10/01-19:36:40.722 2ae4 **** Repaired leveldb C:\Users\Gyurka\AppData\Local\FoundryVTT\Data\systems\arm5e\packs\actors; recovered 1 files; 230766 bytes. Some data may have been lost. ****
